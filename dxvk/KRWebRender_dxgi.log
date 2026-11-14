@@ -1,6 +1,9 @@
 info:  Game: KRWebRender.exe
 info:  DXVK: v3.10
 info:  Build: x86_64 gcc 14.0.0
+info:  Found config file: /home/truong/ww-debug/dxvk.conf
+info:  Effective configuration:
+info:    d3d11.enableContextLock = True
 info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x6ffffc7f8a80
 info:  Extension providers:
 info:    Platform WSI
@@ -19,6 +22,9 @@ warn:  OpenXR: Unable to get required Vulkan Device extensions size
 info:  Game: KRWebRender.exe
 info:  DXVK: v3.10
 info:  Build: x86_64 gcc 14.0.0
+info:  Found config file: /home/truong/ww-debug/dxvk.conf
+info:  Effective configuration:
+info:    d3d11.enableContextLock = True
 info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x6ffffc7f8a80
 info:  Extension providers:
 info:    Platform WSI

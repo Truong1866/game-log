@@ -1,0 +1,1367 @@
+Nov 14 12:43:36.632401 cachyos kernel: Linux version 6.18.60-2-cachyos-lts (linux-cachyos-lts@cachyos) (gcc (GCC) 16.2.1 20260810, GNU ld (GNU Binutils) 2.47) #1 SMP PREEMPT_DYNAMIC Sat, 07 Nov 2026 11:21:27 +0000
+Nov 14 12:43:36.632436 cachyos kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-linux-cachyos-lts root=UUID=4916d227-b1c9-4be2-91af-6cc171e8d31e rw loglevel=3 quiet i915.force_probe=a7a1 xe.force_probe=!a7a1
+Nov 14 12:43:36.632444 cachyos kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks and warning on user-space split_locks
+Nov 14 12:43:36.632448 cachyos kernel: BIOS-provided physical RAM map:
+Nov 14 12:43:36.632453 cachyos kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff] usable
+Nov 14 12:43:36.632457 cachyos kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009efff] reserved
+Nov 14 12:43:36.632462 cachyos kernel: BIOS-e820: [mem 0x000000000009f000-0x000000000009ffff] usable
+Nov 14 12:43:36.632467 cachyos kernel: BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+Nov 14 12:43:36.632474 cachyos kernel: BIOS-e820: [mem 0x0000000000100000-0x000000006a011fff] usable
+Nov 14 12:43:36.632478 cachyos kernel: BIOS-e820: [mem 0x000000006a012000-0x000000006d111fff] reserved
+Nov 14 12:43:36.632482 cachyos kernel: BIOS-e820: [mem 0x000000006d112000-0x000000006d23afff] ACPI data
+Nov 14 12:43:36.632486 cachyos kernel: BIOS-e820: [mem 0x000000006d23b000-0x000000006d31bfff] ACPI NVS
+Nov 14 12:43:36.632489 cachyos kernel: BIOS-e820: [mem 0x000000006d31c000-0x0000000072efefff] reserved
+Nov 14 12:43:36.632493 cachyos kernel: BIOS-e820: [mem 0x0000000072eff000-0x0000000072efffff] usable
+Nov 14 12:43:36.632498 cachyos kernel: BIOS-e820: [mem 0x0000000072f00000-0x0000000078ffffff] reserved
+Nov 14 12:43:36.632501 cachyos kernel: BIOS-e820: [mem 0x0000000079800000-0x0000000079bfffff] reserved
+Nov 14 12:43:36.632505 cachyos kernel: BIOS-e820: [mem 0x000000007a000000-0x00000000803fffff] reserved
+Nov 14 12:43:36.632509 cachyos kernel: BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved
+Nov 14 12:43:36.632512 cachyos kernel: BIOS-e820: [mem 0x00000000fe000000-0x00000000fe010fff] reserved
+Nov 14 12:43:36.632516 cachyos kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Nov 14 12:43:36.632519 cachyos kernel: BIOS-e820: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+Nov 14 12:43:36.632523 cachyos kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+Nov 14 12:43:36.632527 cachyos kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Nov 14 12:43:36.632531 cachyos kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+Nov 14 12:43:36.632533 cachyos kernel: BIOS-e820: [mem 0x0000000100000000-0x000000047fbfffff] usable
+Nov 14 12:43:36.632536 cachyos kernel: NX (Execute Disable) protection: active
+Nov 14 12:43:36.632540 cachyos kernel: APIC: Static calls initialized
+Nov 14 12:43:36.632543 cachyos kernel: efi: EFI v2.8 by American Megatrends
+Nov 14 12:43:36.632547 cachyos kernel: efi: ACPI=0x6d23a000 ACPI 2.0=0x6d23a014 TPMFinalLog=0x6d287000 SMBIOS=0x7299f000 SMBIOS 3.0=0x7299e000 MEMATTR=0x66ba2118 ESRT=0x669f4a98 INITRD=0x6643ff18 RNG=0x6d14c018 TPMEventLog=0x6d14a018 
+Nov 14 12:43:36.632551 cachyos kernel: random: crng init done
+Nov 14 12:43:36.632555 cachyos kernel: efi: Remove mem84: MMIO range=[0xc0000000-0xcfffffff] (256MB) from e820 map
+Nov 14 12:43:36.632559 cachyos kernel: e820: remove [mem 0xc0000000-0xcfffffff] reserved
+Nov 14 12:43:36.632565 cachyos kernel: efi: Not removing mem85: MMIO range=[0xfe000000-0xfe010fff] (68KB) from e820 map
+Nov 14 12:43:36.632569 cachyos kernel: efi: Not removing mem86: MMIO range=[0xfec00000-0xfec00fff] (4KB) from e820 map
+Nov 14 12:43:36.632572 cachyos kernel: efi: Not removing mem87: MMIO range=[0xfed00000-0xfed00fff] (4KB) from e820 map
+Nov 14 12:43:36.632576 cachyos kernel: efi: Not removing mem89: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+Nov 14 12:43:36.632579 cachyos kernel: efi: Remove mem90: MMIO range=[0xff000000-0xffffffff] (16MB) from e820 map
+Nov 14 12:43:36.632583 cachyos kernel: e820: remove [mem 0xff000000-0xffffffff] reserved
+Nov 14 12:43:36.632587 cachyos kernel: SMBIOS 3.5.0 present.
+Nov 14 12:43:36.632591 cachyos kernel: DMI: HP HP Laptop 15-fd0xxx/8BB6, BIOS F.26 04/22/2026
+Nov 14 12:43:36.632596 cachyos kernel: DMI: Memory slots populated: 2/2
+Nov 14 12:43:36.632600 cachyos kernel: tsc: Detected 2600.000 MHz processor
+Nov 14 12:43:36.632603 cachyos kernel: tsc: Detected 2611.200 MHz TSC
+Nov 14 12:43:36.632607 cachyos kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Nov 14 12:43:36.632612 cachyos kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Nov 14 12:43:36.632619 cachyos kernel: last_pfn = 0x47fc00 max_arch_pfn = 0x400000000
+Nov 14 12:43:36.632623 cachyos kernel: MTRR map: 5 entries (3 fixed + 2 variable; max 23), built from 10 variable MTRRs
+Nov 14 12:43:36.632630 cachyos kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Nov 14 12:43:36.632634 cachyos kernel: last_pfn = 0x72f00 max_arch_pfn = 0x400000000
+Nov 14 12:43:36.632639 cachyos kernel: esrt: Reserving ESRT space from 0x00000000669f4a98 to 0x00000000669f4ad0.
+Nov 14 12:43:36.632645 cachyos kernel: e820: update [mem 0x669f4000-0x669f4fff] usable ==> reserved
+Nov 14 12:43:36.632651 cachyos kernel: Using GB pages for direct mapping
+Nov 14 12:43:36.632656 cachyos kernel: Secure boot disabled
+Nov 14 12:43:36.632662 cachyos kernel: RAMDISK: [mem 0x5e662000-0x6131bfff]
+Nov 14 12:43:36.632666 cachyos kernel: ACPI: Early table checksum verification disabled
+Nov 14 12:43:36.632672 cachyos kernel: ACPI: RSDP 0x000000006D23A014 000024 (v02 HPQOEM)
+Nov 14 12:43:36.632679 cachyos kernel: ACPI: XSDT 0x000000006D239728 000114 (v01 HPQOEM SLIC-MPC 01072009 AMI  01000013)
+Nov 14 12:43:36.632684 cachyos kernel: ACPI: FACP 0x000000006D234000 000114 (v06 HPQOEM SLIC-MPC 01072009 HP   01000013)
+Nov 14 12:43:36.632689 cachyos kernel: ACPI: DSDT 0x000000006D18C000 0A7830 (v02 HPQOEM 8BB6     01072009 ACPI 20200717)
+Nov 14 12:43:36.632693 cachyos kernel: ACPI: FACS 0x000000006D319000 000040
+Nov 14 12:43:36.632699 cachyos kernel: ACPI: SSDT 0x000000006D235000 003610 (v02 HPQOEM 8BB6     00001000 ACPI 20200717)
+Nov 14 12:43:36.632705 cachyos kernel: ACPI: FIDT 0x000000006D18B000 00009C (v01 HPQOEM 8BB6     01072009 HP   00010013)
+Nov 14 12:43:36.632710 cachyos kernel: ACPI: MSDM 0x000000006D18A000 000055 (v03 HPQOEM SLIC-MPC 00000001 HP   00010013)
+Nov 14 12:43:36.632715 cachyos kernel: ACPI: SSDT 0x000000006D189000 00038C (v02 HPQOEM 8BB6     00000001 ACPI 20200717)
+Nov 14 12:43:36.632720 cachyos kernel: ACPI: SSDT 0x000000006D183000 005D34 (v02 HPQOEM 8BB6     00003000 ACPI 20200717)
+Nov 14 12:43:36.632726 cachyos kernel: ACPI: SSDT 0x000000006D180000 002BA7 (v02 SaSsdt 8BB6     00003000 ACPI 20200717)
+Nov 14 12:43:36.632730 cachyos kernel: ACPI: SSDT 0x000000006D17C000 0033E9 (v02 HPQOEM 8BB6     00003000 ACPI 20200717)
+Nov 14 12:43:36.632735 cachyos kernel: ACPI: HPET 0x000000006D17B000 000038 (v01 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632741 cachyos kernel: ACPI: APIC 0x000000006D17A000 0001DC (v05 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632747 cachyos kernel: ACPI: MCFG 0x000000006D179000 00003C (v01 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632750 cachyos kernel: ACPI: SSDT 0x000000006D16F000 009872 (v02 HPQOEM 8BB6     00001000 ACPI 20200717)
+Nov 14 12:43:36.632755 cachyos kernel: ACPI: UEFI 0x000000006D26D000 000048 (v01 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632761 cachyos kernel: ACPI: NHLT 0x000000006D16E000 000F4E (v00 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632766 cachyos kernel: ACPI: LPIT 0x000000006D16D000 0000CC (v01 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632773 cachyos kernel: ACPI: SSDT 0x000000006D169000 002A83 (v02 HPQOEM 8BB6     00001000 ACPI 20200717)
+Nov 14 12:43:36.632778 cachyos kernel: ACPI: SSDT 0x000000006D15F000 0092F4 (v02 HPQOEM 8BB6     00000000 ACPI 20200717)
+Nov 14 12:43:36.632784 cachyos kernel: ACPI: DBGP 0x000000006D15E000 000034 (v01 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632789 cachyos kernel: ACPI: DBG2 0x000000006D15D000 000054 (v00 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632793 cachyos kernel: ACPI: SSDT 0x000000006D15C000 000F3D (v02 HPQOEM 8BB6     00001000 ACPI 20200717)
+Nov 14 12:43:36.632798 cachyos kernel: ACPI: DMAR 0x000000006D15B000 000088 (v01 HPQOEM 8BB6     00000002 HP   01000013)
+Nov 14 12:43:36.632803 cachyos kernel: ACPI: FPDT 0x000000006D15A000 000044 (v01 HPQOEM 8BB6     01072009 HP   01000013)
+Nov 14 12:43:36.632809 cachyos kernel: ACPI: SSDT 0x000000006D159000 0003DB (v02 HPQOEM 8BB6     00000000 ACPI 20200717)
+Nov 14 12:43:36.632814 cachyos kernel: ACPI: SSDT 0x000000006D155000 0039DA (v02 HPQOEM 8BB6     00003000 ACPI 20200717)
+Nov 14 12:43:36.632819 cachyos kernel: ACPI: SSDT 0x000000006D151000 0039DA (v02 HPQOEM 8BB6     00003000 ACPI 20200717)
+Nov 14 12:43:36.632824 cachyos kernel: ACPI: SSDT 0x000000006D150000 000060 (v01 HPQOEM 8BB6     00000001 ACPI 20200717)
+Nov 14 12:43:36.632829 cachyos kernel: ACPI: TPM2 0x000000006D14F000 00004C (v04 HPQOEM 8BB6     00000001 HP   00000000)
+Nov 14 12:43:36.632834 cachyos kernel: ACPI: PHAT 0x000000006D14E000 0007DC (v01 HPQOEM 8BB6     00000005 HP   0100000D)
+Nov 14 12:43:36.632837 cachyos kernel: ACPI: WSMT 0x000000006D16C000 000028 (v01 HPQOEM 8BB6     01072009 HP   00010013)
+Nov 14 12:43:36.632841 cachyos kernel: ACPI: BGRT 0x000000006D14D000 000038 (v01 HPQOEM 8BB6     01072009 HP   00010013)
+Nov 14 12:43:36.632847 cachyos kernel: ACPI: Reserving FACP table memory at [mem 0x6d234000-0x6d234113]
+Nov 14 12:43:36.632851 cachyos kernel: ACPI: Reserving DSDT table memory at [mem 0x6d18c000-0x6d23382f]
+Nov 14 12:43:36.632855 cachyos kernel: ACPI: Reserving FACS table memory at [mem 0x6d319000-0x6d31903f]
+Nov 14 12:43:36.632861 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d235000-0x6d23860f]
+Nov 14 12:43:36.632865 cachyos kernel: ACPI: Reserving FIDT table memory at [mem 0x6d18b000-0x6d18b09b]
+Nov 14 12:43:36.632869 cachyos kernel: ACPI: Reserving MSDM table memory at [mem 0x6d18a000-0x6d18a054]
+Nov 14 12:43:36.632872 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d189000-0x6d18938b]
+Nov 14 12:43:36.632875 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d183000-0x6d188d33]
+Nov 14 12:43:36.632877 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d180000-0x6d182ba6]
+Nov 14 12:43:36.632880 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d17c000-0x6d17f3e8]
+Nov 14 12:43:36.632883 cachyos kernel: ACPI: Reserving HPET table memory at [mem 0x6d17b000-0x6d17b037]
+Nov 14 12:43:36.632888 cachyos kernel: ACPI: Reserving APIC table memory at [mem 0x6d17a000-0x6d17a1db]
+Nov 14 12:43:36.632892 cachyos kernel: ACPI: Reserving MCFG table memory at [mem 0x6d179000-0x6d17903b]
+Nov 14 12:43:36.632897 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d16f000-0x6d178871]
+Nov 14 12:43:36.632900 cachyos kernel: ACPI: Reserving UEFI table memory at [mem 0x6d26d000-0x6d26d047]
+Nov 14 12:43:36.632904 cachyos kernel: ACPI: Reserving NHLT table memory at [mem 0x6d16e000-0x6d16ef4d]
+Nov 14 12:43:36.632908 cachyos kernel: ACPI: Reserving LPIT table memory at [mem 0x6d16d000-0x6d16d0cb]
+Nov 14 12:43:36.632914 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d169000-0x6d16ba82]
+Nov 14 12:43:36.632918 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d15f000-0x6d1682f3]
+Nov 14 12:43:36.632922 cachyos kernel: ACPI: Reserving DBGP table memory at [mem 0x6d15e000-0x6d15e033]
+Nov 14 12:43:36.632925 cachyos kernel: ACPI: Reserving DBG2 table memory at [mem 0x6d15d000-0x6d15d053]
+Nov 14 12:43:36.632929 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d15c000-0x6d15cf3c]
+Nov 14 12:43:36.632933 cachyos kernel: ACPI: Reserving DMAR table memory at [mem 0x6d15b000-0x6d15b087]
+Nov 14 12:43:36.632935 cachyos kernel: ACPI: Reserving FPDT table memory at [mem 0x6d15a000-0x6d15a043]
+Nov 14 12:43:36.632938 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d159000-0x6d1593da]
+Nov 14 12:43:36.632942 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d155000-0x6d1589d9]
+Nov 14 12:43:36.632947 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d151000-0x6d1549d9]
+Nov 14 12:43:36.632950 cachyos kernel: ACPI: Reserving SSDT table memory at [mem 0x6d150000-0x6d15005f]
+Nov 14 12:43:36.632957 cachyos kernel: ACPI: Reserving TPM2 table memory at [mem 0x6d14f000-0x6d14f04b]
+Nov 14 12:43:36.632962 cachyos kernel: ACPI: Reserving PHAT table memory at [mem 0x6d14e000-0x6d14e7db]
+Nov 14 12:43:36.632966 cachyos kernel: ACPI: Reserving WSMT table memory at [mem 0x6d16c000-0x6d16c027]
+Nov 14 12:43:36.632969 cachyos kernel: ACPI: Reserving BGRT table memory at [mem 0x6d14d000-0x6d14d037]
+Nov 14 12:43:36.632974 cachyos kernel: No NUMA configuration found
+Nov 14 12:43:36.632979 cachyos kernel: Faking a node at [mem 0x0000000000000000-0x000000047fbfffff]
+Nov 14 12:43:36.632984 cachyos kernel: NODE_DATA(0) allocated [mem 0x47fbd5280-0x47fbfffff]
+Nov 14 12:43:36.632987 cachyos kernel: Zone ranges:
+Nov 14 12:43:36.632990 cachyos kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Nov 14 12:43:36.632994 cachyos kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Nov 14 12:43:36.633001 cachyos kernel:   Normal   [mem 0x0000000100000000-0x000000047fbfffff]
+Nov 14 12:43:36.633004 cachyos kernel:   Device   empty
+Nov 14 12:43:36.633009 cachyos kernel: Movable zone start for each node
+Nov 14 12:43:36.633011 cachyos kernel: Early memory node ranges
+Nov 14 12:43:36.633017 cachyos kernel:   node   0: [mem 0x0000000000001000-0x000000000009dfff]
+Nov 14 12:43:36.633020 cachyos kernel:   node   0: [mem 0x000000000009f000-0x000000000009ffff]
+Nov 14 12:43:36.633024 cachyos kernel:   node   0: [mem 0x0000000000100000-0x000000006a011fff]
+Nov 14 12:43:36.633027 cachyos kernel:   node   0: [mem 0x0000000072eff000-0x0000000072efffff]
+Nov 14 12:43:36.633030 cachyos kernel:   node   0: [mem 0x0000000100000000-0x000000047fbfffff]
+Nov 14 12:43:36.633033 cachyos kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000047fbfffff]
+Nov 14 12:43:36.633037 cachyos kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Nov 14 12:43:36.633041 cachyos kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Nov 14 12:43:36.633045 cachyos kernel: On node 0, zone DMA: 96 pages in unavailable ranges
+Nov 14 12:43:36.633049 cachyos kernel: On node 0, zone DMA32: 36589 pages in unavailable ranges
+Nov 14 12:43:36.633054 cachyos kernel: On node 0, zone Normal: 20736 pages in unavailable ranges
+Nov 14 12:43:36.633058 cachyos kernel: On node 0, zone Normal: 1024 pages in unavailable ranges
+Nov 14 12:43:36.633062 cachyos kernel: Reserving Intel graphics memory at [mem 0x7c800000-0x803fffff]
+Nov 14 12:43:36.633066 cachyos kernel: ACPI: PM-Timer IO Port: 0x1808
+Nov 14 12:43:36.633071 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+Nov 14 12:43:36.633074 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+Nov 14 12:43:36.633079 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+Nov 14 12:43:36.633082 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+Nov 14 12:43:36.633087 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+Nov 14 12:43:36.633090 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+Nov 14 12:43:36.633094 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+Nov 14 12:43:36.633097 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+Nov 14 12:43:36.633100 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+Nov 14 12:43:36.633103 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+Nov 14 12:43:36.633106 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+Nov 14 12:43:36.633110 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+Nov 14 12:43:36.633113 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+Nov 14 12:43:36.633115 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+Nov 14 12:43:36.633119 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+Nov 14 12:43:36.633122 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+Nov 14 12:43:36.633126 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x11] high edge lint[0x1])
+Nov 14 12:43:36.633129 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x12] high edge lint[0x1])
+Nov 14 12:43:36.633134 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x13] high edge lint[0x1])
+Nov 14 12:43:36.633137 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x14] high edge lint[0x1])
+Nov 14 12:43:36.633140 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x15] high edge lint[0x1])
+Nov 14 12:43:36.633142 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x16] high edge lint[0x1])
+Nov 14 12:43:36.633145 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x17] high edge lint[0x1])
+Nov 14 12:43:36.633148 cachyos kernel: ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+Nov 14 12:43:36.633151 cachyos kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+Nov 14 12:43:36.633156 cachyos kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Nov 14 12:43:36.633159 cachyos kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Nov 14 12:43:36.633163 cachyos kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Nov 14 12:43:36.633167 cachyos kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Nov 14 12:43:36.633170 cachyos kernel: e820: update [mem 0x682d6000-0x682e9fff] usable ==> reserved
+Nov 14 12:43:36.633175 cachyos kernel: TSC deadline timer available
+Nov 14 12:43:36.633179 cachyos kernel: CPU topo: Max. logical packages:   1
+Nov 14 12:43:36.633182 cachyos kernel: CPU topo: Max. logical dies:       1
+Nov 14 12:43:36.633185 cachyos kernel: CPU topo: Max. dies per package:   1
+Nov 14 12:43:36.633189 cachyos kernel: CPU topo: Max. threads per core:   2
+Nov 14 12:43:36.633192 cachyos kernel: CPU topo: Num. cores per package:    10
+Nov 14 12:43:36.633194 cachyos kernel: CPU topo: Num. threads per package:  12
+Nov 14 12:43:36.633199 cachyos kernel: CPU topo: Allowing 12 present CPUs plus 0 hotplug CPUs
+Nov 14 12:43:36.633202 cachyos kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Nov 14 12:43:36.633205 cachyos kernel: PM: hibernation: Registered nosave memory: [mem 0x0009e000-0x0009efff]
+Nov 14 12:43:36.633209 cachyos kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Nov 14 12:43:36.633214 cachyos kernel: PM: hibernation: Registered nosave memory: [mem 0x669f4000-0x669f4fff]
+Nov 14 12:43:36.633219 cachyos kernel: PM: hibernation: Registered nosave memory: [mem 0x682d6000-0x682e9fff]
+Nov 14 12:43:36.633223 cachyos kernel: PM: hibernation: Registered nosave memory: [mem 0x6a012000-0x72efefff]
+Nov 14 12:43:36.633227 cachyos kernel: PM: hibernation: Registered nosave memory: [mem 0x72f00000-0xffffffff]
+Nov 14 12:43:36.633230 cachyos kernel: [mem 0x80400000-0xfdffffff] available for PCI devices
+Nov 14 12:43:36.633234 cachyos kernel: Booting paravirtualized kernel on bare hardware
+Nov 14 12:43:36.633240 cachyos kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Nov 14 12:43:36.633244 cachyos kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:12 nr_cpu_ids:12 nr_node_ids:1
+Nov 14 12:43:36.633249 cachyos kernel: percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u262144
+Nov 14 12:43:36.633253 cachyos kernel: pcpu-alloc: s221184 r8192 d28672 u262144 alloc=1*2097152
+Nov 14 12:43:36.633256 cachyos kernel: pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 -- -- -- -- 
+Nov 14 12:43:36.633260 cachyos kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux-cachyos-lts root=UUID=4916d227-b1c9-4be2-91af-6cc171e8d31e rw loglevel=3 quiet i915.force_probe=a7a1 xe.force_probe=!a7a1
+Nov 14 12:43:36.633266 cachyos kernel: printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+Nov 14 12:43:36.633271 cachyos kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Nov 14 12:43:36.633275 cachyos kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Nov 14 12:43:36.633279 cachyos kernel: software IO TLB: area num 16.
+Nov 14 12:43:36.633285 cachyos kernel: Fallback order for Node 0: 0 
+Nov 14 12:43:36.633288 cachyos kernel: Built 1 zonelists, mobility grouping on.  Total pages: 4103089
+Nov 14 12:43:36.633291 cachyos kernel: Policy zone: Normal
+Nov 14 12:43:36.633295 cachyos kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Nov 14 12:43:36.633299 cachyos kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=12, Nodes=1
+Nov 14 12:43:36.633303 cachyos kernel: ftrace: allocating 55264 entries in 216 pages
+Nov 14 12:43:36.633307 cachyos kernel: ftrace: allocated 216 pages with 4 groups
+Nov 14 12:43:36.633311 cachyos kernel: Dynamic Preempt: full
+Nov 14 12:43:36.633314 cachyos kernel: rcu: Preemptible hierarchical RCU implementation.
+Nov 14 12:43:36.633319 cachyos kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=12.
+Nov 14 12:43:36.633324 cachyos kernel: rcu:         RCU priority boosting: priority 1 delay 500 ms.
+Nov 14 12:43:36.633327 cachyos kernel:         Trampoline variant of Tasks RCU enabled.
+Nov 14 12:43:36.633332 cachyos kernel:         Rude variant of Tasks RCU enabled.
+Nov 14 12:43:36.633335 cachyos kernel:         Tracing variant of Tasks RCU enabled.
+Nov 14 12:43:36.633338 cachyos kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Nov 14 12:43:36.633341 cachyos kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=12
+Nov 14 12:43:36.633346 cachyos kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=12.
+Nov 14 12:43:36.633352 cachyos kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=12.
+Nov 14 12:43:36.633355 cachyos kernel: RCU Tasks Trace: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=12.
+Nov 14 12:43:36.633358 cachyos kernel: NR_IRQS: 524544, nr_irqs: 2152, preallocated irqs: 16
+Nov 14 12:43:36.633363 cachyos kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Nov 14 12:43:36.633366 cachyos kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Nov 14 12:43:36.633378 cachyos kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+Nov 14 12:43:36.633384 cachyos kernel: Console: colour dummy device 80x25
+Nov 14 12:43:36.633389 cachyos kernel: printk: legacy console [tty0] enabled
+Nov 14 12:43:36.633393 cachyos kernel: ACPI: Core revision 20250807
+Nov 14 12:43:36.633399 cachyos kernel: hpet: HPET dysfunctional in PC10. Force disabled.
+Nov 14 12:43:36.633404 cachyos kernel: APIC: Switch to symmetric I/O mode setup
+Nov 14 12:43:36.633408 cachyos kernel: DMAR: Host address width 39
+Nov 14 12:43:36.633411 cachyos kernel: DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+Nov 14 12:43:36.633416 cachyos kernel: DMAR: dmar0: reg_base_addr fed90000 ver 4:0 cap 1c0000c40660462 ecap 29a00f0505e
+Nov 14 12:43:36.633421 cachyos kernel: DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+Nov 14 12:43:36.633424 cachyos kernel: DMAR: dmar1: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da
+Nov 14 12:43:36.633429 cachyos kernel: DMAR: RMRR base: 0x0000007c000000 end: 0x000000803fffff
+Nov 14 12:43:36.633432 cachyos kernel: DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+Nov 14 12:43:36.633435 cachyos kernel: DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+Nov 14 12:43:36.633438 cachyos kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+Nov 14 12:43:36.633443 cachyos kernel: DMAR-IR: Enabled IRQ remapping in x2apic mode
+Nov 14 12:43:36.633446 cachyos kernel: x2apic enabled
+Nov 14 12:43:36.633449 cachyos kernel: APIC: Switched APIC routing to: cluster x2apic
+Nov 14 12:43:36.633458 cachyos kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x25a39079a08, max_idle_ns: 440795310461 ns
+Nov 14 12:43:36.633461 cachyos kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 5222.40 BogoMIPS (lpj=2611200)
+Nov 14 12:43:36.633465 cachyos kernel: CPU0: Thermal monitoring enabled (TM1)
+Nov 14 12:43:36.633468 cachyos kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+Nov 14 12:43:36.633471 cachyos kernel: CET detected: Indirect Branch Tracking enabled
+Nov 14 12:43:36.633474 cachyos kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Nov 14 12:43:36.633478 cachyos kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Nov 14 12:43:36.633487 cachyos kernel: process: using mwait in idle threads
+Nov 14 12:43:36.633493 cachyos kernel: mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+Nov 14 12:43:36.633496 cachyos kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+Nov 14 12:43:36.633500 cachyos kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+Nov 14 12:43:36.633503 cachyos kernel: Register File Data Sampling: Mitigation: Clear Register File
+Nov 14 12:43:36.633506 cachyos kernel: VMSCAPE: Mitigation: IBPB before exit to userspace
+Nov 14 12:43:36.633509 cachyos kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Nov 14 12:43:36.633513 cachyos kernel: Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+Nov 14 12:43:36.633516 cachyos kernel: Spectre V2 : Enabling IBPB for BPF
+Nov 14 12:43:36.633519 cachyos kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Nov 14 12:43:36.633523 cachyos kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Nov 14 12:43:36.633526 cachyos kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Nov 14 12:43:36.633529 cachyos kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Nov 14 12:43:36.633532 cachyos kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+Nov 14 12:43:36.633535 cachyos kernel: x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+Nov 14 12:43:36.633538 cachyos kernel: x86/fpu: Supporting XSAVE feature 0x1000: 'Control-flow Kernel registers (KVM only)'
+Nov 14 12:43:36.633541 cachyos kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Nov 14 12:43:36.633545 cachyos kernel: x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8
+Nov 14 12:43:36.633549 cachyos kernel: x86/fpu: xstate_offset[11]:  840, xstate_sizes[11]:   16
+Nov 14 12:43:36.633553 cachyos kernel: x86/fpu: xstate_offset[12]:  856, xstate_sizes[12]:   24
+Nov 14 12:43:36.633557 cachyos kernel: x86/fpu: Enabled xstate features 0x1a07, context size is 880 bytes, using 'compacted' format.
+Nov 14 12:43:36.633560 cachyos kernel: Freeing SMP alternatives memory: 72K
+Nov 14 12:43:36.633563 cachyos kernel: pid_max: default: 32768 minimum: 301
+Nov 14 12:43:36.633566 cachyos kernel: LSM: initializing lsm=capability,landlock,lockdown,yama,bpf
+Nov 14 12:43:36.633569 cachyos kernel: landlock: Up and running.
+Nov 14 12:43:36.633571 cachyos kernel: Yama: becoming mindful.
+Nov 14 12:43:36.633574 cachyos kernel: LSM support for eBPF active
+Nov 14 12:43:36.633577 cachyos kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Nov 14 12:43:36.633580 cachyos kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Nov 14 12:43:36.633583 cachyos kernel: smpboot: CPU0: 13th Gen Intel(R) Core(TM) i7-1355U (family: 0x6, model: 0xba, stepping: 0x3)
+Nov 14 12:43:36.633586 cachyos kernel: Performance Events: XSAVE Architectural LBR, PEBS fmt4+-baseline, Alderlake Hybrid events, AnyThread deprecated, 32-deep LBR, full-width counters, Intel PMU driver.
+Nov 14 12:43:36.633588 cachyos kernel: core: cpu_core PMU driver: 
+Nov 14 12:43:36.633592 cachyos kernel: ... version:                   5
+Nov 14 12:43:36.633595 cachyos kernel: ... bit width:                 48
+Nov 14 12:43:36.633597 cachyos kernel: ... generic counters:          8
+Nov 14 12:43:36.633600 cachyos kernel: ... generic bitmap:            00000000000000ff
+Nov 14 12:43:36.633604 cachyos kernel: ... fixed-purpose counters:    4
+Nov 14 12:43:36.633607 cachyos kernel: ... fixed-purpose bitmap:      000000000000000f
+Nov 14 12:43:36.633610 cachyos kernel: ... value mask:                0000ffffffffffff
+Nov 14 12:43:36.633614 cachyos kernel: ... max period:                00007fffffffffff
+Nov 14 12:43:36.633616 cachyos kernel: ... global_ctrl mask:          0001000f000000ff
+Nov 14 12:43:36.633619 cachyos kernel: signal: max sigframe size: 3632
+Nov 14 12:43:36.633622 cachyos kernel: Estimated ratio of average max frequency by base frequency (times 1024): 1851
+Nov 14 12:43:36.633625 cachyos kernel: rcu: Hierarchical SRCU implementation.
+Nov 14 12:43:36.633629 cachyos kernel: rcu:         Max phase no-delay instances is 400.
+Nov 14 12:43:36.633632 cachyos kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+Nov 14 12:43:36.633636 cachyos kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Nov 14 12:43:36.633639 cachyos kernel: smp: Bringing up secondary CPUs ...
+Nov 14 12:43:36.633642 cachyos kernel: smpboot: x86: Booting SMP configuration:
+Nov 14 12:43:36.633646 cachyos kernel: .... node  #0, CPUs:        #2  #4  #5  #6  #7  #8  #9 #10 #11
+Nov 14 12:43:36.633650 cachyos kernel: core: cpu_atom PMU driver: 
+Nov 14 12:43:36.633654 cachyos kernel: ... version:                   5
+Nov 14 12:43:36.633657 cachyos kernel: ... bit width:                 48
+Nov 14 12:43:36.633659 cachyos kernel: ... generic counters:          6
+Nov 14 12:43:36.633663 cachyos kernel: ... generic bitmap:            000000000000003f
+Nov 14 12:43:36.633666 cachyos kernel: ... fixed-purpose counters:    3
+Nov 14 12:43:36.633669 cachyos kernel: ... fixed-purpose bitmap:      0000000000000007
+Nov 14 12:43:36.633672 cachyos kernel: ... value mask:                0000ffffffffffff
+Nov 14 12:43:36.633674 cachyos kernel: ... max period:                00007fffffffffff
+Nov 14 12:43:36.633678 cachyos kernel: ... global_ctrl mask:          000000070000003f
+Nov 14 12:43:36.633680 cachyos kernel:   #1  #3
+Nov 14 12:43:36.633684 cachyos kernel: smp: Brought up 1 node, 12 CPUs
+Nov 14 12:43:36.633687 cachyos kernel: smpboot: Total of 12 processors activated (62668.80 BogoMIPS)
+Nov 14 12:43:36.633690 cachyos kernel: Memory: 15869320K/16412356K available (24608K kernel code, 2960K rwdata, 16312K rodata, 4932K init, 5232K bss, 519528K reserved, 0K cma-reserved)
+Nov 14 12:43:36.633693 cachyos kernel: le9 Unofficial (le9uo) working set protection 1.15a by Masahito Suzuki (forked from hakavlad's original le9 patch)
+Nov 14 12:43:36.633696 cachyos kernel: devtmpfs: initialized
+Nov 14 12:43:36.633699 cachyos kernel: x86/mm: Memory block size: 128MB
+Nov 14 12:43:36.633702 cachyos kernel: ACPI: PM: Registering ACPI NVS region [mem 0x6d23b000-0x6d31bfff] (921600 bytes)
+Nov 14 12:43:36.633705 cachyos kernel: posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Nov 14 12:43:36.633709 cachyos kernel: futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+Nov 14 12:43:36.633712 cachyos kernel: pinctrl core: initialized pinctrl subsystem
+Nov 14 12:43:36.633715 cachyos kernel: PM: RTC time: 05:43:36, date: 2026-11-14
+Nov 14 12:43:36.633718 cachyos kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Nov 14 12:43:36.633721 cachyos kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+Nov 14 12:43:36.633725 cachyos kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Nov 14 12:43:36.633728 cachyos kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Nov 14 12:43:36.633731 cachyos kernel: audit: initializing netlink subsys (disabled)
+Nov 14 12:43:36.633734 cachyos kernel: audit: type=2000 audit(1794635016.012:1): state=initialized audit_enabled=0 res=1
+Nov 14 12:43:36.633737 cachyos kernel: thermal_sys: Registered thermal governor 'fair_share'
+Nov 14 12:43:36.633741 cachyos kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Nov 14 12:43:36.633744 cachyos kernel: thermal_sys: Registered thermal governor 'step_wise'
+Nov 14 12:43:36.633746 cachyos kernel: thermal_sys: Registered thermal governor 'user_space'
+Nov 14 12:43:36.633749 cachyos kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Nov 14 12:43:36.633752 cachyos kernel: cpuidle: using governor ladder
+Nov 14 12:43:36.633755 cachyos kernel: cpuidle: using governor menu
+Nov 14 12:43:36.633757 cachyos kernel: efi: Freeing EFI boot services memory: 54896K
+Nov 14 12:43:36.633760 cachyos kernel: ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+Nov 14 12:43:36.633765 cachyos kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Nov 14 12:43:36.633768 cachyos kernel: PCI: ECAM [mem 0xc0000000-0xcfffffff] (base 0xc0000000) for domain 0000 [bus 00-ff]
+Nov 14 12:43:36.633771 cachyos kernel: PCI: Using configuration type 1 for base access
+Nov 14 12:43:36.633774 cachyos kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Nov 14 12:43:36.633778 cachyos kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+Nov 14 12:43:36.633781 cachyos kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+Nov 14 12:43:36.633784 cachyos kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Nov 14 12:43:36.633787 cachyos kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Nov 14 12:43:36.633790 cachyos kernel: raid6: skipped pq benchmark and selected avx2x4
+Nov 14 12:43:36.633793 cachyos kernel: raid6: using avx2x2 recovery algorithm
+Nov 14 12:43:36.633796 cachyos kernel: ACPI: Added _OSI(Module Device)
+Nov 14 12:43:36.633799 cachyos kernel: ACPI: Added _OSI(Processor Device)
+Nov 14 12:43:36.633803 cachyos kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Nov 14 12:43:36.633806 cachyos kernel: ACPI: 14 ACPI AML tables successfully acquired and loaded
+Nov 14 12:43:36.633810 cachyos kernel: ACPI: Dynamic OEM Table Load:
+Nov 14 12:43:36.633813 cachyos kernel: ACPI: SSDT 0xFFFF8C5001307400 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+Nov 14 12:43:36.633821 cachyos kernel: ACPI: Dynamic OEM Table Load:
+Nov 14 12:43:36.633824 cachyos kernel: ACPI: SSDT 0xFFFF8C50012FC000 000605 (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+Nov 14 12:43:36.633827 cachyos kernel: ACPI: Dynamic OEM Table Load:
+Nov 14 12:43:36.633830 cachyos kernel: ACPI: SSDT 0xFFFF8C5001FE0C00 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+Nov 14 12:43:36.633833 cachyos kernel: ACPI: Dynamic OEM Table Load:
+Nov 14 12:43:36.633836 cachyos kernel: ACPI: SSDT 0xFFFF8C50012FF000 0004B5 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+Nov 14 12:43:36.633840 cachyos kernel: ACPI: Dynamic OEM Table Load:
+Nov 14 12:43:36.633843 cachyos kernel: ACPI: SSDT 0xFFFF8C50012F4000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+Nov 14 12:43:36.633846 cachyos kernel: ACPI: Dynamic OEM Table Load:
+Nov 14 12:43:36.633849 cachyos kernel: ACPI: SSDT 0xFFFF8C50012F6000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+Nov 14 12:43:36.633853 cachyos kernel: ACPI: Dynamic OEM Table Load:
+Nov 14 12:43:36.633856 cachyos kernel: ACPI: SSDT 0xFFFF8C5001314000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+Nov 14 12:43:36.633859 cachyos kernel: ACPI: Dynamic OEM Table Load:
+Nov 14 12:43:36.633862 cachyos kernel: ACPI: SSDT 0xFFFF8C5001309000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+Nov 14 12:43:36.633866 cachyos kernel: ACPI: EC: EC started
+Nov 14 12:43:36.633869 cachyos kernel: ACPI: EC: interrupt blocked
+Nov 14 12:43:36.633873 cachyos kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Nov 14 12:43:36.633876 cachyos kernel: ACPI: \_SB_.PC00.LPCB.EC0_: Boot DSDT EC used to handle transactions
+Nov 14 12:43:36.633880 cachyos kernel: ACPI: Interpreter enabled
+Nov 14 12:43:36.633883 cachyos kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Nov 14 12:43:36.633886 cachyos kernel: ACPI: Using IOAPIC for interrupt routing
+Nov 14 12:43:36.633890 cachyos kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Nov 14 12:43:36.633894 cachyos kernel: PCI: Ignoring E820 reservations for host bridge windows
+Nov 14 12:43:36.633898 cachyos kernel: ACPI: Enabled 9 GPEs in block 00 to 7F
+Nov 14 12:43:36.633902 cachyos kernel: ACPI: \_SB_.PC00.PEG1.PXP_: New power resource
+Nov 14 12:43:36.633906 cachyos kernel: ACPI: \_SB_.PC00.PEG2.PXP_: New power resource
+Nov 14 12:43:36.633909 cachyos kernel: ACPI: \_SB_.PC00.PEG0.PXP_: New power resource
+Nov 14 12:43:36.633913 cachyos kernel: ACPI: \_SB_.PC00.RP09.PXP_: New power resource
+Nov 14 12:43:36.633916 cachyos kernel: ACPI: \_SB_.PC00.RP06.PXP_: New power resource
+Nov 14 12:43:36.633919 cachyos kernel: ACPI: \_SB_.PC00.XHCI.RHUB.HS10.PRWL: New power resource
+Nov 14 12:43:36.633922 cachyos kernel: ACPI: \_SB_.PC00.PAUD: New power resource
+Nov 14 12:43:36.633926 cachyos kernel: ACPI: \_SB_.PC00.CNVW.WRST: New power resource
+Nov 14 12:43:36.633929 cachyos kernel: ACPI: \PIN_: New power resource
+Nov 14 12:43:36.633932 cachyos kernel: ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-fe])
+Nov 14 12:43:36.634023 cachyos kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Nov 14 12:43:36.634073 cachyos kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+Nov 14 12:43:36.634119 cachyos kernel: acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+Nov 14 12:43:36.634123 cachyos kernel: PCI host bridge to bus 0000:00
+Nov 14 12:43:36.634173 cachyos kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Nov 14 12:43:36.634213 cachyos kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Nov 14 12:43:36.634253 cachyos kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Nov 14 12:43:36.634293 cachyos kernel: pci_bus 0000:00: root bus resource [mem 0x000e8000-0x000effff window]
+Nov 14 12:43:36.634331 cachyos kernel: pci_bus 0000:00: root bus resource [mem 0x80400000-0xbfffffff window]
+Nov 14 12:43:36.634374 cachyos kernel: pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+Nov 14 12:43:36.634416 cachyos kernel: pci_bus 0000:00: root bus resource [bus 00-fe]
+Nov 14 12:43:36.634471 cachyos kernel: pci 0000:00:00.0: [8086:a708] type 00 class 0x060000 conventional PCI endpoint
+Nov 14 12:43:36.634522 cachyos kernel: pci 0000:00:02.0: [8086:a7a1] type 00 class 0x030000 PCIe Root Complex Integrated Endpoint
+Nov 14 12:43:36.634574 cachyos kernel: pci 0000:00:02.0: BAR 0 [mem 0x6000000000-0x6000ffffff 64bit]
+Nov 14 12:43:36.634618 cachyos kernel: pci 0000:00:02.0: BAR 2 [mem 0x4000000000-0x400fffffff 64bit pref]
+Nov 14 12:43:36.634661 cachyos kernel: pci 0000:00:02.0: BAR 4 [io  0x4000-0x403f]
+Nov 14 12:43:36.634705 cachyos kernel: pci 0000:00:02.0: DMAR: Skip IOMMU disabling for graphics
+Nov 14 12:43:36.634749 cachyos kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Nov 14 12:43:36.634794 cachyos kernel: pci 0000:00:02.0: VF BAR 0 [mem 0x00000000-0x00ffffff 64bit]
+Nov 14 12:43:36.634838 cachyos kernel: pci 0000:00:02.0: VF BAR 0 [mem 0x00000000-0x06ffffff 64bit]: contains BAR 0 for 7 VFs
+Nov 14 12:43:36.634881 cachyos kernel: pci 0000:00:02.0: VF BAR 2 [mem 0x00000000-0x1fffffff 64bit pref]
+Nov 14 12:43:36.634926 cachyos kernel: pci 0000:00:02.0: VF BAR 2 [mem 0x00000000-0xdfffffff 64bit pref]: contains BAR 2 for 7 VFs
+Nov 14 12:43:36.634975 cachyos kernel: pci 0000:00:04.0: [8086:a71d] type 00 class 0x118000 conventional PCI endpoint
+Nov 14 12:43:36.635020 cachyos kernel: pci 0000:00:04.0: BAR 0 [mem 0x6001100000-0x600111ffff 64bit]
+Nov 14 12:43:36.635069 cachyos kernel: pci 0000:00:06.0: [8086:a74d] type 01 class 0x060400 PCIe Root Port
+Nov 14 12:43:36.635115 cachyos kernel: pci 0000:00:06.0: PCI bridge to [bus 01]
+Nov 14 12:43:36.635158 cachyos kernel: pci 0000:00:06.0:   bridge window [mem 0x80500000-0x805fffff]
+Nov 14 12:43:36.635204 cachyos kernel: pci 0000:00:06.0: PME# supported from D0 D3hot D3cold
+Nov 14 12:43:36.635250 cachyos kernel: pci 0000:00:06.0: PTM enabled (root), 4ns granularity
+Nov 14 12:43:36.635299 cachyos kernel: pci 0000:00:08.0: [8086:a74f] type 00 class 0x088000 conventional PCI endpoint
+Nov 14 12:43:36.635343 cachyos kernel: pci 0000:00:08.0: BAR 0 [mem 0x600113d000-0x600113dfff 64bit]
+Nov 14 12:43:36.635400 cachyos kernel: pci 0000:00:14.0: [8086:51ed] type 00 class 0x0c0330 conventional PCI endpoint
+Nov 14 12:43:36.635447 cachyos kernel: pci 0000:00:14.0: BAR 0 [mem 0x6001120000-0x600112ffff 64bit]
+Nov 14 12:43:36.635493 cachyos kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+Nov 14 12:43:36.635544 cachyos kernel: pci 0000:00:14.2: [8086:51ef] type 00 class 0x050000 conventional PCI endpoint
+Nov 14 12:43:36.635595 cachyos kernel: pci 0000:00:14.2: BAR 0 [mem 0x6001134000-0x6001137fff 64bit]
+Nov 14 12:43:36.635639 cachyos kernel: pci 0000:00:14.2: BAR 2 [mem 0x600113c000-0x600113cfff 64bit]
+Nov 14 12:43:36.635689 cachyos kernel: pci 0000:00:15.0: [8086:51e8] type 00 class 0x0c8000 conventional PCI endpoint
+Nov 14 12:43:36.635732 cachyos kernel: pci 0000:00:15.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Nov 14 12:43:36.635780 cachyos kernel: pci 0000:00:15.1: [8086:51e9] type 00 class 0x0c8000 conventional PCI endpoint
+Nov 14 12:43:36.635826 cachyos kernel: pci 0000:00:15.1: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Nov 14 12:43:36.635874 cachyos kernel: pci 0000:00:16.0: [8086:51e0] type 00 class 0x078000 conventional PCI endpoint
+Nov 14 12:43:36.635919 cachyos kernel: pci 0000:00:16.0: BAR 0 [mem 0x6001139000-0x6001139fff 64bit]
+Nov 14 12:43:36.635962 cachyos kernel: pci 0000:00:16.0: PME# supported from D3hot
+Nov 14 12:43:36.636007 cachyos kernel: pci 0000:00:1c.0: [8086:51bf] type 01 class 0x060400 PCIe Root Port
+Nov 14 12:43:36.636052 cachyos kernel: pci 0000:00:1c.0: PCI bridge to [bus 02]
+Nov 14 12:43:36.636097 cachyos kernel: pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+Nov 14 12:43:36.636142 cachyos kernel: pci 0000:00:1c.0:   bridge window [mem 0x80400000-0x804fffff]
+Nov 14 12:43:36.636186 cachyos kernel: pci 0000:00:1c.0: removing 2.5GT/s downstream link speed restriction
+Nov 14 12:43:36.636231 cachyos kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+Nov 14 12:43:36.636275 cachyos kernel: pci 0000:00:1c.0: PTM enabled (root), 4ns granularity
+Nov 14 12:43:36.636319 cachyos kernel: pci 0000:00:1f.0: [8086:519d] type 00 class 0x060100 conventional PCI endpoint
+Nov 14 12:43:36.636364 cachyos kernel: pci 0000:00:1f.3: [8086:51ca] type 00 class 0x040100 conventional PCI endpoint
+Nov 14 12:43:36.636410 cachyos kernel: pci 0000:00:1f.3: BAR 0 [mem 0x6001130000-0x6001133fff 64bit]
+Nov 14 12:43:36.636453 cachyos kernel: pci 0000:00:1f.3: BAR 4 [mem 0x6001000000-0x60010fffff 64bit]
+Nov 14 12:43:36.636496 cachyos kernel: pci 0000:00:1f.3: PME# supported from D3hot D3cold
+Nov 14 12:43:36.636539 cachyos kernel: pci 0000:00:1f.4: [8086:51a3] type 00 class 0x0c0500 conventional PCI endpoint
+Nov 14 12:43:36.636582 cachyos kernel: pci 0000:00:1f.4: BAR 0 [mem 0x6001138000-0x60011380ff 64bit]
+Nov 14 12:43:36.636625 cachyos kernel: pci 0000:00:1f.4: BAR 4 [io  0xefa0-0xefbf]
+Nov 14 12:43:36.636668 cachyos kernel: pci 0000:00:1f.5: [8086:51a4] type 00 class 0x0c8000 conventional PCI endpoint
+Nov 14 12:43:36.636713 cachyos kernel: pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]
+Nov 14 12:43:36.636764 cachyos kernel: pci 0000:01:00.0: [144d:a80b] type 00 class 0x010802 PCIe Endpoint
+Nov 14 12:43:36.636812 cachyos kernel: pci 0000:01:00.0: BAR 0 [mem 0x80500000-0x80503fff 64bit]
+Nov 14 12:43:36.636857 cachyos kernel: pci 0000:01:00.0: PME# supported from D0 D3hot
+Nov 14 12:43:36.636902 cachyos kernel: pci 0000:00:06.0: PCI bridge to [bus 01]
+Nov 14 12:43:36.636947 cachyos kernel: pci 0000:02:00.0: [10ec:b852] type 00 class 0x028000 PCIe Endpoint
+Nov 14 12:43:36.636993 cachyos kernel: pci 0000:02:00.0: BAR 0 [io  0x3000-0x30ff]
+Nov 14 12:43:36.637039 cachyos kernel: pci 0000:02:00.0: BAR 2 [mem 0x80400000-0x804fffff 64bit]
+Nov 14 12:43:36.637085 cachyos kernel: pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+Nov 14 12:43:36.637129 cachyos kernel: pci 0000:00:1c.0: PCI bridge to [bus 02]
+Nov 14 12:43:36.637132 cachyos kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+Nov 14 12:43:36.637136 cachyos kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 1
+Nov 14 12:43:36.637139 cachyos kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+Nov 14 12:43:36.637142 cachyos kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+Nov 14 12:43:36.637147 cachyos kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+Nov 14 12:43:36.637151 cachyos kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+Nov 14 12:43:36.637154 cachyos kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+Nov 14 12:43:36.637157 cachyos kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+Nov 14 12:43:36.637161 cachyos kernel: Low-power S0 idle used by default for system suspend
+Nov 14 12:43:36.637164 cachyos kernel: ACPI: EC: interrupt unblocked
+Nov 14 12:43:36.637167 cachyos kernel: ACPI: EC: event unblocked
+Nov 14 12:43:36.637170 cachyos kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Nov 14 12:43:36.637175 cachyos kernel: ACPI: EC: GPE=0x6e
+Nov 14 12:43:36.637178 cachyos kernel: ACPI: \_SB_.PC00.LPCB.EC0_: Boot DSDT EC initialization complete
+Nov 14 12:43:36.637181 cachyos kernel: ACPI: \_SB_.PC00.LPCB.EC0_: EC: Used to handle transactions and events
+Nov 14 12:43:36.637185 cachyos kernel: iommu: Default domain type: Translated
+Nov 14 12:43:36.637188 cachyos kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Nov 14 12:43:36.637191 cachyos kernel: SCSI subsystem initialized
+Nov 14 12:43:36.637195 cachyos kernel: libata version 3.00 loaded.
+Nov 14 12:43:36.637198 cachyos kernel: ACPI: bus type USB registered
+Nov 14 12:43:36.637201 cachyos kernel: usbcore: registered new interface driver usbfs
+Nov 14 12:43:36.637203 cachyos kernel: usbcore: registered new interface driver hub
+Nov 14 12:43:36.637207 cachyos kernel: usbcore: registered new device driver usb
+Nov 14 12:43:36.637209 cachyos kernel: EDAC MC: Ver: 3.0.0
+Nov 14 12:43:36.637212 cachyos kernel: efivars: Registered efivars operations
+Nov 14 12:43:36.637215 cachyos kernel: NetLabel: Initializing
+Nov 14 12:43:36.637219 cachyos kernel: NetLabel:  domain hash size = 128
+Nov 14 12:43:36.637223 cachyos kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Nov 14 12:43:36.637226 cachyos kernel: NetLabel:  unlabeled traffic allowed by default
+Nov 14 12:43:36.637229 cachyos kernel: mctp: management component transport protocol core
+Nov 14 12:43:36.637232 cachyos kernel: NET: Registered PF_MCTP protocol family
+Nov 14 12:43:36.637235 cachyos kernel: PCI: Using ACPI for IRQ routing
+Nov 14 12:43:36.637238 cachyos kernel: PCI: pci_cache_line_size set to 64 bytes
+Nov 14 12:43:36.637281 cachyos kernel: pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]: can't claim; no compatible bridge window
+Nov 14 12:43:36.637285 cachyos kernel: e820: reserve RAM buffer [mem 0x0009e000-0x0009ffff]
+Nov 14 12:43:36.637289 cachyos kernel: e820: reserve RAM buffer [mem 0x669f4000-0x67ffffff]
+Nov 14 12:43:36.637292 cachyos kernel: e820: reserve RAM buffer [mem 0x682d6000-0x6bffffff]
+Nov 14 12:43:36.637296 cachyos kernel: e820: reserve RAM buffer [mem 0x6a012000-0x6bffffff]
+Nov 14 12:43:36.637299 cachyos kernel: e820: reserve RAM buffer [mem 0x72f00000-0x73ffffff]
+Nov 14 12:43:36.637303 cachyos kernel: e820: reserve RAM buffer [mem 0x47fc00000-0x47fffffff]
+Nov 14 12:43:36.637345 cachyos kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Nov 14 12:43:36.637391 cachyos kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Nov 14 12:43:36.637434 cachyos kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Nov 14 12:43:36.637438 cachyos kernel: vgaarb: loaded
+Nov 14 12:43:36.637441 cachyos kernel: Monitor-Mwait will be used to enter C-1 state
+Nov 14 12:43:36.637444 cachyos kernel: Monitor-Mwait will be used to enter C-2 state
+Nov 14 12:43:36.637447 cachyos kernel: Monitor-Mwait will be used to enter C-3 state
+Nov 14 12:43:36.637450 cachyos kernel: clocksource: Switched to clocksource tsc-early
+Nov 14 12:43:36.637453 cachyos kernel: VFS: Disk quotas dquot_6.6.0
+Nov 14 12:43:36.637457 cachyos kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Nov 14 12:43:36.637460 cachyos kernel: pnp: PnP ACPI init
+Nov 14 12:43:36.637517 cachyos kernel: system 00:00: [io  0x0680-0x069f] has been reserved
+Nov 14 12:43:36.637562 cachyos kernel: system 00:00: [io  0x164e-0x164f] has been reserved
+Nov 14 12:43:36.637606 cachyos kernel: system 00:01: [io  0x1854-0x1857] has been reserved
+Nov 14 12:43:36.637649 cachyos kernel: pnp 00:03: disabling [mem 0xc0000000-0xcfffffff] because it overlaps 0000:00:02.0 BAR 9 [mem 0x00000000-0xdfffffff 64bit pref]
+Nov 14 12:43:36.637689 cachyos kernel: system 00:03: [mem 0xfedc0000-0xfedc7fff] has been reserved
+Nov 14 12:43:36.637730 cachyos kernel: system 00:03: [mem 0xfeda0000-0xfeda0fff] has been reserved
+Nov 14 12:43:36.637769 cachyos kernel: system 00:03: [mem 0xfeda1000-0xfeda1fff] has been reserved
+Nov 14 12:43:36.637808 cachyos kernel: system 00:03: [mem 0xfed20000-0xfed7ffff] could not be reserved
+Nov 14 12:43:36.637848 cachyos kernel: system 00:03: [mem 0xfed90000-0xfed93fff] could not be reserved
+Nov 14 12:43:36.637888 cachyos kernel: system 00:03: [mem 0xfed45000-0xfed8ffff] could not be reserved
+Nov 14 12:43:36.637926 cachyos kernel: system 00:03: [mem 0xfee00000-0xfeefffff] could not be reserved
+Nov 14 12:43:36.637968 cachyos kernel: system 00:04: [io  0x2000-0x20fe] has been reserved
+Nov 14 12:43:36.638010 cachyos kernel: system 00:05: [mem 0xfe03e008-0xfe03efff] has been reserved
+Nov 14 12:43:36.638050 cachyos kernel: system 00:05: [mem 0xfe03f000-0xfe03ffff] has been reserved
+Nov 14 12:43:36.638054 cachyos kernel: pnp: PnP ACPI: found 6 devices
+Nov 14 12:43:36.638058 cachyos kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Nov 14 12:43:36.638062 cachyos kernel: NET: Registered PF_INET protocol family
+Nov 14 12:43:36.638065 cachyos kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Nov 14 12:43:36.638068 cachyos kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Nov 14 12:43:36.638072 cachyos kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Nov 14 12:43:36.638075 cachyos kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Nov 14 12:43:36.638078 cachyos kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Nov 14 12:43:36.638081 cachyos kernel: TCP: Hash tables configured (established 131072 bind 65536)
+Nov 14 12:43:36.638084 cachyos kernel: MPTCP token hash table entries: 16384 (order: 7, 393216 bytes, linear)
+Nov 14 12:43:36.638087 cachyos kernel: UDP hash table entries: 8192 (order: 7, 524288 bytes, linear)
+Nov 14 12:43:36.638091 cachyos kernel: UDP-Lite hash table entries: 8192 (order: 7, 524288 bytes, linear)
+Nov 14 12:43:36.638094 cachyos kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Nov 14 12:43:36.638098 cachyos kernel: NET: Registered PF_XDP protocol family
+Nov 14 12:43:36.638141 cachyos kernel: pci 0000:00:02.0: VF BAR 2 [mem 0x4020000000-0x40ffffffff 64bit pref]: assigned
+Nov 14 12:43:36.638185 cachyos kernel: pci 0000:00:02.0: VF BAR 0 [mem 0x4010000000-0x4016ffffff 64bit]: assigned
+Nov 14 12:43:36.638228 cachyos kernel: pci 0000:00:15.0: BAR 0 [mem 0x4017000000-0x4017000fff 64bit]: assigned
+Nov 14 12:43:36.638272 cachyos kernel: pci 0000:00:15.1: BAR 0 [mem 0x4017001000-0x4017001fff 64bit]: assigned
+Nov 14 12:43:36.638315 cachyos kernel: pci 0000:00:1f.5: BAR 0 [mem 0x80600000-0x80600fff]: assigned
+Nov 14 12:43:36.638360 cachyos kernel: pci 0000:00:06.0: PCI bridge to [bus 01]
+Nov 14 12:43:36.638407 cachyos kernel: pci 0000:00:06.0:   bridge window [mem 0x80500000-0x805fffff]
+Nov 14 12:43:36.638452 cachyos kernel: pci 0000:00:1c.0: PCI bridge to [bus 02]
+Nov 14 12:43:36.638496 cachyos kernel: pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+Nov 14 12:43:36.638541 cachyos kernel: pci 0000:00:1c.0:   bridge window [mem 0x80400000-0x804fffff]
+Nov 14 12:43:36.638582 cachyos kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Nov 14 12:43:36.638623 cachyos kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Nov 14 12:43:36.638663 cachyos kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Nov 14 12:43:36.638702 cachyos kernel: pci_bus 0000:00: resource 7 [mem 0x000e8000-0x000effff window]
+Nov 14 12:43:36.638742 cachyos kernel: pci_bus 0000:00: resource 8 [mem 0x80400000-0xbfffffff window]
+Nov 14 12:43:36.638781 cachyos kernel: pci_bus 0000:00: resource 9 [mem 0x4000000000-0x7fffffffff window]
+Nov 14 12:43:36.638826 cachyos kernel: pci_bus 0000:01: resource 1 [mem 0x80500000-0x805fffff]
+Nov 14 12:43:36.638874 cachyos kernel: pci_bus 0000:02: resource 0 [io  0x3000-0x3fff]
+Nov 14 12:43:36.638917 cachyos kernel: pci_bus 0000:02: resource 1 [mem 0x80400000-0x804fffff]
+Nov 14 12:43:36.638921 cachyos kernel: PCI: CLS 64 bytes, default 64
+Nov 14 12:43:36.638925 cachyos kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Nov 14 12:43:36.638928 cachyos kernel: software IO TLB: mapped [mem 0x0000000059443000-0x000000005d443000] (64MB)
+Nov 14 12:43:36.638932 cachyos kernel: Trying to unpack rootfs image as initramfs...
+Nov 14 12:43:36.638935 cachyos kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x25a39079a08, max_idle_ns: 440795310461 ns
+Nov 14 12:43:36.638938 cachyos kernel: clocksource: Switched to clocksource tsc
+Nov 14 12:43:36.638982 cachyos kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+Nov 14 12:43:36.638986 cachyos kernel: Initialise system trusted keyrings
+Nov 14 12:43:36.638990 cachyos kernel: Key type blacklist registered
+Nov 14 12:43:36.638993 cachyos kernel: workingset: timestamp_bits=36 max_order=22 bucket_order=0
+Nov 14 12:43:36.638996 cachyos kernel: fuse: init (API version 7.45)
+Nov 14 12:43:36.639000 cachyos kernel: integrity: Platform Keyring initialized
+Nov 14 12:43:36.639003 cachyos kernel: integrity: Machine keyring initialized
+Nov 14 12:43:36.639006 cachyos kernel: xor: automatically using best checksumming function   avx       
+Nov 14 12:43:36.639009 cachyos kernel: Key type asymmetric registered
+Nov 14 12:43:36.639013 cachyos kernel: Asymmetric key parser 'x509' registered
+Nov 14 12:43:36.639016 cachyos kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+Nov 14 12:43:36.639019 cachyos kernel: io scheduler mq-deadline registered
+Nov 14 12:43:36.639022 cachyos kernel: io scheduler kyber registered
+Nov 14 12:43:36.639025 cachyos kernel: Adaptive Deadline I/O Scheduler 3.1.9 by Masahito Suzuki
+Nov 14 12:43:36.639029 cachyos kernel: io scheduler adios registered
+Nov 14 12:43:36.639032 cachyos kernel: io scheduler bfq registered
+Nov 14 12:43:36.639035 cachyos kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Nov 14 12:43:36.639080 cachyos kernel: pcieport 0000:00:06.0: PME: Signaling with IRQ 120
+Nov 14 12:43:36.639125 cachyos kernel: pcieport 0000:00:06.0: AER: enabled with IRQ 120
+Nov 14 12:43:36.639170 cachyos kernel: pcieport 0000:00:1c.0: PME: Signaling with IRQ 121
+Nov 14 12:43:36.639213 cachyos kernel: pcieport 0000:00:1c.0: AER: enabled with IRQ 121
+Nov 14 12:43:36.639217 cachyos kernel: ACPI: AC: AC Adapter [ADP1] (on-line)
+Nov 14 12:43:36.639221 cachyos kernel: input: Lid Switch as /devices/platform/PNP0C0D:00/input/input0
+Nov 14 12:43:36.639224 cachyos kernel: ACPI: button: Lid Switch [LID0]
+Nov 14 12:43:36.639228 cachyos kernel: input: Power Button as /devices/platform/PNP0C0C:00/input/input1
+Nov 14 12:43:36.639231 cachyos kernel: ACPI: button: Power Button [PWRB]
+Nov 14 12:43:36.639234 cachyos kernel: input: Power Button as /devices/platform/LNXPWRBN:00/input/input2
+Nov 14 12:43:36.639237 cachyos kernel: ACPI: button: Power Button [PWRF]
+Nov 14 12:43:36.639241 cachyos kernel: ACPI: thermal: [Firmware Bug]: Invalid critical threshold (-274000)
+Nov 14 12:43:36.639293 cachyos kernel: thermal LNXTHERM:00: registered as thermal_zone0
+Nov 14 12:43:36.639297 cachyos kernel: ACPI: thermal: Thermal Zone [TZ01] (52 C)
+Nov 14 12:43:36.639301 cachyos kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Nov 14 12:43:36.639304 cachyos kernel: hpet_acpi_add: no address or irqs in _CRS
+Nov 14 12:43:36.639307 cachyos kernel: Non-volatile memory driver v1.3
+Nov 14 12:43:36.639310 cachyos kernel: Linux agpgart interface v0.103
+Nov 14 12:43:36.639313 cachyos kernel: ACPI: battery: Slot [BAT0] (battery present)
+Nov 14 12:43:36.639317 cachyos kernel: ACPI: bus type drm_connector registered
+Nov 14 12:43:36.639360 cachyos kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Nov 14 12:43:36.639409 cachyos kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+Nov 14 12:43:36.639453 cachyos kernel: xhci_hcd 0000:00:14.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000100200009810
+Nov 14 12:43:36.639498 cachyos kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Nov 14 12:43:36.639542 cachyos kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+Nov 14 12:43:36.639585 cachyos kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.1 Enhanced SuperSpeed
+Nov 14 12:43:36.639633 cachyos kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+Nov 14 12:43:36.639675 cachyos kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Nov 14 12:43:36.639714 cachyos kernel: usb usb1: Product: xHCI Host Controller
+Nov 14 12:43:36.639753 cachyos kernel: usb usb1: Manufacturer: Linux 6.18.60-2-cachyos-lts xhci-hcd
+Nov 14 12:43:36.639792 cachyos kernel: usb usb1: SerialNumber: 0000:00:14.0
+Nov 14 12:43:36.639845 cachyos kernel: hub 1-0:1.0: USB hub found
+Nov 14 12:43:36.639896 cachyos kernel: hub 1-0:1.0: 12 ports detected
+Nov 14 12:43:36.639938 cachyos kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+Nov 14 12:43:36.639978 cachyos kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Nov 14 12:43:36.640017 cachyos kernel: usb usb2: Product: xHCI Host Controller
+Nov 14 12:43:36.640057 cachyos kernel: usb usb2: Manufacturer: Linux 6.18.60-2-cachyos-lts xhci-hcd
+Nov 14 12:43:36.640096 cachyos kernel: usb usb2: SerialNumber: 0000:00:14.0
+Nov 14 12:43:36.640147 cachyos kernel: hub 2-0:1.0: USB hub found
+Nov 14 12:43:36.640196 cachyos kernel: hub 2-0:1.0: 4 ports detected
+Nov 14 12:43:36.640201 cachyos kernel: usb: port power management may be unreliable
+Nov 14 12:43:36.640204 cachyos kernel: usbcore: registered new interface driver usbserial_generic
+Nov 14 12:43:36.640207 cachyos kernel: usbserial: USB Serial support registered for generic
+Nov 14 12:43:36.640211 cachyos kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K] at 0x60,0x64 irq 1
+Nov 14 12:43:36.640214 cachyos kernel: i8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp
+Nov 14 12:43:36.640218 cachyos kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Nov 14 12:43:36.640259 cachyos kernel: rtc_cmos rtc_cmos: RTC can wake from S4
+Nov 14 12:43:36.640300 cachyos kernel: rtc_cmos rtc_cmos: registered as rtc0
+Nov 14 12:43:36.640340 cachyos kernel: rtc_cmos rtc_cmos: setting system clock to 2026-11-14T05:43:36 UTC (1794635016)
+Nov 14 12:43:36.640392 cachyos kernel: rtc_cmos rtc_cmos: alarms up to one month, y3k, 114 bytes nvram
+Nov 14 12:43:36.640396 cachyos kernel: intel_pstate: Intel P-state driver initializing
+Nov 14 12:43:36.640399 cachyos kernel: intel_pstate: HWP enabled
+Nov 14 12:43:36.640445 cachyos kernel: simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+Nov 14 12:43:36.640450 cachyos kernel: [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+Nov 14 12:43:36.640454 cachyos kernel: fbcon: Deferring console take-over
+Nov 14 12:43:36.640496 cachyos kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+Nov 14 12:43:36.640501 cachyos kernel: hid: raw HID events driver (C) Jiri Kosina
+Nov 14 12:43:36.640504 cachyos kernel: usbcore: registered new interface driver usbhid
+Nov 14 12:43:36.640507 cachyos kernel: usbhid: USB HID core driver
+Nov 14 12:43:36.640510 cachyos kernel: drop_monitor: Initializing network drop monitor service
+Nov 14 12:43:36.640513 cachyos kernel: NET: Registered PF_INET6 protocol family
+Nov 14 12:43:36.640517 cachyos kernel: Segment Routing with IPv6
+Nov 14 12:43:36.640521 cachyos kernel: RPL Segment Routing with IPv6
+Nov 14 12:43:36.640524 cachyos kernel: In-situ OAM (IOAM) with IPv6
+Nov 14 12:43:36.640527 cachyos kernel: NET: Registered PF_PACKET protocol family
+Nov 14 12:43:36.640530 cachyos kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+Nov 14 12:43:36.640533 cachyos kernel: microcode: Current revision: 0x00006136
+Nov 14 12:43:36.640536 cachyos kernel: microcode: Updated early from: 0x00006134
+Nov 14 12:43:36.640539 cachyos kernel: Freeing initrd memory: 45800K
+Nov 14 12:43:36.640543 cachyos kernel: IPI shorthand broadcast: enabled
+Nov 14 12:43:36.640547 cachyos kernel: sched_clock: Marking stable (810001201, 6618838)->(842590433, -25970394)
+Nov 14 12:43:36.640550 cachyos kernel: registered taskstats version 1
+Nov 14 12:43:36.640553 cachyos kernel: Loading compiled-in X.509 certificates
+Nov 14 12:43:36.640561 cachyos kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 2f96622a21af61858b63c5a263fef33c978b7b21'
+Nov 14 12:43:36.640564 cachyos kernel: zswap: loaded using pool zstd
+Nov 14 12:43:36.640567 cachyos kernel: Demotion targets for Node 0: null
+Nov 14 12:43:36.640571 cachyos kernel: Key type .fscrypt registered
+Nov 14 12:43:36.640574 cachyos kernel: Key type fscrypt-provisioning registered
+Nov 14 12:43:36.640578 cachyos kernel: Btrfs loaded, zoned=yes, fsverity=yes
+Nov 14 12:43:36.640581 cachyos kernel: Key type big_key registered
+Nov 14 12:43:36.640585 cachyos kernel: PM:   Magic number: 2:296:719
+Nov 14 12:43:36.640590 cachyos kernel: RAS: Correctable Errors collector initialized.
+Nov 14 12:43:36.640594 cachyos kernel: clk: Disabling unused clocks
+Nov 14 12:43:36.640597 cachyos kernel: PM: genpd: Disabling unused power domains
+Nov 14 12:43:36.640600 cachyos kernel: Freeing unused decrypted memory: 2028K
+Nov 14 12:43:36.640603 cachyos kernel: Freeing unused kernel image (initmem) memory: 4932K
+Nov 14 12:43:36.640606 cachyos kernel: Write protecting the kernel read-only data: 43008k
+Nov 14 12:43:36.640611 cachyos kernel: Freeing unused kernel image (text/rodata gap) memory: 2012K
+Nov 14 12:43:36.640614 cachyos kernel: Freeing unused kernel image (rodata/data gap) memory: 72K
+Nov 14 12:43:36.640617 cachyos kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Nov 14 12:43:36.640620 cachyos kernel: rodata_test: all tests were successful
+Nov 14 12:43:36.640623 cachyos kernel: Run /init as init process
+Nov 14 12:43:36.640626 cachyos kernel:   with arguments:
+Nov 14 12:43:36.640633 cachyos kernel:     /init
+Nov 14 12:43:36.640636 cachyos kernel:   with environment:
+Nov 14 12:43:36.640639 cachyos kernel:     HOME=/
+Nov 14 12:43:36.640642 cachyos kernel:     TERM=linux
+Nov 14 12:43:36.640646 cachyos kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+Nov 14 12:43:36.640651 cachyos systemd[1]: Successfully made /usr/ read-only.
+Nov 14 12:43:36.640656 cachyos systemd[1]: systemd 262.2-1-arch running in system mode (+PAM +AUDIT -SELINUX +APPARMOR -IMA +IPE +SMACK +SECCOMP +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+Nov 14 12:43:36.640660 cachyos systemd[1]: Detected architecture x86-64.
+Nov 14 12:43:36.640663 cachyos systemd[1]: Running in initrd.
+Nov 14 12:43:36.640667 cachyos systemd[1]: Initializing machine ID from random generator.
+Nov 14 12:43:36.640670 cachyos systemd[1]: Queued start job for default target Initrd Default Target.
+Nov 14 12:43:36.640679 cachyos systemd[1]: Expecting device /dev/disk/by-uuid/4916d227-b1c9-4be2-91af-6cc171e8d31e...
+Nov 14 12:43:36.640683 cachyos systemd[1]: Reached target Path Units.
+Nov 14 12:43:36.640687 cachyos systemd[1]: Reached target Slice Units.
+Nov 14 12:43:36.640690 cachyos systemd[1]: Reached target Swaps.
+Nov 14 12:43:36.640694 cachyos systemd[1]: Reached target Timer Units.
+Nov 14 12:43:36.640698 cachyos systemd[1]: Listening on Journal Socket (/dev/log).
+Nov 14 12:43:36.640701 cachyos systemd[1]: Listening on Journal Sockets.
+Nov 14 12:43:36.640709 cachyos systemd[1]: TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:36.640713 cachyos systemd[1]: Listening on udev Kernel Socket.
+Nov 14 12:43:36.640717 cachyos systemd[1]: Listening on udev Varlink Socket.
+Nov 14 12:43:36.640720 cachyos systemd[1]: Reached target Socket Units.
+Nov 14 12:43:36.640724 cachyos systemd[1]: Create List of Static Device Nodes skipped, unmet condition check ConditionFileNotEmpty=/lib/modules/6.18.60-2-cachyos-lts/modules.devname
+Nov 14 12:43:36.640727 cachyos systemd[1]: Starting Journal Service...
+Nov 14 12:43:36.640731 cachyos systemd[1]: Starting Load Kernel Modules...
+Nov 14 12:43:36.640734 cachyos systemd[1]: TPM PCR OS Separator skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:36.640738 cachyos systemd[1]: TPM PCR Barrier (initrd) skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:36.640741 cachyos systemd[1]: Starting Create Static Device Nodes in /dev...
+Nov 14 12:43:36.640745 cachyos systemd[1]: Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:36.640750 cachyos systemd[1]: TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:36.640754 cachyos systemd[1]: Starting Coldplug All udev Devices...
+Nov 14 12:43:36.640757 cachyos systemd[1]: Starting Virtual Console Setup...
+Nov 14 12:43:36.640760 cachyos systemd[1]: Finished Load Kernel Modules.
+Nov 14 12:43:36.640764 cachyos systemd[1]: Finished Create Static Device Nodes in /dev.
+Nov 14 12:43:36.640767 cachyos systemd[1]: Reached target Preparation for Local File Systems.
+Nov 14 12:43:36.640771 cachyos systemd[1]: Reached target Local File Systems.
+Nov 14 12:43:36.640785 cachyos systemd-journald[152]: Collecting audit messages is disabled.
+Nov 14 12:43:36.640795 cachyos systemd[1]: Starting Rule-based Manager for Device Events and Files...
+Nov 14 12:43:36.640799 cachyos systemd[1]: Finished Virtual Console Setup.
+Nov 14 12:43:36.641473 cachyos systemd[1]: Started Journal Service.
+Nov 14 12:43:36.708402 cachyos kernel: wmi_bus wmi_bus-PNP0C14:03: [Firmware Info]: 8F1F6436-9F42-42C8-BADC-0E9424F20C9A has zero instances
+Nov 14 12:43:36.708555 cachyos kernel: wmi_bus wmi_bus-PNP0C14:03: [Firmware Info]: 8F1F6435-9F42-42C8-BADC-0E9424F20C9A has zero instances
+Nov 14 12:43:36.709167 cachyos kernel: wmi_bus wmi_bus-PNP0C14:03: [Firmware Info]: 7391A661-223A-47DB-A77A-7BE84C60822D has zero instances
+Nov 14 12:43:36.709778 cachyos kernel: wmi_bus wmi_bus-PNP0C14:03: [Firmware Info]: DF4E63B6-3BBC-4858-9737-C74F82F821F3 has zero instances
+Nov 14 12:43:36.715373 cachyos kernel: fbcon: Taking over console
+Nov 14 12:43:36.716403 cachyos kernel: intel-lpss 0000:00:15.0: enabling device (0004 -> 0006)
+Nov 14 12:43:36.716640 cachyos kernel: idma64 idma64.0: Found Intel integrated DMA 64-bit
+Nov 14 12:43:36.716836 cachyos kernel: Console: switching to colour frame buffer device 240x67
+Nov 14 12:43:36.721416 cachyos kernel: Key type psk registered
+Nov 14 12:43:36.724399 cachyos kernel: intel-lpss 0000:00:15.1: enabling device (0004 -> 0006)
+Nov 14 12:43:36.724620 cachyos kernel: idma64 idma64.1: Found Intel integrated DMA 64-bit
+Nov 14 12:43:36.735616 cachyos kernel: nvme 0000:01:00.0: platform quirk: setting simple suspend
+Nov 14 12:43:36.735834 cachyos kernel: nvme nvme0: pci function 0000:01:00.0
+Nov 14 12:43:36.741381 cachyos kernel: usb 1-2: new full-speed USB device number 2 using xhci_hcd
+Nov 14 12:43:36.743383 cachyos kernel: nvme nvme0: D3 entry latency set to 8 seconds
+Nov 14 12:43:36.790540 cachyos kernel: nvme nvme0: allocated 64 MiB host memory buffer (16 segments).
+Nov 14 12:43:36.793494 cachyos kernel: nvme nvme0: 12/0/0 default/read/poll queues
+Nov 14 12:43:36.800514 cachyos kernel: nvme nvme0: Ignoring bogus Namespace Identifiers
+Nov 14 12:43:36.806502 cachyos kernel:  nvme0n1: p2 p5
+Nov 14 12:43:36.870383 cachyos kernel: usb 1-2: New USB device found, idVendor=2717, idProduct=5023, bcdDevice= 2.00
+Nov 14 12:43:36.870526 cachyos kernel: usb 1-2: New USB device strings: Mfr=2, Product=1, SerialNumber=0
+Nov 14 12:43:36.870601 cachyos kernel: usb 1-2: Product: MI Wireless Receiver
+Nov 14 12:43:36.870653 cachyos kernel: usb 1-2: Manufacturer: HS6209
+Nov 14 12:43:36.873401 cachyos kernel: input: HS6209 MI Wireless Receiver as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:2717:5023.0001/input/input4
+Nov 14 12:43:36.957539 cachyos kernel: Setting dangerous option force_probe - tainting kernel
+Nov 14 12:43:36.957563 cachyos kernel: Setting dangerous option force_probe - tainting kernel
+Nov 14 12:43:36.957568 cachyos kernel: i915 0000:00:02.0: [drm] Found alderlake_p/raptorlake_u (device ID a7a1) integrated display version 13.00 stepping E0
+Nov 14 12:43:36.971403 cachyos kernel: Console: switching to colour dummy device 80x25
+Nov 14 12:43:36.987400 cachyos kernel: i915 0000:00:02.0: vgaarb: deactivate vga console
+Nov 14 12:43:36.987941 cachyos kernel: i915 0000:00:02.0: [drm] Using Transparent Hugepages
+Nov 14 12:43:36.988384 cachyos kernel: ------------[ cut here ]------------
+Nov 14 12:43:36.988416 cachyos kernel: i915 0000:00:02.0: [drm] Port B asks to use VBT vswing/preemph tables
+Nov 14 12:43:36.988592 cachyos kernel: WARNING: CPU: 4 PID: 181 at drivers/gpu/drm/i915/display/intel_bios.c:2752 intel_bios_init+0x16f4/0x1f50 [i915]
+Nov 14 12:43:36.988620 cachyos kernel: Modules linked in: i915(+) nvme drm_buddy i2c_algo_bit ttm nvme_core intel_gtt nvme_keyring drm_display_helper nvme_auth intel_lpss_pci spi_intel_pci intel_lpss hkdf spi_intel cec video idma64 wmi serio_raw
+Nov 14 12:43:36.988657 cachyos kernel: CPU: 4 UID: 0 PID: 181 Comm: (udev-worker) Tainted: G     U              6.18.60-2-cachyos-lts #1 PREEMPT(full)  1d1b64f53213e6d7609f5683ab14b27f52274944
+Nov 14 12:43:36.988681 cachyos kernel: Tainted: [U]=USER
+Nov 14 12:43:36.988704 cachyos kernel: Hardware name: HP HP Laptop 15-fd0xxx/8BB6, BIOS F.26 04/22/2026
+Nov 14 12:43:36.989443 cachyos kernel: RIP: 0010:intel_bios_init+0x16f4/0x1f50 [i915]
+Nov 14 12:43:36.989470 cachyos kernel: Code: 04 48 8b 7f 08 48 8b 6f 50 48 85 ed 75 03 48 8b 2f e8 90 a3 28 e7 89 d9 48 89 ea 48 c7 c7 30 ba d5 c0 48 89 c6 e8 bc 5a 4a e6 <0f> 0b e9 a5 fd ff ff 8b 0c 24 41 89 d8 ba 02 00 00 00 31 ff 51 8b
+Nov 14 12:43:36.989494 cachyos kernel: RSP: 0018:ffffd2a2c079f798 EFLAGS: 00010246
+Nov 14 12:43:36.989515 cachyos kernel: RAX: 0000000000000000 RBX: 0000000000000042 RCX: 0000000000000000
+Nov 14 12:43:36.989542 cachyos kernel: RDX: ffff8c536f91d048 RSI: 0000000000000001 RDI: ffff8c536f91d040
+Nov 14 12:43:36.989564 cachyos kernel: RBP: ffff8c50024c6080 R08: 0000000000000001 R09: ffffffffa94b93e8
+Nov 14 12:43:36.989586 cachyos kernel: R10: 0000000000000003 R11: ffffd2a2c079f5d8 R12: ffff8c500e508000
+Nov 14 12:43:36.989608 cachyos kernel: R13: ffff8c500c03d480 R14: 0000000000000001 R15: 0000000000000000
+Nov 14 12:43:36.989629 cachyos kernel: FS:  00007ff89c8c2cc0(0000) GS:ffff8c53c5866000(0000) knlGS:0000000000000000
+Nov 14 12:43:36.989650 cachyos kernel: CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Nov 14 12:43:36.989671 cachyos kernel: CR2: 0000564652e97f2c CR3: 0000000105cbc005 CR4: 0000000000f70ef0
+Nov 14 12:43:36.989692 cachyos kernel: PKRU: 55555554
+Nov 14 12:43:36.989713 cachyos kernel: Call Trace:
+Nov 14 12:43:36.989740 cachyos kernel:  <TASK>
+Nov 14 12:43:36.989761 cachyos kernel:  intel_display_driver_probe_noirq+0x42/0x380 [i915 74294e7b905f88cca6e545f9082fcd51590ec87a]
+Nov 14 12:43:36.989784 cachyos kernel:  i915_driver_probe+0x3f4/0xba0 [i915 74294e7b905f88cca6e545f9082fcd51590ec87a]
+Nov 14 12:43:36.989805 cachyos kernel:  ? drm_privacy_screen_get+0x2d7/0x2e0
+Nov 14 12:43:36.989826 cachyos kernel:  pci_device_probe+0x13b/0x320
+Nov 14 12:43:36.989847 cachyos kernel:  really_probe+0xe9/0x3f0
+Nov 14 12:43:36.989868 cachyos kernel:  ? pm_runtime_barrier+0x61/0xb0
+Nov 14 12:43:36.989888 cachyos kernel:  ? __pfx___driver_attach+0x10/0x10
+Nov 14 12:43:36.989910 cachyos kernel:  __driver_probe_device+0x90/0x190
+Nov 14 12:43:36.989935 cachyos kernel:  __driver_attach+0xb3/0x340
+Nov 14 12:43:36.989957 cachyos kernel:  bus_for_each_dev+0x12f/0x1d0
+Nov 14 12:43:36.989978 cachyos kernel:  bus_add_driver+0x146/0x2f0
+Nov 14 12:43:36.989998 cachyos kernel:  driver_register+0x75/0xe0
+Nov 14 12:43:36.990019 cachyos kernel:  i915_init+0x25/0x90 [i915 74294e7b905f88cca6e545f9082fcd51590ec87a]
+Nov 14 12:43:36.990382 cachyos kernel:  ? __pfx_i915_init+0x10/0x10 [i915 74294e7b905f88cca6e545f9082fcd51590ec87a]
+Nov 14 12:43:36.990408 cachyos kernel:  do_one_initcall+0x8d/0x3c0
+Nov 14 12:43:36.990431 cachyos kernel:  do_init_module+0x6a/0x260
+Nov 14 12:43:36.990458 cachyos kernel:  init_module_from_file+0xc8/0x180
+Nov 14 12:43:36.990480 cachyos kernel:  idempotent_init_module+0x23e/0x360
+Nov 14 12:43:36.990504 cachyos kernel:  __x64_sys_finit_module+0x7f/0x100
+Nov 14 12:43:36.990525 cachyos kernel:  ? syscall_trace_enter+0x95/0x1d0
+Nov 14 12:43:36.990546 cachyos kernel:  do_syscall_64+0x83/0x810
+Nov 14 12:43:36.990567 cachyos kernel:  ? vfs_read+0x17d/0x600
+Nov 14 12:43:36.990588 cachyos kernel:  ? vfs_read+0x17d/0x600
+Nov 14 12:43:36.990609 cachyos kernel:  ? __x64_sys_pread64+0xaa/0x100
+Nov 14 12:43:36.990630 cachyos kernel:  ? do_syscall_64+0x83/0x810
+Nov 14 12:43:36.990655 cachyos kernel:  ? __x64_sys_openat+0xf8/0x250
+Nov 14 12:43:36.990676 cachyos kernel:  ? do_syscall_64+0x83/0x810
+Nov 14 12:43:36.990697 cachyos kernel:  ? exc_page_fault+0x8f/0x1b0
+Nov 14 12:43:36.990718 cachyos kernel:  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+Nov 14 12:43:36.990739 cachyos kernel: RIP: 0033:0x7ff89ca1030d
+Nov 14 12:43:36.990760 cachyos kernel: Code: ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d cb 39 10 00 f7 d8 64 89 01 48
+Nov 14 12:43:36.990783 cachyos kernel: RSP: 002b:00007ffcad30d678 EFLAGS: 00000246 ORIG_RAX: 0000000000000139
+Nov 14 12:43:36.990804 cachyos kernel: RAX: ffffffffffffffda RBX: 000055af69111ea0 RCX: 00007ff89ca1030d
+Nov 14 12:43:36.990826 cachyos kernel: RDX: 0000000000000004 RSI: 000055af691123a0 RDI: 0000000000000026
+Nov 14 12:43:36.990851 cachyos kernel: RBP: 00007ffcad30d710 R08: 0000000000000000 R09: 0000000000000000
+Nov 14 12:43:36.990873 cachyos kernel: R10: 0000000000000000 R11: 0000000000000246 R12: 000055af691123a0
+Nov 14 12:43:36.990894 cachyos kernel: R13: 000055af6910f420 R14: 0000000000020000 R15: 000055af691138d0
+Nov 14 12:43:36.990915 cachyos kernel:  </TASK>
+Nov 14 12:43:36.990936 cachyos kernel: ---[ end trace 0000000000000000 ]---
+Nov 14 12:43:36.990957 cachyos kernel: i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+Nov 14 12:43:36.994394 cachyos kernel: i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/adlp_dmc.bin (v2.20)
+Nov 14 12:43:36.994843 cachyos kernel: hid-generic 0003:2717:5023.0001: input,hidraw0: USB HID v1.11 Keyboard [HS6209 MI Wireless Receiver] on usb-0000:00:14.0-2/input0
+Nov 14 12:43:37.000423 cachyos kernel: input: HS6209 MI Wireless Receiver as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:2717:5023.0002/input/input5
+Nov 14 12:43:37.000489 cachyos kernel: input: HS6209 MI Wireless Receiver Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:2717:5023.0002/input/input6
+Nov 14 12:43:37.000520 cachyos kernel: input: HS6209 MI Wireless Receiver Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:2717:5023.0002/input/input7
+Nov 14 12:43:37.010429 cachyos kernel: i915 0000:00:02.0: [drm] GT0: GuC firmware i915/adlp_guc_70.bin version 70.49.4
+Nov 14 12:43:37.010896 cachyos kernel: i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+Nov 14 12:43:37.029543 cachyos kernel: i915 0000:00:02.0: [drm] GT0: HuC: authenticated for all workloads
+Nov 14 12:43:37.030631 cachyos kernel: i915 0000:00:02.0: [drm] GT0: GUC: submission enabled
+Nov 14 12:43:37.031182 cachyos kernel: i915 0000:00:02.0: [drm] GT0: GUC: SLPC enabled
+Nov 14 12:43:37.031696 cachyos kernel: i915 0000:00:02.0: [drm] GT0: GUC: RC enabled
+Nov 14 12:43:37.033516 cachyos kernel: i915 0000:00:02.0: [drm] Protected Xe Path (PXP) protected content support initialized
+Nov 14 12:43:37.051487 cachyos kernel: input: HS6209 MI Wireless Receiver System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:2717:5023.0002/input/input8
+Nov 14 12:43:37.051608 cachyos kernel: hid-generic 0003:2717:5023.0002: input,hiddev96,hidraw1: USB HID v1.11 Mouse [HS6209 MI Wireless Receiver] on usb-0000:00:14.0-2/input1
+Nov 14 12:43:37.052578 cachyos kernel: i915 0000:00:02.0: [drm] Registered 4 planes with drm panic
+Nov 14 12:43:37.053215 cachyos kernel: [drm] Initialized i915 1.6.0 for 0000:00:02.0 on minor 1
+Nov 14 12:43:37.055535 cachyos kernel: ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Nov 14 12:43:37.056514 cachyos kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input10
+Nov 14 12:43:37.061392 cachyos kernel: fbcon: i915drmfb (fb0) is primary device
+Nov 14 12:43:37.081566 cachyos kernel: Console: switching to colour frame buffer device 240x67
+Nov 14 12:43:37.101407 cachyos kernel: i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+Nov 14 12:43:37.166409 cachyos kernel: usb 1-3: new high-speed USB device number 3 using xhci_hcd
+Nov 14 12:43:37.290561 cachyos kernel: usb 1-3: New USB device found, idVendor=04f2, idProduct=b78f, bcdDevice= 0.08
+Nov 14 12:43:37.290778 cachyos kernel: usb 1-3: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+Nov 14 12:43:37.290886 cachyos kernel: usb 1-3: Product: HP True Vision HD Camera
+Nov 14 12:43:37.291015 cachyos kernel: usb 1-3: Manufacturer: Chicony
+Nov 14 12:43:37.291117 cachyos kernel: usb 1-3: SerialNumber: 0001
+Nov 14 12:43:37.327426 cachyos kernel: Setting dangerous option force_probe - tainting kernel
+Nov 14 12:43:37.327469 cachyos kernel: Setting dangerous option force_probe - tainting kernel
+Nov 14 12:43:37.404561 cachyos kernel: usb 1-10: new full-speed USB device number 4 using xhci_hcd
+Nov 14 12:43:37.529583 cachyos kernel: usb 1-10: New USB device found, idVendor=0bda, idProduct=b85c, bcdDevice= 0.00
+Nov 14 12:43:37.530798 cachyos kernel: usb 1-10: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Nov 14 12:43:37.531465 cachyos kernel: usb 1-10: Product: Bluetooth Radio
+Nov 14 12:43:37.532042 cachyos kernel: usb 1-10: Manufacturer: Realtek
+Nov 14 12:43:37.532930 cachyos kernel: usb 1-10: SerialNumber: 00e04c000001
+Nov 14 12:43:37.673437 cachyos kernel: EXT4-fs (nvme0n1p2): mounted filesystem 4916d227-b1c9-4be2-91af-6cc171e8d31e r/w with ordered data mode. Quota mode: none.
+Nov 14 12:43:39.389994 mydestop systemd-journald[152]: Received SIGTERM from PID 1 (systemd).
+Nov 14 12:43:39.390042 mydestop systemd[1]: systemd 262.2-1-arch running in system mode (+PAM +AUDIT -SELINUX +APPARMOR -IMA +IPE +SMACK +SECCOMP +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+Nov 14 12:43:39.390064 mydestop systemd[1]: Detected architecture x86-64.
+Nov 14 12:43:39.390076 mydestop systemd[1]: Hostname set to <mydestop>.
+Nov 14 12:43:39.390089 mydestop systemd[1]: bpf-restrict-fs: LSM BPF program attached
+Nov 14 12:43:39.390103 mydestop kernel: zram: Added device: zram0
+Nov 14 12:43:39.390116 mydestop systemd[1]: initrd-switch-root.service: Deactivated successfully.
+Nov 14 12:43:39.390129 mydestop systemd[1]: Stopped Switch Root.
+Nov 14 12:43:39.390141 mydestop systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+Nov 14 12:43:39.390153 mydestop systemd[1]: Created slice Slice /system/dirmngr.
+Nov 14 12:43:39.390163 mydestop systemd[1]: Created slice Slice /system/getty.
+Nov 14 12:43:39.390174 mydestop systemd[1]: Created slice Slice /system/gpg-agent.
+Nov 14 12:43:39.390187 mydestop systemd[1]: Created slice Slice /system/gpg-agent-browser.
+Nov 14 12:43:39.390200 mydestop systemd[1]: Created slice Slice /system/gpg-agent-extra.
+Nov 14 12:43:39.390213 mydestop systemd[1]: Created slice Slice /system/gpg-agent-ssh.
+Nov 14 12:43:39.390226 mydestop systemd[1]: Created slice Slice /system/keyboxd.
+Nov 14 12:43:39.390238 mydestop systemd[1]: Created slice Slice /system/modprobe.
+Nov 14 12:43:39.390251 mydestop systemd[1]: Created slice Slice /system/systemd-zram-setup.
+Nov 14 12:43:39.390265 mydestop systemd[1]: Created slice User and Session Slice.
+Nov 14 12:43:39.390276 mydestop systemd[1]: Dispatch Password Requests to Console Directory Watch skipped, unmet condition check ConditionPathExists=!/run/plymouth/pid
+Nov 14 12:43:39.390288 mydestop systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Nov 14 12:43:39.390299 mydestop systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Nov 14 12:43:39.390311 mydestop systemd[1]: Expecting device /dev/zram0...
+Nov 14 12:43:39.390328 mydestop systemd[1]: Reached target Local dm-clone Devices.
+Nov 14 12:43:39.390340 mydestop systemd[1]: Reached target Login Prompts.
+Nov 14 12:43:39.390349 mydestop systemd[1]: Reached target Image Downloads.
+Nov 14 12:43:39.390362 mydestop systemd[1]: Stopped target Switch Root.
+Nov 14 12:43:39.390379 mydestop systemd[1]: Stopped target Initrd File Systems.
+Nov 14 12:43:39.390392 mydestop systemd[1]: Stopped target Initrd Root File System.
+Nov 14 12:43:39.390402 mydestop systemd[1]: Reached target Local Integrity Protected Volumes.
+Nov 14 12:43:39.390412 mydestop systemd[1]: Reached target Remote File Systems.
+Nov 14 12:43:39.390429 mydestop systemd[1]: Reached target Slice Units.
+Nov 14 12:43:39.390440 mydestop systemd[1]: Reached target Local Verity Protected Volumes.
+Nov 14 12:43:39.390456 mydestop systemd[1]: Listening on Device-mapper event daemon FIFOs.
+Nov 14 12:43:39.390477 mydestop systemd[1]: Listening on LVM2 poll daemon socket.
+Nov 14 12:43:39.390492 mydestop systemd[1]: Listening on Query the User Interactively for a Password.
+Nov 14 12:43:39.390506 mydestop systemd[1]: Listening on Process Core Dump Socket.
+Nov 14 12:43:39.390518 mydestop systemd[1]: Listening on Credential Encryption/Decryption.
+Nov 14 12:43:39.390531 mydestop systemd[1]: Listening on Disk Encryption Enrollment Service Socket.
+Nov 14 12:43:39.390544 mydestop systemd[1]: Listening on Factory Reset Management.
+Nov 14 12:43:39.390558 mydestop systemd[1]: Listening on Hostname Service Socket.
+Nov 14 12:43:39.390571 mydestop systemd[1]: Listening on Console Output Muting Service Socket.
+Nov 14 12:43:39.390585 mydestop systemd[1]: Listening on Userspace Out-Of-Memory (OOM) Killer Socket.
+Nov 14 12:43:39.390597 mydestop systemd[1]: TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:39.390610 mydestop systemd[1]: Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+Nov 14 12:43:39.390621 mydestop systemd[1]: Listening on Disk Repartitioning Service Socket.
+Nov 14 12:43:39.390634 mydestop systemd[1]: Listening on Resolve Monitor Varlink Socket.
+Nov 14 12:43:39.390647 mydestop systemd[1]: Listening on Resolve Service Varlink Socket.
+Nov 14 12:43:39.390658 mydestop systemd[1]: Listening on Simple Block Device Backed Storage Provider.
+Nov 14 12:43:39.390669 mydestop systemd[1]: Listening on Simple File System Backed Storage Provider.
+Nov 14 12:43:39.390680 mydestop systemd[1]: Listening on System Install Tool.
+Nov 14 12:43:39.390692 mydestop systemd[1]: Listening on System Updates.
+Nov 14 12:43:39.390700 mydestop systemd[1]: Listening on udev Varlink Socket.
+Nov 14 12:43:39.390713 mydestop systemd[1]: Listening on User Database Manager Socket.
+Nov 14 12:43:39.390726 mydestop systemd[1]: Mounting Huge Pages File System...
+Nov 14 12:43:39.390740 mydestop systemd[1]: Mounting POSIX Message Queue File System...
+Nov 14 12:43:39.390751 mydestop systemd[1]: Mounting Kernel Debug File System...
+Nov 14 12:43:39.390763 mydestop systemd[1]: Mounting Kernel Trace File System...
+Nov 14 12:43:39.390772 mydestop systemd[1]: Starting Create List of Static Device Nodes...
+Nov 14 12:43:39.390783 mydestop systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Nov 14 12:43:39.390800 mydestop systemd[1]: Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+Nov 14 12:43:39.390809 mydestop systemd[1]: Mounting Kernel Configuration File System...
+Nov 14 12:43:39.390823 mydestop systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+Nov 14 12:43:39.390836 mydestop systemd[1]: Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+Nov 14 12:43:39.390847 mydestop systemd[1]: Mounting FUSE Control File System...
+Nov 14 12:43:39.390859 mydestop systemd[1]: plymouth-switch-root.service: Deactivated successfully.
+Nov 14 12:43:39.390871 mydestop systemd[1]: Stopped Plymouth switch root service.
+Nov 14 12:43:39.390884 mydestop systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+Nov 14 12:43:39.390897 mydestop systemd[1]: Starting Journal Service...
+Nov 14 12:43:39.390907 mydestop systemd[1]: Starting Load Kernel Modules...
+Nov 14 12:43:39.390916 mydestop systemd[1]: TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:39.390925 mydestop systemd[1]: TPM PCR OS Separator skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:39.390935 mydestop systemd[1]: Starting Remount Root and Kernel File Systems...
+Nov 14 12:43:39.390944 mydestop systemd[1]: Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:39.390958 mydestop systemd[1]: TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionPathExists=/etc/initrd-release
+Nov 14 12:43:39.390972 mydestop systemd[1]: Reached target Local Encrypted Volumes.
+Nov 14 12:43:39.390983 mydestop systemd[1]: TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:39.390993 mydestop systemd[1]: Starting Load udev Rules from Credentials...
+Nov 14 12:43:39.391005 mydestop systemd[1]: Starting Coldplug All udev Devices...
+Nov 14 12:43:39.391018 mydestop systemd[1]: Mounted Huge Pages File System.
+Nov 14 12:43:39.391029 mydestop systemd[1]: Mounted Kernel Debug File System.
+Nov 14 12:43:39.391040 mydestop systemd[1]: Finished Create List of Static Device Nodes.
+Nov 14 12:43:39.391051 mydestop systemd[1]: Mounted FUSE Control File System.
+Nov 14 12:43:39.391061 mydestop systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+Nov 14 12:43:39.391072 mydestop systemd[1]: Mounted Kernel Trace File System.
+Nov 14 12:43:39.391083 mydestop systemd[1]: Mounted POSIX Message Queue File System.
+Nov 14 12:43:39.391091 mydestop systemd[1]: Mounted Kernel Configuration File System.
+Nov 14 12:43:39.391104 mydestop systemd[1]: Finished Load udev Rules from Credentials.
+Nov 14 12:43:39.391131 mydestop systemd-journald[317]: Collecting audit messages is disabled.
+Nov 14 12:43:39.391160 mydestop kernel: EXT4-fs (nvme0n1p2): re-mounted 4916d227-b1c9-4be2-91af-6cc171e8d31e.
+Nov 14 12:43:39.391170 mydestop systemd[1]: Finished Remount Root and Kernel File Systems.
+Nov 14 12:43:39.391181 mydestop systemd[1]: Rebuild Hardware Database skipped, unmet condition check ConditionNeedsUpdate=/etc
+Nov 14 12:43:39.391192 mydestop systemd[1]: Starting Load/Save OS Random Seed...
+Nov 14 12:43:39.391201 mydestop systemd[1]: TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-os
+Nov 14 12:43:39.392486 mydestop systemd[1]: Started Journal Service.
+Nov 14 12:43:39.398456 mydestop kernel: Asymmetric key parser 'pkcs8' registered
+Nov 14 12:43:39.401376 mydestop kernel: i2c_dev: i2c /dev entries driver
+Nov 14 12:43:39.407375 mydestop kernel: device-mapper: uevent: version 1.0.3
+Nov 14 12:43:39.407412 mydestop kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Nov 14 12:43:39.609496 mydestop systemd-journald[317]: Received client request to flush runtime journal.
+Nov 14 12:43:39.858429 mydestop kernel: zram0: detected capacity change from 0 to 16002048
+Nov 14 12:43:39.958380 mydestop kernel: input: Intel HID events as /devices/platform/INTC1078:00/input/input11
+Nov 14 12:43:39.961379 mydestop kernel: intel-hid INTC1078:00: platform supports 5 button array
+Nov 14 12:43:39.965391 mydestop kernel: input: Intel HID 5 button array as /devices/platform/INTC1078:00/input/input12
+Nov 14 12:43:39.979379 mydestop kernel: Adding 8001020k swap on /dev/zram0.  Priority:100 extents:1 across:8001020k SSDsc
+Nov 14 12:43:40.007423 mydestop kernel: intel_pmc_core INT33A1:00:  initialized
+Nov 14 12:43:40.010636 mydestop kernel: mousedev: PS/2 mouse device common for all mice
+Nov 14 12:43:40.022383 mydestop kernel: resource: resource sanity check: requesting [mem 0x00000000fedc0000-0x00000000fedcffff], which spans more than pnp 00:03 [mem 0xfedc0000-0xfedc7fff]
+Nov 14 12:43:40.022442 mydestop kernel: caller igen6_probe+0x1c2/0xc00 [igen6_edac] mapping multiple BARs
+Nov 14 12:43:40.036393 mydestop kernel: EDAC MC0: Giving out device to module igen6_edac controller Intel_client_SoC MC#0: DEV 0000:00:00.0 (INTERRUPT)
+Nov 14 12:43:40.049394 mydestop kernel: EDAC MC1: Giving out device to module igen6_edac controller Intel_client_SoC MC#1: DEV 0000:00:00.0 (INTERRUPT)
+Nov 14 12:43:40.052382 mydestop kernel: EDAC igen6: v2.5.1
+Nov 14 12:43:40.064387 mydestop kernel: input: PC Speaker as /devices/platform/pcspkr/input/input13
+Nov 14 12:43:40.076412 mydestop kernel: mc: Linux media interface: v0.10
+Nov 14 12:43:40.086389 mydestop kernel: input: HP WMI hotkeys as /devices/virtual/input/input14
+Nov 14 12:43:40.192644 mydestop kernel: input: SYNA32DC:00 06CB:CEE7 Mouse as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-SYNA32DC:00/0018:06CB:CEE7.0003/input/input15
+Nov 14 12:43:40.192803 mydestop kernel: input: SYNA32DC:00 06CB:CEE7 Touchpad as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-SYNA32DC:00/0018:06CB:CEE7.0003/input/input16
+Nov 14 12:43:40.193290 mydestop kernel: hid-generic 0018:06CB:CEE7.0003: input,hidraw2: I2C HID v1.00 Mouse [SYNA32DC:00 06CB:CEE7] on i2c-SYNA32DC:00
+Nov 14 12:43:40.213413 mydestop kernel: mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+Nov 14 12:43:40.219481 mydestop kernel: spi-nor spi0.0: supply vcc not found, using dummy regulator
+Nov 14 12:43:40.222439 mydestop kernel: RAPL PMU: API unit is 2^-32 Joules, 3 fixed counters, 655360 ms ovfl timer
+Nov 14 12:43:40.222609 mydestop kernel: RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+Nov 14 12:43:40.222656 mydestop kernel: RAPL PMU: hw unit of domain package 2^-14 Joules
+Nov 14 12:43:40.222705 mydestop kernel: RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+Nov 14 12:43:40.229435 mydestop kernel: Creating 1 MTD partitions on "0000:00:1f.5":
+Nov 14 12:43:40.229605 mydestop kernel: 0x000000000000-0x000001000000 : "BIOS"
+Nov 14 12:43:40.234458 mydestop kernel: i801_smbus 0000:00:1f.4: SPD Write Disable is set
+Nov 14 12:43:40.235076 mydestop kernel: i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+Nov 14 12:43:40.242427 mydestop kernel: i2c i2c-12: Successfully instantiated SPD at 0x50
+Nov 14 12:43:40.247398 mydestop kernel: videodev: Linux video capture interface: v2.00
+Nov 14 12:43:40.248519 mydestop kernel: mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+Nov 14 12:43:40.259402 mydestop kernel: mei_pxp 0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: bound 0000:00:02.0 (ops i915_pxp_tee_component_ops [i915])
+Nov 14 12:43:40.276386 mydestop kernel: Bluetooth: Core ver 2.22
+Nov 14 12:43:40.276432 mydestop kernel: NET: Registered PF_BLUETOOTH protocol family
+Nov 14 12:43:40.276440 mydestop kernel: Bluetooth: HCI device and connection manager initialized
+Nov 14 12:43:40.276447 mydestop kernel: Bluetooth: HCI socket layer initialized
+Nov 14 12:43:40.276467 mydestop kernel: Bluetooth: L2CAP socket layer initialized
+Nov 14 12:43:40.276474 mydestop kernel: Bluetooth: SCO socket layer initialized
+Nov 14 12:43:40.278379 mydestop kernel: ee1004 12-0050: 512 byte EE1004-compliant SPD EEPROM, read-only
+Nov 14 12:43:40.316393 mydestop kernel: intel_rapl_msr: PL4 support detected.
+Nov 14 12:43:40.316438 mydestop kernel: intel_rapl_common: Found RAPL domain package
+Nov 14 12:43:40.316473 mydestop kernel: intel_rapl_common: Found RAPL domain core
+Nov 14 12:43:40.316488 mydestop kernel: intel_rapl_common: Found RAPL domain uncore
+Nov 14 12:43:40.318417 mydestop kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Nov 14 12:43:40.323378 mydestop kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Nov 14 12:43:40.323429 mydestop kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Nov 14 12:43:40.339395 mydestop kernel: input: SYNA32DC:00 06CB:CEE7 Mouse as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-SYNA32DC:00/0018:06CB:CEE7.0003/input/input18
+Nov 14 12:43:40.339495 mydestop kernel: input: SYNA32DC:00 06CB:CEE7 Touchpad as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-SYNA32DC:00/0018:06CB:CEE7.0003/input/input19
+Nov 14 12:43:40.339524 mydestop kernel: hid-multitouch 0018:06CB:CEE7.0003: input,hidraw2: I2C HID v1.00 Mouse [SYNA32DC:00 06CB:CEE7] on i2c-SYNA32DC:00
+Nov 14 12:43:40.340381 mydestop kernel: proc_thermal_pci 0000:00:04.0: enabling device (0000 -> 0002)
+Nov 14 12:43:40.341382 mydestop kernel: intel_rapl_common: Found RAPL domain package
+Nov 14 12:43:40.354380 mydestop kernel: usbcore: registered new interface driver btusb
+Nov 14 12:43:40.356390 mydestop kernel: Bluetooth: hci0: RTL: examining hci_ver=0b hci_rev=000b lmp_ver=0b lmp_subver=8852
+Nov 14 12:43:40.357384 mydestop kernel: Bluetooth: hci0: RTL: rom_version status=0 version=1
+Nov 14 12:43:40.358385 mydestop kernel: Bluetooth: hci0: RTL: btrtl_initialize: key id 0
+Nov 14 12:43:40.358425 mydestop kernel: Bluetooth: hci0: RTL: loading rtl_bt/rtl8852bu_fw.bin
+Nov 14 12:43:40.361391 mydestop kernel: Bluetooth: hci0: RTL: loading rtl_bt/rtl8852bu_config.bin
+Nov 14 12:43:40.365378 mydestop kernel: Bluetooth: hci0: RTL: cfg_sz 6, total sz 62539
+Nov 14 12:43:40.367384 mydestop kernel: uvcvideo 1-3:1.0: Found UVC 1.10 device HP True Vision HD Camera (04f2:b78f)
+Nov 14 12:43:40.371356 mydestop kernel: usbcore: registered new interface driver uvcvideo
+Nov 14 12:43:40.506374 mydestop kernel: intel_tcc_cooling: TCC Offset locked
+Nov 14 12:43:40.516376 mydestop kernel: rtw89_8852be 0000:02:00.0: loaded firmware rtw89/rtw8852b_fw-1.bin
+Nov 14 12:43:40.662437 mydestop kernel: rtw89_8852be 0000:02:00.0: enabling device (0000 -> 0003)
+Nov 14 12:43:40.662918 mydestop kernel: snd_soc_avs 0000:00:1f.3: Digital mics found on Skylake+ platform, using SOF driver
+Nov 14 12:43:40.670509 mydestop kernel: rtw89_8852be 0000:02:00.0: Firmware version 0.29.29.15 (6fb3ec41), cmd version 0, type 5
+Nov 14 12:43:40.670700 mydestop kernel: rtw89_8852be 0000:02:00.0: Firmware version 0.29.29.15 (6fb3ec41), cmd version 0, type 3
+Nov 14 12:43:40.691563 mydestop kernel: Bluetooth: hci0: RTL: fw version 0x127cfd78
+Nov 14 12:43:40.775420 mydestop kernel: Bluetooth: hci0: AOSP extensions version v1.00
+Nov 14 12:43:40.792404 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: enabling device (0000 -> 0002)
+Nov 14 12:43:40.792647 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: DSP detected with PCI class/subclass/prog-if 0x040100
+Nov 14 12:43:40.792785 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: bound 0000:00:02.0 (ops intel_audio_component_bind_ops [i915])
+Nov 14 12:43:40.798374 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: use msi interrupt mode
+Nov 14 12:43:40.849439 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: hda codecs found, mask 5
+Nov 14 12:43:40.849655 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: using HDA machine driver skl_hda_dsp_generic now
+Nov 14 12:43:40.849808 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: NHLT device BT(0) detected, ssp_mask 0x4
+Nov 14 12:43:40.849935 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: BT link detected in NHLT tables: 0x4
+Nov 14 12:43:40.850055 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: DMICs detected in NHLT tables: 2
+Nov 14 12:43:40.867377 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: Firmware paths/files for ipc type 0:
+Nov 14 12:43:40.867521 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3:  Firmware file:     intel/sof/sof-rpl.ri
+Nov 14 12:43:40.867639 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3:  Topology file:     intel/sof-tplg/sof-hda-generic-2ch.tplg
+Nov 14 12:43:40.867751 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: Firmware info: version 2:2:0-57864
+Nov 14 12:43:40.867868 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: Firmware: ABI 3:22:1 Kernel ABI 3:23:1
+Nov 14 12:43:40.963408 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: Firmware info: version 2:2:0-57864
+Nov 14 12:43:40.964054 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: Firmware: ABI 3:22:1 Kernel ABI 3:23:1
+Nov 14 12:43:40.966593 mydestop kernel: rtw89_8852be 0000:02:00.0: chip rfe_type is 1
+Nov 14 12:43:40.989384 mydestop kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: Topology: ABI 3:22:1 Kernel ABI 3:23:1
+Nov 14 12:43:40.989661 mydestop kernel: skl_hda_dsp_generic skl_hda_dsp_generic: ASoC: Parent card not yet available, widget card binding deferred
+Nov 14 12:43:40.997377 mydestop kernel: rtw89_8852be 0000:02:00.0: rfkill hardware state changed to enable
+Nov 14 12:43:41.019421 mydestop kernel: snd_hda_codec_alc269 ehdaudio0D0: ALC236: picked fixup  for PCI SSID 103c:0000
+Nov 14 12:43:41.019585 mydestop kernel: snd_hda_codec_alc269 ehdaudio0D0: autoconfig for ALC236: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+Nov 14 12:43:41.019670 mydestop kernel: snd_hda_codec_alc269 ehdaudio0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Nov 14 12:43:41.019743 mydestop kernel: snd_hda_codec_alc269 ehdaudio0D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+Nov 14 12:43:41.019812 mydestop kernel: snd_hda_codec_alc269 ehdaudio0D0:    mono: mono_out=0x0
+Nov 14 12:43:41.019881 mydestop kernel: snd_hda_codec_alc269 ehdaudio0D0:    inputs:
+Nov 14 12:43:41.019948 mydestop kernel: snd_hda_codec_alc269 ehdaudio0D0:      Mic=0x19
+Nov 14 12:43:41.063563 mydestop kernel: skl_hda_dsp_generic skl_hda_dsp_generic: hda_dsp_hdmi_build_controls: no PCM in topology for HDMI converter 3
+Nov 14 12:43:41.085417 mydestop kernel: input: sof-hda-dsp Mic as /devices/pci0000:00/0000:00:1f.3/skl_hda_dsp_generic/sound/card0/input21
+Nov 14 12:43:41.085476 mydestop kernel: input: sof-hda-dsp Headphone as /devices/pci0000:00/0000:00:1f.3/skl_hda_dsp_generic/sound/card0/input22
+Nov 14 12:43:41.085495 mydestop kernel: input: sof-hda-dsp HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/skl_hda_dsp_generic/sound/card0/input23
+Nov 14 12:43:41.085507 mydestop kernel: input: sof-hda-dsp HDMI/DP,pcm=4 as /devices/pci0000:00/0000:00:1f.3/skl_hda_dsp_generic/sound/card0/input24
+Nov 14 12:43:41.085523 mydestop kernel: input: sof-hda-dsp HDMI/DP,pcm=5 as /devices/pci0000:00/0000:00:1f.3/skl_hda_dsp_generic/sound/card0/input25
+Nov 14 12:43:41.442389 mydestop kernel: ACPI BIOS Error (bug): AE_AML_BUFFER_LIMIT, Index (0x000000032) is beyond end of object (length 0x32) (20250807/exoparg2-393)
+Nov 14 12:43:41.442453 mydestop kernel: ACPI Error: Aborting method \_SB.WMID.WQBZ due to previous error (AE_AML_BUFFER_LIMIT) (20250807/psparse-543)
+Nov 14 12:43:41.442492 mydestop kernel: ACPI Error: Aborting method \_SB.WMID.WQBE due to previous error (AE_AML_BUFFER_LIMIT) (20250807/psparse-543)
+Nov 14 12:43:41.449394 mydestop kernel: hp_bioscfg: Returned error 0x3, "Invalid command value/Feature not supported"
+Nov 14 12:43:41.493393 mydestop kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Nov 14 12:43:41.493456 mydestop kernel: Bluetooth: BNEP filters: protocol multicast
+Nov 14 12:43:41.493486 mydestop kernel: Bluetooth: BNEP socket layer initialized
+Nov 14 12:43:41.495465 mydestop kernel: Bluetooth: MGMT ver 1.23
+Nov 14 12:43:41.501414 mydestop kernel: NET: Registered PF_ALG protocol family
+Nov 14 12:43:43.641385 mydestop kernel: rfkill: input handler disabled
+Nov 14 12:43:44.056387 mydestop kernel: Bluetooth: RFCOMM TTY layer initialized
+Nov 14 12:43:44.056452 mydestop kernel: Bluetooth: RFCOMM socket layer initialized
+Nov 14 12:43:44.056460 mydestop kernel: Bluetooth: RFCOMM ver 1.11
+Nov 14 12:43:45.092567 mydestop kernel: wlan0: authenticate with b8:29:03:a3:76:41 (local address=cc:47:40:bd:72:06)
+Nov 14 12:43:45.092591 mydestop kernel: wlan0: send auth to b8:29:03:a3:76:41 (try 1/3)
+Nov 14 12:43:45.120514 mydestop kernel: wlan0: authenticated
+Nov 14 12:43:45.123514 mydestop kernel: wlan0: associate with b8:29:03:a3:76:41 (try 1/3)
+Nov 14 12:43:45.148593 mydestop kernel: wlan0: RX AssocResp from b8:29:03:a3:76:41 (capab=0x1931 status=0 aid=12)
+Nov 14 12:43:45.259462 mydestop kernel: wlan0: associated
+Nov 14 12:43:45.259595 mydestop kernel: wlan0: Limiting TX power to 30 (30 - 0) dBm as advertised by b8:29:03:a3:76:41
+Nov 14 12:43:45.588949 mydestop kernel: warning: `tokio-rt-worker' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+Nov 14 12:43:45.685404 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=53573 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 12:43:45.865531 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=53680 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 12:43:46.115624 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=53801 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 12:43:46.600695 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=74 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 12:43:46.865712 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=74 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 12:43:47.115681 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=74 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 12:44:11.987720 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 12:44:59.252780 mydestop kernel: rfkill: input handler enabled
+Nov 14 12:45:00.101720 mydestop kernel: rfkill: input handler disabled
+Nov 14 12:45:00.293728 mydestop kernel: nvme nvme0: using unchecked data buffer
+Nov 14 12:45:07.793736 mydestop kernel: /proc/cgroups lists only v1 controllers, use cgroup.controllers of root cgroup for v2 info
+Nov 14 12:46:17.471950 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 12:48:22.937726 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 12:50:28.254727 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 12:52:33.843724 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 12:54:39.304017 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 12:56:44.759098 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 12:58:50.213722 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 13:00:02.209725 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=223 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=183 
+Nov 14 13:00:02.209803 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=89 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=49 
+Nov 14 13:00:03.223742 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=89 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=49 
+Nov 14 13:00:03.565774 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=71 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=31 
+Nov 14 13:00:03.565845 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=51 TOS=0x00 PREC=0x00 TTL=255 ID=24209 PROTO=UDP SPT=5355 DPT=5355 LEN=31 
+Nov 14 13:00:04.566774 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=51 TOS=0x00 PREC=0x00 TTL=255 ID=24605 PROTO=UDP SPT=5355 DPT=5355 LEN=31 
+Nov 14 13:00:04.566848 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=71 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=31 
+Nov 14 13:00:05.578776 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=51 TOS=0x00 PREC=0x00 TTL=255 ID=25484 PROTO=UDP SPT=5355 DPT=5355 LEN=31 
+Nov 14 13:00:05.578846 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=71 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=31 
+Nov 14 13:00:06.195850 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=223 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=183 
+Nov 14 13:00:09.261792 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=89 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=49 
+Nov 14 13:00:18.613720 mydestop kernel: tun: Universal TUN/TAP device driver, 1.6
+Nov 14 13:00:18.682744 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=89 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=49 
+Nov 14 13:00:18.699718 mydestop kernel: [UFW BLOCK] IN=CloudflareWARP OUT= MAC= SRC=172.16.0.2 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=9762 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:18.721858 mydestop kernel: [UFW BLOCK] IN=CloudflareWARP OUT= MAC= SRC=fe80:0000:0000:0000:4215:2431:d600:4416 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=74 TC=0 HOPLIMIT=255 FLOWLBL=163638 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:18.828913 mydestop kernel: [UFW BLOCK] IN=CloudflareWARP OUT= MAC= SRC=172.16.0.2 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=9851 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:19.078863 mydestop kernel: [UFW BLOCK] IN=CloudflareWARP OUT= MAC= SRC=172.16.0.2 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=10083 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:21.782801 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=34891 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:21.782852 mydestop kernel: [UFW BLOCK] IN=CloudflareWARP OUT= MAC= SRC=172.16.0.2 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=12393 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:22.232763 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=74 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:22.827760 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=35869 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:22.827809 mydestop kernel: [UFW BLOCK] IN=CloudflareWARP OUT= MAC= SRC=172.16.0.2 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=12806 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:00:32.357462 mydestop kernel: x86/split lock detection: #AC: gldriverquery/16412 took a split_lock trap at address: 0xf4a74f1f
+Nov 14 13:00:55.779720 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=242 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=202 
+Nov 14 13:43:03.318862 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=36490 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:43:03.373731 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=229 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=189 
+Nov 14 13:43:03.373810 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=89 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=49 
+Nov 14 13:43:03.420786 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=74 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:43:04.328721 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=74 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:43:04.328784 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=37009 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:43:04.568737 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=74 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:43:05.401730 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=54 TOS=0x00 PREC=0x00 TTL=255 ID=37125 PROTO=UDP SPT=5355 DPT=5355 LEN=34 
+Nov 14 13:43:05.404780 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=229 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=189 
+Nov 14 13:43:05.404825 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=89 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=49 
+Nov 14 13:43:09.417720 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=89 TC=0 HOPLIMIT=1 FLOWLBL=170775 PROTO=UDP SPT=27036 DPT=27036 LEN=49 
+Nov 14 13:43:12.043732 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=39128 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:13.078727 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=39991 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:14.091728 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=40332 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:15.577719 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:16.577792 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:20.948722 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=43424 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:22.077716 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=44123 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:23.327739 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=44465 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:24.532731 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:49.215732 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=61455 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:50.239732 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=62441 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:51.327729 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=62552 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:43:52.827781 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:44:03.577730 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 13:44:49.730740 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 13:46:55.172720 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 13:47:36.239731 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=cc:47:40:bd:72:06:b8:29:03:a3:76:40:08:00 SRC=43.152.4.157 DST=192.168.1.33 LEN=95 TOS=0x00 PREC=0x00 TTL=55 ID=0 DF PROTO=UDP SPT=443 DPT=50035 LEN=75 
+Nov 14 13:49:00.614733 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 13:51:06.056758 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 13:53:11.497735 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 13:53:58.466802 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bd2!
+Nov 14 13:54:00.374696 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [27696]
+Nov 14 13:54:00.377705 mydestop kernel: i915 0000:00:02.0: [drm] GPU error state saved to /sys/class/drm/card1/error
+Nov 14 13:54:00.377959 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[27696] context reset due to GPU hang
+Nov 14 13:54:00.378141 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bd0!
+Nov 14 13:54:00.378156 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bce!
+Nov 14 13:54:00.378172 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bcc!
+Nov 14 13:54:00.378188 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bca!
+Nov 14 13:54:00.378202 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bde!
+Nov 14 13:54:00.378215 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bdc!
+Nov 14 13:54:00.378232 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bda!
+Nov 14 13:54:00.378245 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bd8!
+Nov 14 13:54:00.378265 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bd6!
+Nov 14 13:54:00.378283 mydestop kernel: Fence expiration time out i915-0000:00:02.0:Client-Win64-Sh[27696]:49bd4!
+Nov 14 13:55:17.046722 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 13:57:22.386762 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 13:59:27.930966 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:01:33.371834 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:03:38.812954 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:05:44.255006 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:07:49.695853 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:09:55.136867 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:10:45.328735 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=1768 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:46.334733 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=1850 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:47.577741 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=2400 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:49.059766 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:50.077739 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:51.327758 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:54.274768 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=6970 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:55.327767 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=7250 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:56.577734 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=8316 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:58.078761 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:10:59.327715 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:11:00.577736 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:11:44.577867 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=47737 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:11:45.828753 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=48521 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:11:47.077721 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=48987 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:11:48.578811 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:11:49.828737 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:11:51.078770 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:11:59.827791 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=50076 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:12:00.476817 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:12:01.077763 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=50318 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:12:02.327718 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=50692 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:12:03.635727 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:12:04.668934 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:12:05.828773 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:13:52.796222 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [36635]
+Nov 14 14:13:52.796626 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[36635] context reset due to GPU hang
+Nov 14 14:14:05.974736 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:15:16.779762 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=57331 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:15:17.828735 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=57803 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:15:19.077718 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=58775 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:15:20.577719 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:15:21.827720 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:15:22.993737 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 14:16:11.411862 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:18:16.903867 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:20:22.344928 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:22:27.684873 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:24:33.122835 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:26:38.569049 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:28:43.993830 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:30:49.553976 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:32:54.892941 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:36:52.287702 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [49616]
+Nov 14 14:36:52.288185 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[49616] context reset due to GPU hang
+Nov 14 14:37:05.766724 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:39:11.311719 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:41:16.751823 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:43:22.050834 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:43:46.094518 mydestop kernel: capability: warning: `gvfsd-admin' uses 32-bit capabilities (legacy support in use)
+Nov 14 14:45:27.529811 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:45:54.964471 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [54075]
+Nov 14 14:45:54.964849 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[54075] context reset due to GPU hang
+Nov 14 14:47:33.071837 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:49:38.512898 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:51:43.845830 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:53:49.393881 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:55:54.834864 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 14:58:00.171792 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:00:05.716911 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:02:11.055835 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:04:16.598898 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:06:21.937989 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:08:27.481987 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:10:32.815836 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:12:38.251813 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:14:43.790989 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:16:49.228895 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:18:54.666770 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:21:00.004941 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:23:05.438850 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:25:10.984842 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:27:16.317851 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:29:21.859878 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:31:27.304842 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:33:32.642741 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:35:38.185859 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:36:45.077737 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=7815 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:46.096728 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=8681 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:47.327718 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=8864 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:48.827729 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:49.860723 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:50.889804 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:53.924776 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=10585 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:55.077768 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=11713 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:56.327719 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=11848 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:57.827723 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:36:58.891721 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:37:00.077724 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:37:43.519729 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:37:44.268734 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=43732 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:37:45.328736 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=44553 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:37:46.579172 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=45352 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:37:48.077735 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:37:49.327746 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:37:50.577771 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:39:04.019371 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [68245]
+Nov 14 15:39:04.019906 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[68245] context reset due to GPU hang
+Nov 14 15:39:34.077715 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=35857 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:39:35.327778 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=36762 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:39:36.578753 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=37458 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:39:48.963816 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:39:58.827729 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=51225 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:39:59.916774 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=52046 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:01.077717 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=52443 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:02.327731 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:03.552757 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:04.578881 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:07.779789 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=54681 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:08.827713 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=54934 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:10.078757 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=55197 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:11.578885 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:12.827732 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:14.077731 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:58.078815 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=10747 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:40:59.327732 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=10887 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:41:02.078788 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:41:03.328754 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:41:04.578742 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:0889:64ee:93af:c1c1 DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=70 TC=0 HOPLIMIT=255 FLOWLBL=762387 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:41:26.148606 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [70433]
+Nov 14 15:41:26.148994 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[70433] context reset due to GPU hang
+Nov 14 15:41:54.403797 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:43:35.165730 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=27601 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:43:36.328000 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=28457 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:43:37.578797 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.1.33 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=29377 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+Nov 14 15:43:59.844966 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:45:27.945909 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [72834]
+Nov 14 15:45:27.946221 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[72834] context reset due to GPU hang
+Nov 14 15:46:05.280897 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:47:23.953499 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [74443]
+Nov 14 15:47:23.953889 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[74443] context reset due to GPU hang
+Nov 14 15:48:10.720822 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:49:12.315218 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [75951]
+Nov 14 15:49:12.315542 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[75951] context reset due to GPU hang
+Nov 14 15:50:16.267829 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:52:21.708934 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:54:27.149808 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:56:21.990345 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [79521]
+Nov 14 15:56:21.990585 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[79521] context reset due to GPU hang
+Nov 14 15:56:32.487874 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 15:58:37.978796 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:00:33.942509 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [81933]
+Nov 14 16:00:33.942839 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[81933] context reset due to GPU hang
+Nov 14 16:00:43.368836 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:01:33.953952 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=cc:47:40:bd:72:06:b8:29:03:a3:76:40:08:00 SRC=34.142.217.223 DST=192.168.1.33 LEN=40 TOS=0x00 PREC=0x00 TTL=250 ID=13239 PROTO=TCP SPT=443 DPT=38416 WINDOW=28160 RES=0x00 ACK URGP=0 
+Nov 14 16:02:48.805759 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:04:54.351796 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:06:59.791824 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:09:05.232937 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:11:10.566760 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:11:10.904056 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [85143]
+Nov 14 16:11:10.904405 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[85143] context reset due to GPU hang
+Nov 14 16:12:59.011710 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [86404]
+Nov 14 16:12:59.012067 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[86404] context reset due to GPU hang
+Nov 14 16:13:16.113768 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:15:21.553769 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:15:33.773965 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [87707]
+Nov 14 16:15:33.774328 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[87707] context reset due to GPU hang
+Nov 14 16:17:13.851605 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfdfb, in Client-Win64-Sh [88961]
+Nov 14 16:17:13.852018 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[88961] context reset due to GPU hang
+Nov 14 16:17:26.995755 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:19:32.322970 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:21:37.883867 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:23:43.231829 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:25:48.675754 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:27:54.118801 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:29:59.561766 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:30:05.614984 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfffb, in wined3d_cs [93087]
+Nov 14 16:30:05.615333 mydestop kernel: i915 0000:00:02.0: [drm] wined3d_cs[93087] context reset due to GPU hang
+Nov 14 16:30:13.215739 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dffdfb, in wined3d_cs [93087]
+Nov 14 16:30:13.216140 mydestop kernel: i915 0000:00:02.0: [drm] wined3d_cs[93087] context reset due to GPU hang
+Nov 14 16:30:20.865307 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfffb, in wined3d_cs [93087]
+Nov 14 16:30:20.865674 mydestop kernel: i915 0000:00:02.0: [drm] wined3d_cs[93087] context reset due to GPU hang
+Nov 14 16:32:05.106937 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:34:10.549883 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:36:15.889903 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:38:21.331886 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:40:26.773820 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:42:32.316792 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:43:51.988047 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfffb, in Client-Win64-Sh [96841]
+Nov 14 16:43:51.988358 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[96841] context reset due to GPU hang
+Nov 14 16:44:37.657844 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:46:43.052811 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:48:48.540838 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:50:53.977821 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:52:59.525989 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:55:04.965826 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:57:10.406830 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 16:59:15.698724 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:01:21.289935 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:03:26.623824 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:05:32.069797 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:07:37.510802 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:09:43.050956 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:11:48.495751 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:13:53.835764 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:15:59.378881 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:18:04.717732 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:19:21.081748 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfffb, in Client-Win64-Sh [106859]
+Nov 14 17:19:21.081997 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[106859] context reset due to GPU hang
+Nov 14 17:20:10.154861 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:22:15.600796 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:24:21.041861 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:26:26.583880 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:28:31.959815 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:30:19.031847 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfffb, in Client-Win64-Sh [110043]
+Nov 14 17:30:19.032162 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[110043] context reset due to GPU hang
+Nov 14 17:30:37.459831 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:32:42.899174 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:34:48.235724 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 
+Nov 14 17:34:57.384133 mydestop kernel: i915 0000:00:02.0: [drm] GPU HANG: ecode 12:1:85dcfffb, in Client-Win64-Sh [112046]
+Nov 14 17:34:57.384452 mydestop kernel: i915 0000:00:02.0: [drm] Client-Win64-Sh[112046] context reset due to GPU hang
+Nov 14 17:36:53.653895 mydestop kernel: [UFW BLOCK] IN=wlan0 OUT= MAC=01:00:5e:00:00:01:b8:29:03:a3:76:40:08:00 SRC=0.0.0.0 DST=224.0.0.1 LEN=32 TOS=0x00 PREC=0xC0 TTL=1 ID=0 DF PROTO=2 

@@ -1,0 +1,1185 @@
+info:  Creating device:
+info:  Intel(R) Iris(R) Xe Graphics (RPL-U):
+info:    Driver   : Intel open-source Mesa driver 26.2.7
+info:  Queues:
+info:    Graphics : (0, 0)
+info:    Transfer : (0, 0)
+info:    Sparse   : (0, 0)
+info:  Memory:
+info:    Heap 0: 11.44 GiB (DEVICE_LOCAL)
+info:    Budget: 7.86 GiB
+info:      Type  0: DEVICE_LOCAL
+info:      Type  1: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
+info:      Type  2: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
+info:      Type  3: DEVICE_LOCAL | PROTECTED
+info:      Type  4: DEVICE_LOCAL
+info:      Type  5: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
+info:      Type  6: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
+info:  Enabled extensions:
+info:    VK_EXT_attachment_feedback_loop_layout
+info:    VK_EXT_border_color_swizzle
+info:    VK_EXT_conservative_rasterization
+info:    VK_EXT_custom_border_color
+info:    VK_EXT_depth_clip_enable
+info:    VK_EXT_depth_bias_control
+info:    VK_EXT_descriptor_heap
+info:    VK_EXT_dynamic_rendering_unused_attachments
+info:    VK_EXT_extended_dynamic_state3
+info:    VK_EXT_fragment_shader_interlock
+info:    VK_EXT_graphics_pipeline_library
+info:    VK_EXT_hdr_metadata
+info:    VK_EXT_line_rasterization
+info:    VK_EXT_multi_draw
+info:    VK_EXT_non_seamless_cube_map
+info:    VK_EXT_robustness2
+info:    VK_EXT_sample_locations
+info:    VK_EXT_shader_module_identifier
+info:    VK_EXT_shader_stencil_export
+info:    VK_EXT_transform_feedback
+info:    VK_EXT_vertex_attribute_divisor
+info:    VK_KHR_dynamic_rendering_local_read
+info:    VK_KHR_external_memory_win32
+info:    VK_KHR_external_semaphore_win32
+info:    VK_KHR_incremental_present
+info:    VK_KHR_load_store_op_none
+info:    VK_KHR_maintenance5
+info:    VK_KHR_maintenance6
+info:    VK_KHR_maintenance8
+info:    VK_KHR_maintenance9
+info:    VK_KHR_maintenance10
+info:    VK_KHR_maintenance11
+info:    VK_KHR_pipeline_library
+info:    VK_KHR_present_id
+info:    VK_KHR_present_wait
+info:    VK_KHR_shader_float_controls2
+info:    VK_KHR_shader_subgroup_uniform_control_flow
+info:    VK_KHR_shader_untyped_pointers
+info:    VK_KHR_swapchain
+info:    VK_KHR_swapchain_maintenance1
+info:    VK_KHR_swapchain_mutable_format
+info:    VK_KHR_win32_keyed_mutex
+info:    VK_AMD_buffer_marker
+info:  Enabled features:
+info:    depthBiasClamp                 : 1
+info:    depthBounds                    : 1
+info:    depthClamp                     : 1
+info:    drawIndirectFirstInstance      : 1
+info:    dualSrcBlend                   : 1
+info:    fillModeNonSolid               : 1
+info:    fragmentStoresAndAtomics       : 1
+info:    fullDrawIndexUint32            : 1
+info:    geometryShader                 : 1
+info:    imageCubeArray                 : 1
+info:    independentBlend               : 1
+info:    largePoints                    : 1
+info:    logicOp                        : 1
+info:    multiDrawIndirect              : 1
+info:    multiViewport                  : 1
+info:    occlusionQueryPrecise          : 1
+info:    pipelineStatisticsQuery        : 1
+info:    robustBufferAccess             : 1
+info:    sampleRateShading              : 1
+info:    samplerAnisotropy              : 1
+info:    shaderClipDistance             : 1
+info:    shaderCullDistance             : 1
+info:    shaderFloat64                  : 0
+info:    shaderImageGatherExtended      : 1
+info:    shaderInt16                    : 1
+info:    shaderInt64                    : 1
+info:    shaderUniformBufferArrayDynamicIndexing : 1
+info:    shaderSampledImageArrayDynamicIndexing : 1
+info:    shaderStorageBufferArrayDynamicIndexing : 1
+info:    shaderStorageImageArrayDynamicIndexing : 1
+info:    sparseBinding                  : 1
+info:    sparseResidencyBuffer          : 1
+info:    sparseResidencyImage2D         : 1
+info:    sparseResidencyImage3D         : 1
+info:    sparseResidency2Samples        : 1
+info:    sparseResidency4Samples        : 1
+info:    sparseResidency8Samples        : 1
+info:    sparseResidency16Samples       : 1
+info:    sparseResidencyAliased         : 1
+info:    shaderResourceResidency        : 1
+info:    shaderResourceMinLod           : 1
+info:    tessellationShader             : 1
+info:    textureCompressionBC           : 1
+info:    variableMultisampleRate        : 1
+info:    vertexPipelineStoresAndAtomics : 1
+info:    wideLines                      : 1
+info:    shaderDrawParameters           : 1
+info:    storageBuffer16BitAccess       : 1
+info:    storagePushConstant16          : 1
+info:    bufferDeviceAddress            : 1
+info:    descriptorIndexing             : 1
+info:    storageBuffer8BitAccess        : 1
+info:    storagePushConstant8           : 1
+info:    shaderUniformTexelBufferArrayDynamicIndexing : 1
+info:    shaderStorageTexelBufferArrayDynamicIndexing : 1
+info:    shaderUniformBufferArrayNonUniformIndexing : 1
+info:    shaderSampledImageArrayNonUniformIndexing : 1
+info:    shaderStorageBufferArrayNonUniformIndexing : 1
+info:    shaderStorageImageArrayNonUniformIndexing : 1
+info:    shaderUniformTexelBufferArrayNonUniformIndexing : 1
+info:    shaderStorageTexelBufferArrayNonUniformIndexing : 1
+info:    descriptorBindingSampledImageUpdateAfterBind : 1
+info:    descriptorBindingUpdateUnusedWhilePending : 1
+info:    descriptorBindingPartiallyBound : 1
+info:    drawIndirectCount              : 1
+info:    hostQueryReset                 : 1
+info:    runtimeDescriptorArray         : 1
+info:    samplerFilterMinmax            : 1
+info:    samplerMirrorClampToEdge       : 1
+info:    scalarBlockLayout              : 1
+info:    shaderFloat16                  : 1
+info:    shaderInt8                     : 1
+info:    shaderOutputViewportIndex      : 1
+info:    shaderOutputLayer              : 1
+info:    timelineSemaphore              : 1
+info:    uniformBufferStandardLayout    : 1
+info:    vulkanMemoryModel              : 1
+info:    inlineUniformBlock             : 1
+info:    computeFullSubgroups           : 1
+info:    dynamicRendering               : 1
+info:    maintenance4                   : 1
+info:    robustImageAccess              : 0
+info:    pipelineCreationCacheControl   : 1
+info:    shaderDemoteToHelperInvocation : 1
+info:    shaderZeroInitializeWorkgroupMemory : 1
+info:    subgroupSizeControl            : 1
+info:    synchronization2               : 1
+info:  VK_EXT_attachment_feedback_loop_layout:
+info:    attachmentFeedbackLoopLayout   : 1
+info:  VK_EXT_border_color_swizzle:
+info:    borderColorSwizzle             : 1
+info:    borderColorSwizzleFromImage    : 1
+info:  VK_EXT_conservative_rasterization:
+info:    extConservativeRasterization   : 1
+info:  VK_EXT_custom_border_color:
+info:    customBorderColors             : 1
+info:    customBorderColorWithoutFormat : 1
+info:  VK_EXT_depth_clip_enable:
+info:    depthClipEnable                : 1
+info:  VK_EXT_depth_bias_control:
+info:    depthBiasControl               : 1
+info:    leastRepresentableValueForceUnormRepresentation : 0
+info:    floatRepresentation            : 1
+info:    depthBiasExact                 : 1
+info:  VK_EXT_descriptor_buffer:
+info:    descriptorBuffer               : 0
+info:  VK_EXT_descriptor_heap:
+info:    descriptorHeap                 : 1
+info:  VK_EXT_dynamic_rendering_unused_attachments:
+info:    dynamicRenderingUnusedAttachments : 1
+info:  VK_EXT_extended_dynamic_state3:
+info:    extendedDynamicState3AlphaToCoverageEnable : 1
+info:    extendedDynamicState3DepthClipEnable : 1
+info:    extendedDynamicState3RasterizationSamples : 1
+info:    extendedDynamicState3SampleMask : 1
+info:    extendedDynamicState3LineRasterizationMode : 1
+info:    extendedDynamicState3SampleLocationsEnable : 1
+info:  VK_EXT_fragment_shader_interlock:
+info:    fragmentShaderSampleInterlock  : 1
+info:    fragmentShaderPixelInterlock   : 1
+info:  VK_EXT_full_screen_exclusive:
+info:    extFullScreenExclusive         : 0
+info:  VK_EXT_graphics_pipeline_library:
+info:    graphicsPipelineLibrary        : 1
+info:  VK_EXT_hdr_metadata:
+info:    extHdrMetadata                 : 1
+info:  VK_EXT_line_rasterization:
+info:    rectangularLines               : 1
+info:    smoothLines                    : 0
+info:  VK_EXT_memory_budget:
+info:    extMemoryBudget                : 1
+info:  VK_EXT_memory_priority:
+info:    memoryPriority                 : 0
+info:  VK_EXT_multi_draw:
+info:    multiDraw                      : 1
+info:  VK_EXT_non_seamless_cube_map:
+info:    nonSeamlessCubeMap             : 1
+info:  VK_EXT_pageable_device_local_memory:
+info:    pageableDeviceLocalMemory      : 0
+info:  VK_EXT_robustness2:
+info:    robustBufferAccess2            : 1
+info:    robustImageAccess2             : 1
+info:    nullDescriptor                 : 1
+info:  VK_EXT_sample_locations:
+info:    extSampleLocations             : 1
+info:  VK_EXT_shader_module_identifier:
+info:    shaderModuleIdentifier         : 1
+info:  VK_EXT_shader_stencil_export:
+info:    extShaderStencilExport         : 1
+info:  VK_EXT_swapchain_colorspace:
+info:    extSwapchainColorSpace         : 0
+info:  VK_EXT_swapchain_maintenance1:
+info:    swapchainMaintenance1          : 0
+info:  VK_EXT_transform_feedback:
+info:    transformFeedback              : 1
+info:    geometryStreams                : 1
+info:  VK_EXT_vertex_attribute_divisor:
+info:    vertexAttributeInstanceRateDivisor : 1
+info:    vertexAttributeInstanceRateZeroDivisor : 1
+info:  VK_KHR_device_fault:
+info:    deviceFault                    : 0
+info:    deviceFaultVendorBinary        : 0
+info:  VK_KHR_dynamic_rendering_local_read:
+info:    dynamicRenderingLocalRead      : 1
+info:  VK_KHR_external_memory_win32:
+info:    khrExternalMemoryWin32         : 1
+info:  VK_KHR_external_semaphore_win32:
+info:    khrExternalSemaphoreWin32      : 1
+info:  VK_KHR_incremental_present:
+info:    khrIncrementalPresent          : 1
+info:  VK_KHR_load_store_op_none:
+info:    khrLoadStoreOpNone             : 1
+info:  VK_KHR_maintenance5:
+info:    maintenance5                   : 1
+info:  VK_KHR_maintenance6:
+info:    maintenance6                   : 1
+info:  VK_KHR_maintenance7:
+info:    maintenance7                   : 0
+info:  VK_KHR_maintenance8:
+info:    maintenance8                   : 1
+info:  VK_KHR_maintenance9:
+info:    maintenance9                   : 1
+info:  VK_KHR_maintenance10:
+info:    maintenance10                  : 1
+info:  VK_KHR_maintenance11:
+info:    maintenance11                  : 1
+info:  VK_KHR_pipeline_library:
+info:    khrPipelineLibrary             : 1
+info:  VK_KHR_present_id:
+info:    presentId                      : 1
+info:  VK_KHR_present_id2:
+info:    presentId2                     : 0
+info:  VK_KHR_present_wait:
+info:    presentWait                    : 1
+info:  VK_KHR_present_wait2:
+info:    presentWait2                   : 0
+info:  VK_KHR_shader_float_controls2:
+info:    shaderFloatControls2           : 1
+info:  VK_KHR_shader_subgroup_uniform_control_flow:
+info:    shaderSubgroupUniformControlFlow : 1
+info:  VK_KHR_shader_untyped_pointers:
+info:    shaderUntypedPointers          : 1
+info:  VK_KHR_swapchain:
+info:    khrSwapchain                   : 1
+info:  VK_KHR_swapchain_maintenance1:
+info:    swapchainMaintenance1          : 1
+info:  VK_KHR_swapchain_mutable_format:
+info:    khrSwapchainMutableFormat      : 1
+info:  VK_KHR_unified_image_layouts:
+info:    unifiedImageLayouts            : 0
+info:  VK_KHR_win32_keyed_mutex:
+info:    khrWin32KeyedMutex             : 1
+info:  VK_AMD_buffer_marker:
+info:    amdBufferMarker                : 1
+info:  VK_NV_device_diagnostic_checkpoints:
+info:    nvDeviceDiagnosticCheckpoints  : 0
+info:  VK_NV_low_latency2:
+info:    nvLowLatency2                  : 0
+info:  VK_NV_raw_access_chains:
+info:    shaderRawAccessChains          : 0
+info:  VK_NVX_binary_import:
+info:    nvxBinaryImport                : 0
+info:  VK_NVX_image_view_handle:
+info:    nvxImageViewHandle             : 0
+info:  Descriptor sizes (set alignment: 64)
+info:    Sampler              : 32
+info:    Uniform buffer       : 64
+info:    Storage buffer       : 64
+info:    Uniform texel buffer : 64
+info:    Storage texel buffer : 64
+info:    Sampled image        : 64
+info:    Storage image        : 64
+info:    Input attachment     : 64
+info:  Memory type mask for sparse resources: 0x7
+info:  Memory type mask for buffer resources: 0x7, usage: 0x219ff
+info:  Creating sampler descriptor heap (64 kB)
+info:  Graphics pipeline libraries supported
+info:  Binding model: Descriptor heap
+info:  D3D11InternalCreateDevice: Maximum supported feature level: D3D_FEATURE_LEVEL_12_1
+info:  D3D11InternalCreateDevice: Using feature level D3D_FEATURE_LEVEL_11_0
+info:  Creating resource descriptor heap (8192 kB)
+info:  Loaded igd10iumd64.dll for Intel driver workarounds
+info:  Creating device:
+info:  Intel(R) Iris(R) Xe Graphics (RPL-U):
+info:    Driver   : Intel open-source Mesa driver 26.2.7
+info:  Queues:
+info:    Graphics : (0, 0)
+info:    Transfer : (0, 0)
+info:    Sparse   : (0, 0)
+info:  Memory:
+info:    Heap 0: 11.44 GiB (DEVICE_LOCAL)
+info:    Budget: 7.86 GiB
+info:      Type  0: DEVICE_LOCAL
+info:      Type  1: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
+info:      Type  2: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
+info:      Type  3: DEVICE_LOCAL | PROTECTED
+info:      Type  4: DEVICE_LOCAL
+info:      Type  5: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
+info:      Type  6: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
+info:  Enabled extensions:
+info:    VK_EXT_attachment_feedback_loop_layout
+info:    VK_EXT_border_color_swizzle
+info:    VK_EXT_conservative_rasterization
+info:    VK_EXT_custom_border_color
+info:    VK_EXT_depth_clip_enable
+info:    VK_EXT_depth_bias_control
+info:    VK_EXT_descriptor_heap
+info:    VK_EXT_dynamic_rendering_unused_attachments
+info:    VK_EXT_extended_dynamic_state3
+info:    VK_EXT_fragment_shader_interlock
+info:    VK_EXT_graphics_pipeline_library
+info:    VK_EXT_hdr_metadata
+info:    VK_EXT_line_rasterization
+info:    VK_EXT_multi_draw
+info:    VK_EXT_non_seamless_cube_map
+info:    VK_EXT_robustness2
+info:    VK_EXT_sample_locations
+info:    VK_EXT_shader_module_identifier
+info:    VK_EXT_shader_stencil_export
+info:    VK_EXT_transform_feedback
+info:    VK_EXT_vertex_attribute_divisor
+info:    VK_KHR_dynamic_rendering_local_read
+info:    VK_KHR_external_memory_win32
+info:    VK_KHR_external_semaphore_win32
+info:    VK_KHR_incremental_present
+info:    VK_KHR_load_store_op_none
+info:    VK_KHR_maintenance5
+info:    VK_KHR_maintenance6
+info:    VK_KHR_maintenance8
+info:    VK_KHR_maintenance9
+info:    VK_KHR_maintenance10
+info:    VK_KHR_maintenance11
+info:    VK_KHR_pipeline_library
+info:    VK_KHR_present_id
+info:    VK_KHR_present_wait
+info:    VK_KHR_shader_float_controls2
+info:    VK_KHR_shader_subgroup_uniform_control_flow
+info:    VK_KHR_shader_untyped_pointers
+info:    VK_KHR_swapchain
+info:    VK_KHR_swapchain_maintenance1
+info:    VK_KHR_swapchain_mutable_format
+info:    VK_KHR_win32_keyed_mutex
+info:    VK_AMD_buffer_marker
+info:  Enabled features:
+info:    depthBiasClamp                 : 1
+info:    depthBounds                    : 1
+info:    depthClamp                     : 1
+info:    drawIndirectFirstInstance      : 1
+info:    dualSrcBlend                   : 1
+info:    fillModeNonSolid               : 1
+info:    fragmentStoresAndAtomics       : 1
+info:    fullDrawIndexUint32            : 1
+info:    geometryShader                 : 1
+info:    imageCubeArray                 : 1
+info:    independentBlend               : 1
+info:    largePoints                    : 1
+info:    logicOp                        : 1
+info:    multiDrawIndirect              : 1
+info:    multiViewport                  : 1
+info:    occlusionQueryPrecise          : 1
+info:    pipelineStatisticsQuery        : 1
+info:    robustBufferAccess             : 1
+info:    sampleRateShading              : 1
+info:    samplerAnisotropy              : 1
+info:    shaderClipDistance             : 1
+info:    shaderCullDistance             : 1
+info:    shaderFloat64                  : 0
+info:    shaderImageGatherExtended      : 1
+info:    shaderInt16                    : 1
+info:    shaderInt64                    : 1
+info:    shaderUniformBufferArrayDynamicIndexing : 1
+info:    shaderSampledImageArrayDynamicIndexing : 1
+info:    shaderStorageBufferArrayDynamicIndexing : 1
+info:    shaderStorageImageArrayDynamicIndexing : 1
+info:    sparseBinding                  : 1
+info:    sparseResidencyBuffer          : 1
+info:    sparseResidencyImage2D         : 1
+info:    sparseResidencyImage3D         : 1
+info:    sparseResidency2Samples        : 1
+info:    sparseResidency4Samples        : 1
+info:    sparseResidency8Samples        : 1
+info:    sparseResidency16Samples       : 1
+info:    sparseResidencyAliased         : 1
+info:    shaderResourceResidency        : 1
+info:    shaderResourceMinLod           : 1
+info:    tessellationShader             : 1
+info:    textureCompressionBC           : 1
+info:    variableMultisampleRate        : 1
+info:    vertexPipelineStoresAndAtomics : 1
+info:    wideLines                      : 1
+info:    shaderDrawParameters           : 1
+info:    storageBuffer16BitAccess       : 1
+info:    storagePushConstant16          : 1
+info:    bufferDeviceAddress            : 1
+info:    descriptorIndexing             : 1
+info:    storageBuffer8BitAccess        : 1
+info:    storagePushConstant8           : 1
+info:    shaderUniformTexelBufferArrayDynamicIndexing : 1
+info:    shaderStorageTexelBufferArrayDynamicIndexing : 1
+info:    shaderUniformBufferArrayNonUniformIndexing : 1
+info:    shaderSampledImageArrayNonUniformIndexing : 1
+info:    shaderStorageBufferArrayNonUniformIndexing : 1
+info:    shaderStorageImageArrayNonUniformIndexing : 1
+info:    shaderUniformTexelBufferArrayNonUniformIndexing : 1
+info:    shaderStorageTexelBufferArrayNonUniformIndexing : 1
+info:    descriptorBindingSampledImageUpdateAfterBind : 1
+info:    descriptorBindingUpdateUnusedWhilePending : 1
+info:    descriptorBindingPartiallyBound : 1
+info:    drawIndirectCount              : 1
+info:    hostQueryReset                 : 1
+info:    runtimeDescriptorArray         : 1
+info:    samplerFilterMinmax            : 1
+info:    samplerMirrorClampToEdge       : 1
+info:    scalarBlockLayout              : 1
+info:    shaderFloat16                  : 1
+info:    shaderInt8                     : 1
+info:    shaderOutputViewportIndex      : 1
+info:    shaderOutputLayer              : 1
+info:    timelineSemaphore              : 1
+info:    uniformBufferStandardLayout    : 1
+info:    vulkanMemoryModel              : 1
+info:    inlineUniformBlock             : 1
+info:    computeFullSubgroups           : 1
+info:    dynamicRendering               : 1
+info:    maintenance4                   : 1
+info:    robustImageAccess              : 0
+info:    pipelineCreationCacheControl   : 1
+info:    shaderDemoteToHelperInvocation : 1
+info:    shaderZeroInitializeWorkgroupMemory : 1
+info:    subgroupSizeControl            : 1
+info:    synchronization2               : 1
+info:  VK_EXT_attachment_feedback_loop_layout:
+info:    attachmentFeedbackLoopLayout   : 1
+info:  VK_EXT_border_color_swizzle:
+info:    borderColorSwizzle             : 1
+info:    borderColorSwizzleFromImage    : 1
+info:  VK_EXT_conservative_rasterization:
+info:    extConservativeRasterization   : 1
+info:  VK_EXT_custom_border_color:
+info:    customBorderColors             : 1
+info:    customBorderColorWithoutFormat : 1
+info:  VK_EXT_depth_clip_enable:
+info:    depthClipEnable                : 1
+info:  VK_EXT_depth_bias_control:
+info:    depthBiasControl               : 1
+info:    leastRepresentableValueForceUnormRepresentation : 0
+info:    floatRepresentation            : 1
+info:    depthBiasExact                 : 1
+info:  VK_EXT_descriptor_buffer:
+info:    descriptorBuffer               : 0
+info:  VK_EXT_descriptor_heap:
+info:    descriptorHeap                 : 1
+info:  VK_EXT_dynamic_rendering_unused_attachments:
+info:    dynamicRenderingUnusedAttachments : 1
+info:  VK_EXT_extended_dynamic_state3:
+info:    extendedDynamicState3AlphaToCoverageEnable : 1
+info:    extendedDynamicState3DepthClipEnable : 1
+info:    extendedDynamicState3RasterizationSamples : 1
+info:    extendedDynamicState3SampleMask : 1
+info:    extendedDynamicState3LineRasterizationMode : 1
+info:    extendedDynamicState3SampleLocationsEnable : 1
+info:  VK_EXT_fragment_shader_interlock:
+info:    fragmentShaderSampleInterlock  : 1
+info:    fragmentShaderPixelInterlock   : 1
+info:  VK_EXT_full_screen_exclusive:
+info:    extFullScreenExclusive         : 0
+info:  VK_EXT_graphics_pipeline_library:
+info:    graphicsPipelineLibrary        : 1
+info:  VK_EXT_hdr_metadata:
+info:    extHdrMetadata                 : 1
+info:  VK_EXT_line_rasterization:
+info:    rectangularLines               : 1
+info:    smoothLines                    : 0
+info:  VK_EXT_memory_budget:
+info:    extMemoryBudget                : 1
+info:  VK_EXT_memory_priority:
+info:    memoryPriority                 : 0
+info:  VK_EXT_multi_draw:
+info:    multiDraw                      : 1
+info:  VK_EXT_non_seamless_cube_map:
+info:    nonSeamlessCubeMap             : 1
+info:  VK_EXT_pageable_device_local_memory:
+info:    pageableDeviceLocalMemory      : 0
+info:  VK_EXT_robustness2:
+info:    robustBufferAccess2            : 1
+info:    robustImageAccess2             : 1
+info:    nullDescriptor                 : 1
+info:  VK_EXT_sample_locations:
+info:    extSampleLocations             : 1
+info:  VK_EXT_shader_module_identifier:
+info:    shaderModuleIdentifier         : 1
+info:  VK_EXT_shader_stencil_export:
+info:    extShaderStencilExport         : 1
+info:  VK_EXT_swapchain_colorspace:
+info:    extSwapchainColorSpace         : 0
+info:  VK_EXT_swapchain_maintenance1:
+info:    swapchainMaintenance1          : 0
+info:  VK_EXT_transform_feedback:
+info:    transformFeedback              : 1
+info:    geometryStreams                : 1
+info:  VK_EXT_vertex_attribute_divisor:
+info:    vertexAttributeInstanceRateDivisor : 1
+info:    vertexAttributeInstanceRateZeroDivisor : 1
+info:  VK_KHR_device_fault:
+info:    deviceFault                    : 0
+info:    deviceFaultVendorBinary        : 0
+info:  VK_KHR_dynamic_rendering_local_read:
+info:    dynamicRenderingLocalRead      : 1
+info:  VK_KHR_external_memory_win32:
+info:    khrExternalMemoryWin32         : 1
+info:  VK_KHR_external_semaphore_win32:
+info:    khrExternalSemaphoreWin32      : 1
+info:  VK_KHR_incremental_present:
+info:    khrIncrementalPresent          : 1
+info:  VK_KHR_load_store_op_none:
+info:    khrLoadStoreOpNone             : 1
+info:  VK_KHR_maintenance5:
+info:    maintenance5                   : 1
+info:  VK_KHR_maintenance6:
+info:    maintenance6                   : 1
+info:  VK_KHR_maintenance7:
+info:    maintenance7                   : 0
+info:  VK_KHR_maintenance8:
+info:    maintenance8                   : 1
+info:  VK_KHR_maintenance9:
+info:    maintenance9                   : 1
+info:  VK_KHR_maintenance10:
+info:    maintenance10                  : 1
+info:  VK_KHR_maintenance11:
+info:    maintenance11                  : 1
+info:  VK_KHR_pipeline_library:
+info:    khrPipelineLibrary             : 1
+info:  VK_KHR_present_id:
+info:    presentId                      : 1
+info:  VK_KHR_present_id2:
+info:    presentId2                     : 0
+info:  VK_KHR_present_wait:
+info:    presentWait                    : 1
+info:  VK_KHR_present_wait2:
+info:    presentWait2                   : 0
+info:  VK_KHR_shader_float_controls2:
+info:    shaderFloatControls2           : 1
+info:  VK_KHR_shader_subgroup_uniform_control_flow:
+info:    shaderSubgroupUniformControlFlow : 1
+info:  VK_KHR_shader_untyped_pointers:
+info:    shaderUntypedPointers          : 1
+info:  VK_KHR_swapchain:
+info:    khrSwapchain                   : 1
+info:  VK_KHR_swapchain_maintenance1:
+info:    swapchainMaintenance1          : 1
+info:  VK_KHR_swapchain_mutable_format:
+info:    khrSwapchainMutableFormat      : 1
+info:  VK_KHR_unified_image_layouts:
+info:    unifiedImageLayouts            : 0
+info:  VK_KHR_win32_keyed_mutex:
+info:    khrWin32KeyedMutex             : 1
+info:  VK_AMD_buffer_marker:
+info:    amdBufferMarker                : 1
+info:  VK_NV_device_diagnostic_checkpoints:
+info:    nvDeviceDiagnosticCheckpoints  : 0
+info:  VK_NV_low_latency2:
+info:    nvLowLatency2                  : 0
+info:  VK_NV_raw_access_chains:
+info:    shaderRawAccessChains          : 0
+info:  VK_NVX_binary_import:
+info:    nvxBinaryImport                : 0
+info:  VK_NVX_image_view_handle:
+info:    nvxImageViewHandle             : 0
+info:  Descriptor sizes (set alignment: 64)
+info:    Sampler              : 32
+info:    Uniform buffer       : 64
+info:    Storage buffer       : 64
+info:    Uniform texel buffer : 64
+info:    Storage texel buffer : 64
+info:    Sampled image        : 64
+info:    Storage image        : 64
+info:    Input attachment     : 64
+info:  Memory type mask for sparse resources: 0x7
+info:  Memory type mask for buffer resources: 0x7, usage: 0x219ff
+info:  Creating sampler descriptor heap (64 kB)
+info:  Graphics pipeline libraries supported
+info:  Binding model: Descriptor heap
+info:  D3D11InternalCreateDevice: Maximum supported feature level: D3D_FEATURE_LEVEL_12_1
+info:  D3D11InternalCreateDevice: Using feature level D3D_FEATURE_LEVEL_11_0
+info:  Creating resource descriptor heap (8192 kB)
+info:  Loaded igd10iumd64.dll for Intel driver workarounds
+warn:  D3D11DXGIDevice::QueryInterface: Unknown interface query
+warn:  a7aa6116-9c8d-4bba-9083-b4d816b71b78
+warn:  D3D11DXGIDevice::QueryInterface: Unknown interface query
+warn:  ccffef16-7b69-468f-bce3-cd953369a39a
+warn:  D3D11DXGIDevice::QueryInterface: Unknown interface query
+warn:  0ec870a6-5d7e-4c22-8cfc-5baae07616ed
+info:  Presenter: Actual swapchain properties:
+info:    Format:       VK_FORMAT_B8G8R8A8_UNORM
+info:    Color space:  VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
+info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR (dynamic: yes)
+info:    Buffer size:  1920x1080
+info:    Image count:  4
+info:  Creating device:
+info:  Intel(R) Iris(R) Xe Graphics (RPL-U):
+info:    Driver   : Intel open-source Mesa driver 26.2.7
+info:  Queues:
+info:    Graphics : (0, 0)
+info:    Transfer : (0, 0)
+info:    Sparse   : (0, 0)
+info:  Memory:
+info:    Heap 0: 11.44 GiB (DEVICE_LOCAL)
+info:    Budget: 7.68 GiB
+info:      Type  0: DEVICE_LOCAL
+info:      Type  1: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
+info:      Type  2: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
+info:      Type  3: DEVICE_LOCAL | PROTECTED
+info:      Type  4: DEVICE_LOCAL
+info:      Type  5: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
+info:      Type  6: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
+info:  Enabled extensions:
+info:    VK_EXT_attachment_feedback_loop_layout
+info:    VK_EXT_border_color_swizzle
+info:    VK_EXT_conservative_rasterization
+info:    VK_EXT_custom_border_color
+info:    VK_EXT_depth_clip_enable
+info:    VK_EXT_depth_bias_control
+info:    VK_EXT_descriptor_heap
+info:    VK_EXT_dynamic_rendering_unused_attachments
+info:    VK_EXT_extended_dynamic_state3
+info:    VK_EXT_fragment_shader_interlock
+info:    VK_EXT_graphics_pipeline_library
+info:    VK_EXT_hdr_metadata
+info:    VK_EXT_line_rasterization
+info:    VK_EXT_multi_draw
+info:    VK_EXT_non_seamless_cube_map
+info:    VK_EXT_robustness2
+info:    VK_EXT_sample_locations
+info:    VK_EXT_shader_module_identifier
+info:    VK_EXT_shader_stencil_export
+info:    VK_EXT_transform_feedback
+info:    VK_EXT_vertex_attribute_divisor
+info:    VK_KHR_dynamic_rendering_local_read
+info:    VK_KHR_external_memory_win32
+info:    VK_KHR_external_semaphore_win32
+info:    VK_KHR_incremental_present
+info:    VK_KHR_load_store_op_none
+info:    VK_KHR_maintenance5
+info:    VK_KHR_maintenance6
+info:    VK_KHR_maintenance8
+info:    VK_KHR_maintenance9
+info:    VK_KHR_maintenance10
+info:    VK_KHR_maintenance11
+info:    VK_KHR_pipeline_library
+info:    VK_KHR_present_id
+info:    VK_KHR_present_wait
+info:    VK_KHR_shader_float_controls2
+info:    VK_KHR_shader_subgroup_uniform_control_flow
+info:    VK_KHR_shader_untyped_pointers
+info:    VK_KHR_swapchain
+info:    VK_KHR_swapchain_maintenance1
+info:    VK_KHR_swapchain_mutable_format
+info:    VK_KHR_win32_keyed_mutex
+info:    VK_AMD_buffer_marker
+info:  Enabled features:
+info:    depthBiasClamp                 : 1
+info:    depthBounds                    : 1
+info:    depthClamp                     : 1
+info:    drawIndirectFirstInstance      : 1
+info:    dualSrcBlend                   : 1
+info:    fillModeNonSolid               : 1
+info:    fragmentStoresAndAtomics       : 1
+info:    fullDrawIndexUint32            : 1
+info:    geometryShader                 : 1
+info:    imageCubeArray                 : 1
+info:    independentBlend               : 1
+info:    largePoints                    : 1
+info:    logicOp                        : 1
+info:    multiDrawIndirect              : 1
+info:    multiViewport                  : 1
+info:    occlusionQueryPrecise          : 1
+info:    pipelineStatisticsQuery        : 1
+info:    robustBufferAccess             : 1
+info:    sampleRateShading              : 1
+info:    samplerAnisotropy              : 1
+info:    shaderClipDistance             : 1
+info:    shaderCullDistance             : 1
+info:    shaderFloat64                  : 0
+info:    shaderImageGatherExtended      : 1
+info:    shaderInt16                    : 1
+info:    shaderInt64                    : 1
+info:    shaderUniformBufferArrayDynamicIndexing : 1
+info:    shaderSampledImageArrayDynamicIndexing : 1
+info:    shaderStorageBufferArrayDynamicIndexing : 1
+info:    shaderStorageImageArrayDynamicIndexing : 1
+info:    sparseBinding                  : 1
+info:    sparseResidencyBuffer          : 1
+info:    sparseResidencyImage2D         : 1
+info:    sparseResidencyImage3D         : 1
+info:    sparseResidency2Samples        : 1
+info:    sparseResidency4Samples        : 1
+info:    sparseResidency8Samples        : 1
+info:    sparseResidency16Samples       : 1
+info:    sparseResidencyAliased         : 1
+info:    shaderResourceResidency        : 1
+info:    shaderResourceMinLod           : 1
+info:    tessellationShader             : 1
+info:    textureCompressionBC           : 1
+info:    variableMultisampleRate        : 1
+info:    vertexPipelineStoresAndAtomics : 1
+info:    wideLines                      : 1
+info:    shaderDrawParameters           : 1
+info:    storageBuffer16BitAccess       : 1
+info:    storagePushConstant16          : 1
+info:    bufferDeviceAddress            : 1
+info:    descriptorIndexing             : 1
+info:    storageBuffer8BitAccess        : 1
+info:    storagePushConstant8           : 1
+info:    shaderUniformTexelBufferArrayDynamicIndexing : 1
+info:    shaderStorageTexelBufferArrayDynamicIndexing : 1
+info:    shaderUniformBufferArrayNonUniformIndexing : 1
+info:    shaderSampledImageArrayNonUniformIndexing : 1
+info:    shaderStorageBufferArrayNonUniformIndexing : 1
+info:    shaderStorageImageArrayNonUniformIndexing : 1
+info:    shaderUniformTexelBufferArrayNonUniformIndexing : 1
+info:    shaderStorageTexelBufferArrayNonUniformIndexing : 1
+info:    descriptorBindingSampledImageUpdateAfterBind : 1
+info:    descriptorBindingUpdateUnusedWhilePending : 1
+info:    descriptorBindingPartiallyBound : 1
+info:    drawIndirectCount              : 1
+info:    hostQueryReset                 : 1
+info:    runtimeDescriptorArray         : 1
+info:    samplerFilterMinmax            : 1
+info:    samplerMirrorClampToEdge       : 1
+info:    scalarBlockLayout              : 1
+info:    shaderFloat16                  : 1
+info:    shaderInt8                     : 1
+info:    shaderOutputViewportIndex      : 1
+info:    shaderOutputLayer              : 1
+info:    timelineSemaphore              : 1
+info:    uniformBufferStandardLayout    : 1
+info:    vulkanMemoryModel              : 1
+info:    inlineUniformBlock             : 1
+info:    computeFullSubgroups           : 1
+info:    dynamicRendering               : 1
+info:    maintenance4                   : 1
+info:    robustImageAccess              : 0
+info:    pipelineCreationCacheControl   : 1
+info:    shaderDemoteToHelperInvocation : 1
+info:    shaderZeroInitializeWorkgroupMemory : 1
+info:    subgroupSizeControl            : 1
+info:    synchronization2               : 1
+info:  VK_EXT_attachment_feedback_loop_layout:
+info:    attachmentFeedbackLoopLayout   : 1
+info:  VK_EXT_border_color_swizzle:
+info:    borderColorSwizzle             : 1
+info:    borderColorSwizzleFromImage    : 1
+info:  VK_EXT_conservative_rasterization:
+info:    extConservativeRasterization   : 1
+info:  VK_EXT_custom_border_color:
+info:    customBorderColors             : 1
+info:    customBorderColorWithoutFormat : 1
+info:  VK_EXT_depth_clip_enable:
+info:    depthClipEnable                : 1
+info:  VK_EXT_depth_bias_control:
+info:    depthBiasControl               : 1
+info:    leastRepresentableValueForceUnormRepresentation : 0
+info:    floatRepresentation            : 1
+info:    depthBiasExact                 : 1
+info:  VK_EXT_descriptor_buffer:
+info:    descriptorBuffer               : 0
+info:  VK_EXT_descriptor_heap:
+info:    descriptorHeap                 : 1
+info:  VK_EXT_dynamic_rendering_unused_attachments:
+info:    dynamicRenderingUnusedAttachments : 1
+info:  VK_EXT_extended_dynamic_state3:
+info:    extendedDynamicState3AlphaToCoverageEnable : 1
+info:    extendedDynamicState3DepthClipEnable : 1
+info:    extendedDynamicState3RasterizationSamples : 1
+info:    extendedDynamicState3SampleMask : 1
+info:    extendedDynamicState3LineRasterizationMode : 1
+info:    extendedDynamicState3SampleLocationsEnable : 1
+info:  VK_EXT_fragment_shader_interlock:
+info:    fragmentShaderSampleInterlock  : 1
+info:    fragmentShaderPixelInterlock   : 1
+info:  VK_EXT_full_screen_exclusive:
+info:    extFullScreenExclusive         : 0
+info:  VK_EXT_graphics_pipeline_library:
+info:    graphicsPipelineLibrary        : 1
+info:  VK_EXT_hdr_metadata:
+info:    extHdrMetadata                 : 1
+info:  VK_EXT_line_rasterization:
+info:    rectangularLines               : 1
+info:    smoothLines                    : 0
+info:  VK_EXT_memory_budget:
+info:    extMemoryBudget                : 1
+info:  VK_EXT_memory_priority:
+info:    memoryPriority                 : 0
+info:  VK_EXT_multi_draw:
+info:    multiDraw                      : 1
+info:  VK_EXT_non_seamless_cube_map:
+info:    nonSeamlessCubeMap             : 1
+info:  VK_EXT_pageable_device_local_memory:
+info:    pageableDeviceLocalMemory      : 0
+info:  VK_EXT_robustness2:
+info:    robustBufferAccess2            : 1
+info:    robustImageAccess2             : 1
+info:    nullDescriptor                 : 1
+info:  VK_EXT_sample_locations:
+info:    extSampleLocations             : 1
+info:  VK_EXT_shader_module_identifier:
+info:    shaderModuleIdentifier         : 1
+info:  VK_EXT_shader_stencil_export:
+info:    extShaderStencilExport         : 1
+info:  VK_EXT_swapchain_colorspace:
+info:    extSwapchainColorSpace         : 0
+info:  VK_EXT_swapchain_maintenance1:
+info:    swapchainMaintenance1          : 0
+info:  VK_EXT_transform_feedback:
+info:    transformFeedback              : 1
+info:    geometryStreams                : 1
+info:  VK_EXT_vertex_attribute_divisor:
+info:    vertexAttributeInstanceRateDivisor : 1
+info:    vertexAttributeInstanceRateZeroDivisor : 1
+info:  VK_KHR_device_fault:
+info:    deviceFault                    : 0
+info:    deviceFaultVendorBinary        : 0
+info:  VK_KHR_dynamic_rendering_local_read:
+info:    dynamicRenderingLocalRead      : 1
+info:  VK_KHR_external_memory_win32:
+info:    khrExternalMemoryWin32         : 1
+info:  VK_KHR_external_semaphore_win32:
+info:    khrExternalSemaphoreWin32      : 1
+info:  VK_KHR_incremental_present:
+info:    khrIncrementalPresent          : 1
+info:  VK_KHR_load_store_op_none:
+info:    khrLoadStoreOpNone             : 1
+info:  VK_KHR_maintenance5:
+info:    maintenance5                   : 1
+info:  VK_KHR_maintenance6:
+info:    maintenance6                   : 1
+info:  VK_KHR_maintenance7:
+info:    maintenance7                   : 0
+info:  VK_KHR_maintenance8:
+info:    maintenance8                   : 1
+info:  VK_KHR_maintenance9:
+info:    maintenance9                   : 1
+info:  VK_KHR_maintenance10:
+info:    maintenance10                  : 1
+info:  VK_KHR_maintenance11:
+info:    maintenance11                  : 1
+info:  VK_KHR_pipeline_library:
+info:    khrPipelineLibrary             : 1
+info:  VK_KHR_present_id:
+info:    presentId                      : 1
+info:  VK_KHR_present_id2:
+info:    presentId2                     : 0
+info:  VK_KHR_present_wait:
+info:    presentWait                    : 1
+info:  VK_KHR_present_wait2:
+info:    presentWait2                   : 0
+info:  VK_KHR_shader_float_controls2:
+info:    shaderFloatControls2           : 1
+info:  VK_KHR_shader_subgroup_uniform_control_flow:
+info:    shaderSubgroupUniformControlFlow : 1
+info:  VK_KHR_shader_untyped_pointers:
+info:    shaderUntypedPointers          : 1
+info:  VK_KHR_swapchain:
+info:    khrSwapchain                   : 1
+info:  VK_KHR_swapchain_maintenance1:
+info:    swapchainMaintenance1          : 1
+info:  VK_KHR_swapchain_mutable_format:
+info:    khrSwapchainMutableFormat      : 1
+info:  VK_KHR_unified_image_layouts:
+info:    unifiedImageLayouts            : 0
+info:  VK_KHR_win32_keyed_mutex:
+info:    khrWin32KeyedMutex             : 1
+info:  VK_AMD_buffer_marker:
+info:    amdBufferMarker                : 1
+info:  VK_NV_device_diagnostic_checkpoints:
+info:    nvDeviceDiagnosticCheckpoints  : 0
+info:  VK_NV_low_latency2:
+info:    nvLowLatency2                  : 0
+info:  VK_NV_raw_access_chains:
+info:    shaderRawAccessChains          : 0
+info:  VK_NVX_binary_import:
+info:    nvxBinaryImport                : 0
+info:  VK_NVX_image_view_handle:
+info:    nvxImageViewHandle             : 0
+info:  Descriptor sizes (set alignment: 64)
+info:    Sampler              : 32
+info:    Uniform buffer       : 64
+info:    Storage buffer       : 64
+info:    Uniform texel buffer : 64
+info:    Storage texel buffer : 64
+info:    Sampled image        : 64
+info:    Storage image        : 64
+info:    Input attachment     : 64
+info:  Memory type mask for sparse resources: 0x7
+info:  Memory type mask for buffer resources: 0x7, usage: 0x219ff
+info:  Creating sampler descriptor heap (64 kB)
+info:  Graphics pipeline libraries supported
+info:  Binding model: Descriptor heap
+info:  D3D11InternalCreateDevice: Maximum supported feature level: D3D_FEATURE_LEVEL_12_1
+info:  D3D11InternalCreateDevice: Using feature level D3D_FEATURE_LEVEL_11_0
+info:  Creating resource descriptor heap (8192 kB)
+info:  Loaded igd10iumd64.dll for Intel driver workarounds
+info:  Found cache file: C:\users\steamuser\AppData\Local\dxvk\ab2bf56732e900e8.dxvk.bin
+info:  Cache: 992 shaders (9.1 MB)
+info:  DXVK: Using 12 compiler threads
+info:  Presenter: Got VK_SUBOPTIMAL_KHR, recreating swapchain
+info:  Presenter: Actual swapchain properties:
+info:    Format:       VK_FORMAT_B8G8R8A8_UNORM
+info:    Color space:  VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
+info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR (dynamic: yes)
+info:    Buffer size:  1920x1080
+info:    Image count:  4
+info:  Presenter: Got VK_SUBOPTIMAL_KHR, recreating swapchain
+info:  Presenter: Actual swapchain properties:
+info:    Format:       VK_FORMAT_B8G8R8A8_UNORM
+info:    Color space:  VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
+info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR (dynamic: yes)
+info:    Buffer size:  1920x1080
+info:    Image count:  4
+info:  Presenter: Got VK_SUBOPTIMAL_KHR, recreating swapchain
+info:  Presenter: Actual swapchain properties:
+info:    Format:       VK_FORMAT_B8G8R8A8_UNORM
+info:    Color space:  VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
+info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR (dynamic: yes)
+info:    Buffer size:  1920x1080
+info:    Image count:  4
+err:   DXVK: Hang detected:
+err:   Queue family 0, index 0
+err:   Last command completed: 115739
+err:   Last command started:   115740
+err:   115466: Barrier (0, 275): 0x18f8:0x1820 -> 0x18f8:0x1820
+err:   115467: Color pass 1 (0: Image (12555))
+err:   115468: BeginRendering
+err:   115469: [vs.f7a998e] [fs.c103e76] 
+err:   115470: Draw (4, 1)
+err:   115471: EndRendering
+err:   115472: Barrier (1, 0): 0x48c:0x100 -> 0x1cfc:0x19ac
+err:   115473: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115474: Color pass 2 (0: Image (12556))
+err:   115475: BeginRendering
+err:   115476: [vs.f7a998e] [fs.c103e76] 
+err:   115477: Draw (4, 1)
+err:   115539: EndRendering
+err:   115540: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115541: CopyBufferToImage
+err:   115542: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115543: CopyBufferToImage
+err:   115544: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115545: CopyBufferToImage
+err:   115546: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115547: CopyBufferToImage
+err:   115548: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115549: CopyBufferToImage
+err:   115550: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115551: CopyBufferToImage
+err:   115552: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115553: CopyBufferToImage
+err:   115555: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115556: CopyBufferToImage
+err:   115557: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115558: CopyBufferToImage
+err:   115559: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115560: CopyBufferToImage
+err:   115561: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115562: CopyBufferToImage
+err:   115563: Barrier (1, 0): 0x148c:0x1100 -> 0x1cfc:0x19ac
+err:   115564: Barrier (0, 2): 0x18f8:0x1820 -> 0x1000:0x1800
+err:   115565: CopyImage
+err:   115566: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x800
+err:   115567: CopyImage
+err:   115568: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1820
+err:   115569: Barrier (0, 7): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115570: [cs.978ad12]
+err:   115571: Relaxed sync
+err:   115572: Dispatch (2, 2, 1)
+err:   115573: CopyImage
+err:   115574: Barrier (1, 0): 0x1800:0x1040 -> 0x18f8:0x1868
+err:   115575: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
+err:   115576: [cs.b7cbd11]
+err:   115577: Dispatch (8192, 1, 1)
+err:   115578: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115579: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
+err:   115580: CopyImage
+err:   115581: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
+err:   115582: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
+err:   115583: [cs.5eba86e]
+err:   115584: Dispatch (8192, 1, 1)
+err:   115585: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115586: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
+err:   115587: CopyImage
+err:   115588: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
+err:   115589: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
+err:   115590: [cs.6ba882a]
+err:   115591: Dispatch (8192, 1, 1)
+err:   115592: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115593: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
+err:   115594: CopyImage
+err:   115595: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
+err:   115596: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
+err:   115597: [cs.c8cd84a]
+err:   115598: Dispatch (8192, 1, 1)
+err:   115599: [cs.b4cc6c5]
+err:   115600: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115601: Dispatch (8192, 1, 1)
+err:   115603: Color pass 3 (0: Image (14539))
+err:   115604: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
+err:   115605: BeginRendering
+err:   115606: [vs.48f2196] [fs.f6ee148] 
+err:   115607: DrawIndexed (48, 1)
+err:   115608: EndRendering
+err:   115609: Barrier (1, 0): 0xc0c:0x140 -> 0x1cfc:0x19ee
+err:   115610: Color pass 4 (0: Image (14539))
+err:   115611: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115612: BeginRendering
+err:   115613: [vs.48f2196] [fs.f6ee148] 
+err:   115614: DrawIndexed (48, 1)
+err:   115615: EndRendering
+err:   115616: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115617: Color pass 5 (0: Image (14539))
+err:   115618: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115619: BeginRendering
+err:   115620: [vs.48f2196] [fs.f6ee148] 
+err:   115621: DrawIndexed (48, 1)
+err:   115622: EndRendering
+err:   115623: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115624: Color pass 6 (0: Image (14539))
+err:   115625: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115626: BeginRendering
+err:   115627: [vs.48f2196] [fs.f6ee148] 
+err:   115628: DrawIndexed (48, 1)
+err:   115629: EndRendering
+err:   115630: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115631: Color pass 7 (0: Image (14539))
+err:   115632: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115633: BeginRendering
+err:   115634: [vs.48f2196] [fs.f6ee148] 
+err:   115635: DrawIndexed (48, 1)
+err:   115636: EndRendering
+err:   115637: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115638: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115639: Color pass 8 (0: Image (14541))
+err:   115640: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
+err:   115641: BeginRendering
+err:   115642: [vs.48f2196] [fs.f6ee148] 
+err:   115643: DrawIndexed (48, 1)
+err:   115644: EndRendering
+err:   115645: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115646: Color pass 9 (0: Image (14541))
+err:   115647: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115648: BeginRendering
+err:   115649: [vs.48f2196] [fs.f6ee148] 
+err:   115650: DrawIndexed (48, 1)
+err:   115651: EndRendering
+err:   115652: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115653: Color pass 10 (0: Image (14541))
+err:   115654: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115655: BeginRendering
+err:   115656: [vs.48f2196] [fs.f6ee148] 
+err:   115657: DrawIndexed (48, 1)
+err:   115658: EndRendering
+err:   115659: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115660: Color pass 11 (0: Image (14541))
+err:   115661: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115662: BeginRendering
+err:   115663: [vs.48f2196] [fs.f6ee148] 
+err:   115664: DrawIndexed (48, 1)
+err:   115665: EndRendering
+err:   115666: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115667: Color pass 12 (0: Image (14541))
+err:   115668: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115669: BeginRendering
+err:   115670: [vs.48f2196] [fs.f6ee148] 
+err:   115671: DrawIndexed (48, 1)
+err:   115672: EndRendering
+err:   115673: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115674: Color pass 13 (0: Image (14541))
+err:   115675: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115676: BeginRendering
+err:   115677: [vs.48f2196] [fs.f6ee148] 
+err:   115678: DrawIndexed (48, 1)
+err:   115679: EndRendering
+err:   115680: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115681: Color pass 14 (0: Image (14541))
+err:   115682: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115683: BeginRendering
+err:   115684: [vs.48f2196] [fs.f6ee148] 
+err:   115685: DrawIndexed (48, 1)
+err:   115686: EndRendering
+err:   115687: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115688: Color pass 15 (0: Image (14541))
+err:   115689: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115690: BeginRendering
+err:   115691: [vs.48f2196] [fs.f6ee148] 
+err:   115692: DrawIndexed (48, 1)
+err:   115693: EndRendering
+err:   115694: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115695: Color pass 16 (0: Image (14541))
+err:   115696: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115697: BeginRendering
+err:   115698: [vs.48f2196] [fs.f6ee148] 
+err:   115699: DrawIndexed (48, 1)
+err:   115700: EndRendering
+err:   115701: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115702: Color pass 17 (0: Image (14541))
+err:   115703: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115704: BeginRendering
+err:   115705: [vs.48f2196] [fs.f6ee148] 
+err:   115706: DrawIndexed (48, 1)
+err:   115707: EndRendering
+err:   115708: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115709: Color pass 18 (0: Image (14541))
+err:   115710: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115711: BeginRendering
+err:   115712: [vs.48f2196] [fs.f6ee148] 
+err:   115713: DrawIndexed (48, 1)
+err:   115714: EndRendering
+err:   115715: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115716: Color pass 19 (0: Image (14541))
+err:   115717: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115718: BeginRendering
+err:   115719: [vs.48f2196] [fs.f6ee148] 
+err:   115720: DrawIndexed (48, 1)
+err:   115721: EndRendering
+err:   115722: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115723: Color pass 20 (0: Image (14541))
+err:   115724: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115725: BeginRendering
+err:   115726: [vs.48f2196] [fs.f6ee148] 
+err:   115727: DrawIndexed (48, 1)
+err:   115728: EndRendering
+err:   115729: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115730: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115731: [cs.e2ef3e6]
+err:   115732: Dispatch (76, 1, 1)
+err:   115733: [cs.e2ef3e6]
+err:   115734: Dispatch (17, 1, 1)
+err:   115735: [cs.9b4aefd]
+err:   115736: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115737: Dispatch (1, 1, 1)
+err:   115738: [cs.8baa63f]
+err:   115739: Barrier (1, 0): 0x800:0x40 -> 0x18fe:0x186d
+err:   !!! Potential hang region BEGIN !!!
+err:   115740: Dispatch (16, 1, 1)
+err:   !!! Potential hang region END !!!
+err:   115741: Barrier (1, 0): 0x800:0x40 -> 0x1cfe:0x19ed
+err:   115742: Color pass 21 (0: Image (14570))
+err:   115743: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
+err:   115744: BeginRendering
+err:   115745: [vs.3bdc4b2] [fs.0ea55b5] 
+err:   115746: DrawIndexedIndirect (1, 0)
+err:   115747: EndRendering
+err:   115748: Barrier (1, 0): 0x40e:0x100 -> 0x1cfe:0x19ef
+err:   115749: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115750: [cs.05834bf]
+err:   115751: Relaxed sync
+err:   115752: DispatchIndirect
+err:   115753: [cs.d545f90]
+err:   115754: Dispatch (1, 1, 1)
+err:   115755: [cs.e36db06]
+err:   115756: Barrier (1, 0): 0x802:0x40 -> 0x1cfe:0x19ed
+err:   115757: DispatchIndirect
+err:   115758: CopyBuffer
+err:   115763: Barrier (1, 0): 0x1802:0x1040 -> 0x58fe:0x386d

@@ -7,7 +7,7 @@ info:    Transfer : (0, 0)
 info:    Sparse   : (0, 0)
 info:  Memory:
 info:    Heap 0: 11.44 GiB (DEVICE_LOCAL)
-info:    Budget: 8.1 GiB
+info:    Budget: 7.86 GiB
 info:      Type  0: DEVICE_LOCAL
 info:      Type  1: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
 info:      Type  2: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
@@ -311,7 +311,7 @@ info:    Transfer : (0, 0)
 info:    Sparse   : (0, 0)
 info:  Memory:
 info:    Heap 0: 11.44 GiB (DEVICE_LOCAL)
-info:    Budget: 8.3 GiB
+info:    Budget: 7.86 GiB
 info:      Type  0: DEVICE_LOCAL
 info:      Type  1: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
 info:      Type  2: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
@@ -627,7 +627,7 @@ info:    Transfer : (0, 0)
 info:    Sparse   : (0, 0)
 info:  Memory:
 info:    Heap 0: 11.44 GiB (DEVICE_LOCAL)
-info:    Budget: 7.73 GiB
+info:    Budget: 7.68 GiB
 info:      Type  0: DEVICE_LOCAL
 info:      Type  1: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT
 info:      Type  2: DEVICE_LOCAL | HOST_VISIBLE | HOST_COHERENT | HOST_CACHED
@@ -923,29 +923,8 @@ info:  D3D11InternalCreateDevice: Using feature level D3D_FEATURE_LEVEL_11_0
 info:  Creating resource descriptor heap (8192 kB)
 info:  Loaded igd10iumd64.dll for Intel driver workarounds
 info:  Found cache file: C:\users\steamuser\AppData\Local\dxvk\ab2bf56732e900e8.dxvk.bin
-info:  Cache: 224 shaders (1.6 MB)
+info:  Cache: 992 shaders (9.1 MB)
 info:  DXVK: Using 12 compiler threads
-info:  Presenter: Got VK_SUBOPTIMAL_KHR, recreating swapchain
-info:  Presenter: Actual swapchain properties:
-info:    Format:       VK_FORMAT_B8G8R8A8_UNORM
-info:    Color space:  VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
-info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR (dynamic: yes)
-info:    Buffer size:  1920x1080
-info:    Image count:  4
-info:  Presenter: Got VK_SUBOPTIMAL_KHR, recreating swapchain
-info:  Presenter: Actual swapchain properties:
-info:    Format:       VK_FORMAT_B8G8R8A8_UNORM
-info:    Color space:  VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
-info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR (dynamic: yes)
-info:    Buffer size:  1920x1080
-info:    Image count:  4
-info:  Presenter: Got VK_SUBOPTIMAL_KHR, recreating swapchain
-info:  Presenter: Actual swapchain properties:
-info:    Format:       VK_FORMAT_B8G8R8A8_UNORM
-info:    Color space:  VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
-info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR (dynamic: yes)
-info:    Buffer size:  1920x1080
-info:    Image count:  4
 info:  Presenter: Got VK_SUBOPTIMAL_KHR, recreating swapchain
 info:  Presenter: Actual swapchain properties:
 info:    Format:       VK_FORMAT_B8G8R8A8_UNORM
@@ -969,273 +948,238 @@ info:    Buffer size:  1920x1080
 info:    Image count:  4
 err:   DXVK: Hang detected:
 err:   Queue family 0, index 0
-err:   Last command completed: 99707
-err:   Last command started:   99708
-err:    99434: Barrier (0, 275): 0x18f8:0x1820 -> 0x18f8:0x1820
-err:    99435: Color pass 1 (0: Image (12082))
-err:    99436: BeginRendering
-err:    99437: [vs.f7a998e] [fs.c103e76] 
-err:    99438: Draw (4, 1)
-err:    99439: EndRendering
-err:    99440: Barrier (1, 0): 0x48c:0x100 -> 0x1cfc:0x19ac
-err:    99441: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99442: Color pass 2 (0: Image (12078))
-err:    99443: BeginRendering
-err:    99444: [vs.f7a998e] [fs.c103e76] 
-err:    99445: Draw (4, 1)
-err:    99507: EndRendering
-err:    99508: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99509: CopyBufferToImage
-err:    99510: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99511: CopyBufferToImage
-err:    99512: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99513: CopyBufferToImage
-err:    99514: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99515: CopyBufferToImage
-err:    99516: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99517: CopyBufferToImage
-err:    99518: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99519: CopyBufferToImage
-err:    99520: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99521: CopyBufferToImage
-err:    99523: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99524: CopyBufferToImage
-err:    99525: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99526: CopyBufferToImage
-err:    99527: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99528: CopyBufferToImage
-err:    99529: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
-err:    99530: CopyBufferToImage
-err:    99531: Barrier (1, 0): 0x148c:0x1100 -> 0x1cfc:0x19ac
-err:    99532: Barrier (0, 2): 0x18f8:0x1820 -> 0x1000:0x1800
-err:    99533: CopyImage
-err:    99534: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x800
-err:    99535: CopyImage
-err:    99536: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1820
-err:    99537: Barrier (0, 7): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99538: [cs.978ad12]
-err:    99539: Relaxed sync
-err:    99540: Dispatch (2, 2, 1)
-err:    99541: CopyImage
-err:    99542: Barrier (1, 0): 0x1800:0x1040 -> 0x18f8:0x1868
-err:    99543: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
-err:    99544: [cs.b7cbd11]
-err:    99545: Dispatch (8192, 1, 1)
-err:    99546: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
-err:    99547: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
-err:    99548: CopyImage
-err:    99549: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
-err:    99550: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
-err:    99551: [cs.5eba86e]
-err:    99552: Dispatch (8192, 1, 1)
-err:    99553: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
-err:    99554: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
-err:    99555: CopyImage
-err:    99556: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
-err:    99557: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
-err:    99558: [cs.6ba882a]
-err:    99559: Dispatch (8192, 1, 1)
-err:    99560: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
-err:    99561: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
-err:    99562: CopyImage
-err:    99563: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
-err:    99564: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
-err:    99565: [cs.c8cd84a]
-err:    99566: Dispatch (8192, 1, 1)
-err:    99567: [cs.b4cc6c5]
-err:    99568: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
-err:    99569: Dispatch (8192, 1, 1)
-err:    99571: Color pass 3 (0: Image (14061))
-err:    99572: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
-err:    99573: BeginRendering
-err:    99574: [vs.48f2196] [fs.f6ee148] 
-err:    99575: DrawIndexed (48, 1)
-err:    99576: EndRendering
-err:    99577: Barrier (1, 0): 0xc0c:0x140 -> 0x1cfc:0x19ee
-err:    99578: Color pass 4 (0: Image (14061))
-err:    99579: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99580: BeginRendering
-err:    99581: [vs.48f2196] [fs.f6ee148] 
-err:    99582: DrawIndexed (48, 1)
-err:    99583: EndRendering
-err:    99584: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99585: Color pass 5 (0: Image (14061))
-err:    99586: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99587: BeginRendering
-err:    99588: [vs.48f2196] [fs.f6ee148] 
-err:    99589: DrawIndexed (48, 1)
-err:    99590: EndRendering
-err:    99591: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99592: Color pass 6 (0: Image (14061))
-err:    99593: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99594: BeginRendering
-err:    99595: [vs.48f2196] [fs.f6ee148] 
-err:    99596: DrawIndexed (48, 1)
-err:    99597: EndRendering
-err:    99598: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99599: Color pass 7 (0: Image (14061))
-err:    99600: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99601: BeginRendering
-err:    99602: [vs.48f2196] [fs.f6ee148] 
-err:    99603: DrawIndexed (48, 1)
-err:    99604: EndRendering
-err:    99605: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99606: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99607: Color pass 8 (0: Image (14063))
-err:    99608: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
-err:    99609: BeginRendering
-err:    99610: [vs.48f2196] [fs.f6ee148] 
-err:    99611: DrawIndexed (48, 1)
-err:    99612: EndRendering
-err:    99613: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99614: Color pass 9 (0: Image (14063))
-err:    99615: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99616: BeginRendering
-err:    99617: [vs.48f2196] [fs.f6ee148] 
-err:    99618: DrawIndexed (48, 1)
-err:    99619: EndRendering
-err:    99620: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99621: Color pass 10 (0: Image (14063))
-err:    99622: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99623: BeginRendering
-err:    99624: [vs.48f2196] [fs.f6ee148] 
-err:    99625: DrawIndexed (48, 1)
-err:    99626: EndRendering
-err:    99627: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99628: Color pass 11 (0: Image (14063))
-err:    99629: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99630: BeginRendering
-err:    99631: [vs.48f2196] [fs.f6ee148] 
-err:    99632: DrawIndexed (48, 1)
-err:    99633: EndRendering
-err:    99634: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99635: Color pass 12 (0: Image (14063))
-err:    99636: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99637: BeginRendering
-err:    99638: [vs.48f2196] [fs.f6ee148] 
-err:    99639: DrawIndexed (48, 1)
-err:    99640: EndRendering
-err:    99641: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99642: Color pass 13 (0: Image (14063))
-err:    99643: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99644: BeginRendering
-err:    99645: [vs.48f2196] [fs.f6ee148] 
-err:    99646: DrawIndexed (48, 1)
-err:    99647: EndRendering
-err:    99648: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99649: Color pass 14 (0: Image (14063))
-err:    99650: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99651: BeginRendering
-err:    99652: [vs.48f2196] [fs.f6ee148] 
-err:    99653: DrawIndexed (48, 1)
-err:    99654: EndRendering
-err:    99655: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99656: Color pass 15 (0: Image (14063))
-err:    99657: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99658: BeginRendering
-err:    99659: [vs.48f2196] [fs.f6ee148] 
-err:    99660: DrawIndexed (48, 1)
-err:    99661: EndRendering
-err:    99662: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99663: Color pass 16 (0: Image (14063))
-err:    99664: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99665: BeginRendering
-err:    99666: [vs.48f2196] [fs.f6ee148] 
-err:    99667: DrawIndexed (48, 1)
-err:    99668: EndRendering
-err:    99669: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99670: Color pass 17 (0: Image (14063))
-err:    99671: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99672: BeginRendering
-err:    99673: [vs.48f2196] [fs.f6ee148] 
-err:    99674: DrawIndexed (48, 1)
-err:    99675: EndRendering
-err:    99676: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99677: Color pass 18 (0: Image (14063))
-err:    99678: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99679: BeginRendering
-err:    99680: [vs.48f2196] [fs.f6ee148] 
-err:    99681: DrawIndexed (48, 1)
-err:    99682: EndRendering
-err:    99683: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99684: Color pass 19 (0: Image (14063))
-err:    99685: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99686: BeginRendering
-err:    99687: [vs.48f2196] [fs.f6ee148] 
-err:    99688: DrawIndexed (48, 1)
-err:    99689: EndRendering
-err:    99690: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99691: Color pass 20 (0: Image (14063))
-err:    99692: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99693: BeginRendering
-err:    99694: [vs.48f2196] [fs.f6ee148] 
-err:    99695: DrawIndexed (48, 1)
-err:    99696: EndRendering
-err:    99697: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
-err:    99698: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99699: [cs.e2ef3e6]
-err:    99700: Dispatch (76, 1, 1)
-err:    99701: [cs.e2ef3e6]
-err:    99702: Dispatch (17, 1, 1)
-err:    99703: [cs.9b4aefd]
-err:    99704: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
-err:    99705: Dispatch (1, 1, 1)
-err:    99706: [cs.8baa63f]
-err:    99707: Barrier (1, 0): 0x800:0x40 -> 0x18fe:0x186d
+err:   Last command completed: 115739
+err:   Last command started:   115740
+err:   115466: Barrier (0, 275): 0x18f8:0x1820 -> 0x18f8:0x1820
+err:   115467: Color pass 1 (0: Image (12555))
+err:   115468: BeginRendering
+err:   115469: [vs.f7a998e] [fs.c103e76] 
+err:   115470: Draw (4, 1)
+err:   115471: EndRendering
+err:   115472: Barrier (1, 0): 0x48c:0x100 -> 0x1cfc:0x19ac
+err:   115473: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115474: Color pass 2 (0: Image (12556))
+err:   115475: BeginRendering
+err:   115476: [vs.f7a998e] [fs.c103e76] 
+err:   115477: Draw (4, 1)
+err:   115539: EndRendering
+err:   115540: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115541: CopyBufferToImage
+err:   115542: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115543: CopyBufferToImage
+err:   115544: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115545: CopyBufferToImage
+err:   115546: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115547: CopyBufferToImage
+err:   115548: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115549: CopyBufferToImage
+err:   115550: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115551: CopyBufferToImage
+err:   115552: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115553: CopyBufferToImage
+err:   115555: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115556: CopyBufferToImage
+err:   115557: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115558: CopyBufferToImage
+err:   115559: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115560: CopyBufferToImage
+err:   115561: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x1000
+err:   115562: CopyBufferToImage
+err:   115563: Barrier (1, 0): 0x148c:0x1100 -> 0x1cfc:0x19ac
+err:   115564: Barrier (0, 2): 0x18f8:0x1820 -> 0x1000:0x1800
+err:   115565: CopyImage
+err:   115566: Barrier (0, 1): 0x18f8:0x1820 -> 0x1000:0x800
+err:   115567: CopyImage
+err:   115568: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1820
+err:   115569: Barrier (0, 7): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115570: [cs.978ad12]
+err:   115571: Relaxed sync
+err:   115572: Dispatch (2, 2, 1)
+err:   115573: CopyImage
+err:   115574: Barrier (1, 0): 0x1800:0x1040 -> 0x18f8:0x1868
+err:   115575: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
+err:   115576: [cs.b7cbd11]
+err:   115577: Dispatch (8192, 1, 1)
+err:   115578: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115579: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
+err:   115580: CopyImage
+err:   115581: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
+err:   115582: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
+err:   115583: [cs.5eba86e]
+err:   115584: Dispatch (8192, 1, 1)
+err:   115585: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115586: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
+err:   115587: CopyImage
+err:   115588: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
+err:   115589: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
+err:   115590: [cs.6ba882a]
+err:   115591: Dispatch (8192, 1, 1)
+err:   115592: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115593: Barrier (0, 2): 0x18f8:0x1860 -> 0x1000:0x1800
+err:   115594: CopyImage
+err:   115595: Barrier (1, 0): 0x1000:0x1000 -> 0x18f8:0x1860
+err:   115596: Barrier (0, 2): 0x18f8:0x1860 -> 0x18f8:0x1860
+err:   115597: [cs.c8cd84a]
+err:   115598: Dispatch (8192, 1, 1)
+err:   115599: [cs.b4cc6c5]
+err:   115600: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115601: Dispatch (8192, 1, 1)
+err:   115603: Color pass 3 (0: Image (14539))
+err:   115604: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
+err:   115605: BeginRendering
+err:   115606: [vs.48f2196] [fs.f6ee148] 
+err:   115607: DrawIndexed (48, 1)
+err:   115608: EndRendering
+err:   115609: Barrier (1, 0): 0xc0c:0x140 -> 0x1cfc:0x19ee
+err:   115610: Color pass 4 (0: Image (14539))
+err:   115611: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115612: BeginRendering
+err:   115613: [vs.48f2196] [fs.f6ee148] 
+err:   115614: DrawIndexed (48, 1)
+err:   115615: EndRendering
+err:   115616: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115617: Color pass 5 (0: Image (14539))
+err:   115618: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115619: BeginRendering
+err:   115620: [vs.48f2196] [fs.f6ee148] 
+err:   115621: DrawIndexed (48, 1)
+err:   115622: EndRendering
+err:   115623: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115624: Color pass 6 (0: Image (14539))
+err:   115625: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115626: BeginRendering
+err:   115627: [vs.48f2196] [fs.f6ee148] 
+err:   115628: DrawIndexed (48, 1)
+err:   115629: EndRendering
+err:   115630: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115631: Color pass 7 (0: Image (14539))
+err:   115632: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115633: BeginRendering
+err:   115634: [vs.48f2196] [fs.f6ee148] 
+err:   115635: DrawIndexed (48, 1)
+err:   115636: EndRendering
+err:   115637: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115638: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115639: Color pass 8 (0: Image (14541))
+err:   115640: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
+err:   115641: BeginRendering
+err:   115642: [vs.48f2196] [fs.f6ee148] 
+err:   115643: DrawIndexed (48, 1)
+err:   115644: EndRendering
+err:   115645: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115646: Color pass 9 (0: Image (14541))
+err:   115647: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115648: BeginRendering
+err:   115649: [vs.48f2196] [fs.f6ee148] 
+err:   115650: DrawIndexed (48, 1)
+err:   115651: EndRendering
+err:   115652: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115653: Color pass 10 (0: Image (14541))
+err:   115654: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115655: BeginRendering
+err:   115656: [vs.48f2196] [fs.f6ee148] 
+err:   115657: DrawIndexed (48, 1)
+err:   115658: EndRendering
+err:   115659: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115660: Color pass 11 (0: Image (14541))
+err:   115661: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115662: BeginRendering
+err:   115663: [vs.48f2196] [fs.f6ee148] 
+err:   115664: DrawIndexed (48, 1)
+err:   115665: EndRendering
+err:   115666: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115667: Color pass 12 (0: Image (14541))
+err:   115668: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115669: BeginRendering
+err:   115670: [vs.48f2196] [fs.f6ee148] 
+err:   115671: DrawIndexed (48, 1)
+err:   115672: EndRendering
+err:   115673: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115674: Color pass 13 (0: Image (14541))
+err:   115675: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115676: BeginRendering
+err:   115677: [vs.48f2196] [fs.f6ee148] 
+err:   115678: DrawIndexed (48, 1)
+err:   115679: EndRendering
+err:   115680: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115681: Color pass 14 (0: Image (14541))
+err:   115682: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115683: BeginRendering
+err:   115684: [vs.48f2196] [fs.f6ee148] 
+err:   115685: DrawIndexed (48, 1)
+err:   115686: EndRendering
+err:   115687: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115688: Color pass 15 (0: Image (14541))
+err:   115689: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115690: BeginRendering
+err:   115691: [vs.48f2196] [fs.f6ee148] 
+err:   115692: DrawIndexed (48, 1)
+err:   115693: EndRendering
+err:   115694: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115695: Color pass 16 (0: Image (14541))
+err:   115696: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115697: BeginRendering
+err:   115698: [vs.48f2196] [fs.f6ee148] 
+err:   115699: DrawIndexed (48, 1)
+err:   115700: EndRendering
+err:   115701: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115702: Color pass 17 (0: Image (14541))
+err:   115703: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115704: BeginRendering
+err:   115705: [vs.48f2196] [fs.f6ee148] 
+err:   115706: DrawIndexed (48, 1)
+err:   115707: EndRendering
+err:   115708: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115709: Color pass 18 (0: Image (14541))
+err:   115710: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115711: BeginRendering
+err:   115712: [vs.48f2196] [fs.f6ee148] 
+err:   115713: DrawIndexed (48, 1)
+err:   115714: EndRendering
+err:   115715: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115716: Color pass 19 (0: Image (14541))
+err:   115717: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115718: BeginRendering
+err:   115719: [vs.48f2196] [fs.f6ee148] 
+err:   115720: DrawIndexed (48, 1)
+err:   115721: EndRendering
+err:   115722: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115723: Color pass 20 (0: Image (14541))
+err:   115724: Barrier (0, 2): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115725: BeginRendering
+err:   115726: [vs.48f2196] [fs.f6ee148] 
+err:   115727: DrawIndexed (48, 1)
+err:   115728: EndRendering
+err:   115729: Barrier (1, 0): 0x40c:0x100 -> 0x1cfc:0x19ae
+err:   115730: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115731: [cs.e2ef3e6]
+err:   115732: Dispatch (76, 1, 1)
+err:   115733: [cs.e2ef3e6]
+err:   115734: Dispatch (17, 1, 1)
+err:   115735: [cs.9b4aefd]
+err:   115736: Barrier (1, 0): 0x800:0x40 -> 0x18fc:0x186c
+err:   115737: Dispatch (1, 1, 1)
+err:   115738: [cs.8baa63f]
+err:   115739: Barrier (1, 0): 0x800:0x40 -> 0x18fe:0x186d
 err:   !!! Potential hang region BEGIN !!!
-err:    99708: Dispatch (16, 1, 1)
+err:   115740: Dispatch (16, 1, 1)
 err:   !!! Potential hang region END !!!
-err:    99709: Barrier (1, 0): 0x800:0x40 -> 0x1cfe:0x19ed
-err:    99710: Color pass 21 (0: Image (14092))
-err:    99711: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
-err:    99712: BeginRendering
-err:    99713: [vs.3bdc4b2] [fs.0ea55b5] 
-err:    99714: DrawIndexedIndirect (1, 0)
-err:    99715: EndRendering
-err:    99716: Barrier (1, 0): 0x40e:0x100 -> 0x1cfe:0x19ef
-err:    99717: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
-err:    99718: [cs.05834bf]
-err:    99719: Relaxed sync
-err:    99720: DispatchIndirect
-err:    99721: [cs.d545f90]
-err:    99722: Dispatch (1, 1, 1)
-err:    99723: [cs.e36db06]
-err:    99724: Barrier (1, 0): 0x802:0x40 -> 0x1cfe:0x19ed
-err:    99725: DispatchIndirect
-err:    99726: CopyBuffer
-err:    99728: Clear render target (Image (11642))
-err:    99729: BeginRendering
-err:    99730: EndRendering
-err:    99731: Barrier (1, 0): 0x1b02:0x1440 -> 0x1bfe:0x1e6d
-err:    99732: Barrier (0, 1): 0x1bf8:0x1e20 -> 0x1bf8:0x1e20
-err:    99733: Color pass 22 (0: Image (14060))
-err:    99734: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
-err:    99735: BeginRendering
-err:    99736: [vs.7078e7c] [fs.759a301] 
-err:    99737: DrawIndexed (3, 1)
-err:    99738: DrawIndexed (3, 1)
-err:    99739: DrawIndexed (3, 1)
-err:    99740: DrawIndexed (3, 1)
-err:    99741: DrawIndexed (3, 1)
-err:    99742: DrawIndexed (3, 1)
-err:    99743: DrawIndexed (3, 1)
-err:    99744: DrawIndexed (3, 1)
-err:    99745: DrawIndexed (3, 1)
-err:    99746: DrawIndexed (3, 1)
-err:    99747: DrawIndexed (3, 1)
-err:    99748: DrawIndexed (3, 1)
-err:    99749: DrawIndexed (3, 1)
-err:    99750: DrawIndexed (3, 1)
-err:    99751: DrawIndexed (3, 1)
-err:    99752: DrawIndexed (3, 1)
-err:    99753: DrawIndexed (3, 1)
-err:    99754: DrawIndexed (3, 1)
-err:    99755: DrawIndexed (3, 1)
-err:    99756: DrawIndexed (3, 1)
-err:    99757: DrawIndexed (3, 1)
-err:    99758: DrawIndexed (3, 1)
-err:    99759: DrawIndexed (3, 1)
-err:    99760: DrawIndexed (3, 1)
-err:    99761: DrawIndexed (3, 1)
-err:    99762: EndRendering
-err:    99767: Barrier (1, 0): 0x1484:0x100 -> 0x5cfc:0x39ae
+err:   115741: Barrier (1, 0): 0x800:0x40 -> 0x1cfe:0x19ed
+err:   115742: Color pass 21 (0: Image (14570))
+err:   115743: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x400:0x180
+err:   115744: BeginRendering
+err:   115745: [vs.3bdc4b2] [fs.0ea55b5] 
+err:   115746: DrawIndexedIndirect (1, 0)
+err:   115747: EndRendering
+err:   115748: Barrier (1, 0): 0x40e:0x100 -> 0x1cfe:0x19ef
+err:   115749: Barrier (0, 1): 0x1cf8:0x19a0 -> 0x1cf8:0x19a0
+err:   115750: [cs.05834bf]
+err:   115751: Relaxed sync
+err:   115752: DispatchIndirect
+err:   115753: [cs.d545f90]
+err:   115754: Dispatch (1, 1, 1)
+err:   115755: [cs.e36db06]
+err:   115756: Barrier (1, 0): 0x802:0x40 -> 0x1cfe:0x19ed
+err:   115757: DispatchIndirect
+err:   115758: CopyBuffer
+err:   115763: Barrier (1, 0): 0x1802:0x1040 -> 0x58fe:0x386d
